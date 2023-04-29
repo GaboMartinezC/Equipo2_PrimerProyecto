@@ -71,9 +71,8 @@ namespace DAL
             }
             return retVal;
         }
-        public bool InhabilitarEmpleado(int id)
+        public void InhabilitarEmpleado(int id)
         {
-            bool retVal = false;
             using (var cn = GetConnection())
             {
                 try
@@ -86,16 +85,13 @@ namespace DAL
                         cmd.Parameters.Add(new SqlParameter("@idEmp", id));
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Close();
-                        retVal = true;
                     }
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
-                    retVal = false;
                 }
             }
-            return retVal;
         }
         public DataTable BuscarTodos()
         {

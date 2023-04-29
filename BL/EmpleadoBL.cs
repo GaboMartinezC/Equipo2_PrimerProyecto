@@ -53,6 +53,10 @@ namespace BL
                 retVal = dal.ActualizarEmpleado(empleado);
             return retVal;
         }
+        public void InhabilitarEmpleado(int id)
+        {
+            dal.InhabilitarEmpleado(id);
+        }
         private bool ContactosUsuarioValidos(Empleado empleado)
         {
             bool retVal = true;
