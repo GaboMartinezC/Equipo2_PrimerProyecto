@@ -1,6 +1,5 @@
 using ET;
 using BL;
-using DAL;
 using System.Data;
 
 namespace Proyecto1erTrimestreProgramacion_Equipo2
