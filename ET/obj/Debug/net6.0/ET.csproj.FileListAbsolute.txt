@@ -22,3 +22,15 @@ F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.dll
 F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\refint\ET.dll
 F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.pdb
 F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ref\ET.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\bin\Debug\net6.0\ET.deps.json
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\bin\Debug\net6.0\ET.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\bin\Debug\net6.0\ET.pdb
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.csproj.AssemblyReference.cache
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.AssemblyInfoInputs.cache
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.AssemblyInfo.cs
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.csproj.CoreCompileInputs.cache
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\refint\ET.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.pdb
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ref\ET.dll

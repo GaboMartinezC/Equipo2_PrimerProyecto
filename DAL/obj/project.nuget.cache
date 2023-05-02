@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0oHOJJGG3/mtZPzn16r6HkyvYSNqJF4s8FtkAwvomB6D00RZ9bd6qe2Hpb4I6pnfexohefb2oo90bcuGJKqalg==",
+  "dgSpecHash": "bCLQ0XihogtGnYpWzboqLZb5dwFE64pRy3J8O0toPBGXXZ8qwWZCtXiuJjAeFgXo3go/UDf2f4QoGfDSBzxQMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cotor\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\cotor\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
