@@ -1,0 +1,36 @@
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.exe
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.deps.json
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.runtimeconfig.json
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.csproj.AssemblyReference.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.Form1.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.csproj.GenerateResource.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.AssemblyInfoInputs.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.AssemblyInfo.cs
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\refint\InterfazPrincipal.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.genruntimeconfig.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\ref\InterfazPrincipal.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\2\InterfazPrincipal\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.Properties.Resources.resources
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.exe
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.deps.json
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.runtimeconfig.json
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.dll
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\bin\Debug\net6.0-windows\InterfazPrincipal.pdb
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.csproj.AssemblyReference.cache
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.Properties.Resources.resources
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.csproj.GenerateResource.cache
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.AssemblyInfoInputs.cache
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.AssemblyInfo.cs
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.csproj.CoreCompileInputs.cache
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.dll
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\refint\InterfazPrincipal.dll
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.pdb
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.genruntimeconfig.cache
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\ref\InterfazPrincipal.dll
+C:\Archivos\ArchivosTecnicas\COTIDIANO\InterfazPrincipalKeyla\InterfazPrincipal\obj\Debug\net6.0-windows\InterfazPrincipal.Principal.resources
