@@ -8,12 +8,13 @@ namespace BL
     {
         //genera una instancia que permite acceder a los métodos de EncabezadoEntradaDAL
         private EncabezadoEntradaDAL dal = new EncabezadoEntradaDAL();
+        private DetalleEntradaDAL detalleDal = new DetalleEntradaDAL();
         public bool IngresarEntrada(EncabezadoEntrada encabezado)
         {
             //Valor de retorno
             bool retVal = true;
             // Instancia una datatable que se llena con los datos existentes en BD 
-            DataTable listaEntradas = dal.VerTodoRegistroEntradas();
+            DataTable listaEntradas = detalleDal.VerTodoRegistroEntradas();
             //Variable temporal que guarda los datos a validar
             string descripcion = "";
             for (int i = 0; i < listaEntradas.Rows.Count; i++)
@@ -35,31 +36,13 @@ namespace BL
 
         public bool BorrarRegistroEntrada(int idEncabezado)
         {
-            //Valor de retorno
-            bool retVal = false;
-            // Instancia una datatable que se llena con los datos existentes en BD de los autores
-            DataTable listaEntradas = dal.VerTodoRegistroEntradas();
-            //Variable temporal que guarda los datos a validar
-            string descripcion = "";
-            for (int i = 0; i < listaEntradas.Rows.Count; i++)
-            {
-                //recorrido a la lista de autores
-                descripcion = listaEntradas.Rows[i][idEncabezado].ToString();
-                if (idEncabezado.Equals(descripcion))
-                {
-                    retVal = true;
-                }
-            }
-            //retorna true en caso de que el id haya sido encontrado para seguidamente borrarlo
-            if (retVal)
-                retVal = dal.BorrarRegistroEntrada(idEncabezado);
-            return retVal;
+            return dal.BorrarRegistroEntrada(idEncabezado);
         }
 
         public bool ActualizarEntrada(EncabezadoEntrada entrada)
         {
             bool retVal = false;
-            DataTable listaEntradas = dal.VerTodoRegistroEntradas();
+            DataTable listaEntradas = detalleDal.VerTodoRegistroEntradas();
             string descripcion = "";
             for (int i = 0; i < listaEntradas.Rows.Count; i++)
             {
@@ -79,7 +62,7 @@ namespace BL
         no necesita confirmar existencia, solo mostrarla*/
         public DataTable VerTodoRegistroEntradas()
         {
-            return dal.VerTodoRegistroEntradas();
+            return detalleDal.VerTodoRegistroEntradas();
         }
         //busca las entradas por fecha
         public DataTable BuscarEntradasFecha(DateOnly fecha)

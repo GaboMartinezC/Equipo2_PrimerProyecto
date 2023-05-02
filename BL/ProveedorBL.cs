@@ -65,7 +65,7 @@ namespace BL
             }
             if (retVal)
                 retVal = dal.BorrarProveedor(id);
-            return retVal;
+            return dal.BorrarProveedor(id);
         }
 
         /*Los metodos tipo DataTable solo van a retornar una instancia a los metodos

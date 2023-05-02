@@ -1,7 +1,6 @@
 ﻿using DAL;
 using ET;
 using System.Data;
-//using System.Data.SqlClient
 namespace BL
 {
     public class SucursalesBL
@@ -19,8 +18,8 @@ namespace BL
             {
                 //Llena la string de descripcion con la consulta y la compara con el nuevo registro
                 //Si este se encuentra, el valor de retorno es falso
-                descripcion = listaSucursales.Rows[i]["ID"].ToString();
-                if (sucursal.Equals(descripcion))
+                descripcion = listaSucursales.Rows[i]["UBICACION"].ToString();
+                if (sucursal.Ubicacion.Equals(descripcion))
                     retVal = false;
             }
             //si el valor de retorno es true permite ingresar la categoria debido a que no existe
@@ -32,6 +31,9 @@ namespace BL
         public bool ActualizarSucursal(Sucursales sucursal)
         {
             bool retVal = false;
+            //Cuenta los registros que se encontraron, no debe pasar de uno
+            //Que 
+            int cantRegistros = 0;
             //Busca todos las sucursales disponibles en la BD
             DataTable listaSucursales = dal.BuscarTodoSucursal();
             string descripcion = "";
@@ -40,7 +42,7 @@ namespace BL
             {
                 //Llena la string de descripcion con la consulta y la compara con el nuevo registro
                 //Si este se encuentra, el valor de retorno es true
-                descripcion = listaSucursales.Rows[i]["ID"].ToString();
+                descripcion = listaSucursales.Rows[i]["DESCRIPCION"].ToString();
                 if (sucursal.Equals(descripcion))
                     retVal = true;
             }

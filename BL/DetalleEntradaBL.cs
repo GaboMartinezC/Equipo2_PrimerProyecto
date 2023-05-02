@@ -1,27 +1,15 @@
-<<<<<<< HEAD
 ﻿using ET;
 using DAL;
 using System.Data;
-
-=======
-﻿using DAL;
-using ET;
-using System.Data;
 //using System.Data.SqlClient
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
 namespace BL
 {
     public class DetalleEntradaBL
     {
-<<<<<<< HEAD
-        private DetalleEntradaDAL dal = new DetalleEntradaDAL();
-=======
-        //genera una instancia que permite acceder a los métodos de EncabezadoEntradaDAL
-        private EncabezadoEntradaDAL dal = new EncabezadoEntradaDAL();
+        private DetalleEntradaDAL detalleDal = new DetalleEntradaDAL();
+        private EncabezadoEntradaDAL encabezadoDal = new EncabezadoEntradaDAL();
         //genera una instancia que permite acceder a los métodos de DetalleEntradaDAL
         private DetalleEntradaDAL det = new DetalleEntradaDAL();
-
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
         public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
         {
             //Variables bandera que alojarán las cantidades máximas y mínimas, más la nueva cantidad
@@ -67,42 +55,11 @@ namespace BL
                 }
             }
             //Si no encontró ningún problema y no salió del método, ingresa la lista
-<<<<<<< HEAD
-            return dal.IngresarDetalleEntrada(ListaDetalles);
+            return detalleDal.IngresarDetalleEntrada(ListaDetalles);
         }
         public DataTable VerTodoRegistroEntradas()
         {
-            return dal.VerTodoRegistroEntradas();
+            return detalleDal.VerTodoRegistroEntradas();
         }
-=======
-            return det.IngresarDetalleEntrada(ListaDetalles);
-        }
-        public bool ActualizarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
-        {
-            bool retVal = false;
-            // Instancia una datatable que se llena con los datos existentes en BD 
-            DataTable listaEntradas = dal.VerTodoRegistroEntradas();
-            //Variable temporal que guarda los datos a validar
-            string descripcion = "";
-            for (int i = 0; i < listaEntradas.Rows.Count; i++)
-            {
-                //Llena la string de descripcion con la consulta y la compara con el nuevo registro
-                //Si este se encuentra, el valor de retorno es falso
-                descripcion = listaEntradas.Rows[i]["ID"].ToString();
-                if (ListaDetalles.Equals(descripcion))
-                    retVal = true;
-            }
-            if (retVal)
-                retVal = det.ActualizarDetalleEntrada(ListaDetalles);
-            return retVal;
-        }
-
-        public DataTable UltimoIdEncabezado()
-        {
-            return UltimoIdEncabezado();
-        }
-
-
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
     }
 }

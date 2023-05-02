@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DAL
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\DAL\
-=======
-build_property.ProjectDir = C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
+build_property.ProjectDir = C:\Users\Estudiante-14\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\

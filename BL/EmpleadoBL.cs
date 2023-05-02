@@ -6,8 +6,6 @@ namespace BL
     public class EmpleadoBL
     {
         EmpleadoDAL dal = new EmpleadoDAL();
-<<<<<<< HEAD
-=======
         public bool IngresarEmpleado(Empleado empleado)
         {
             //Valor de retorno
@@ -41,17 +39,19 @@ namespace BL
                 if (dt.Rows[i]["CEDULA"].ToString().Equals(empleado.Cedula))
                 {
                     cantRegistros++;
-                    //Si de por sí ya es mayor a uno, para evitar recorridos innecesarios
+                    //Si ya es mayor a uno, para evitar recorridos innecesarios
                     //sale del metodo
                     if (cantRegistros > 1)
                         return false;
                 }
             }
-            //Valida si el registro es igual a 1, por lo cual solo existe en la BD el registro 
+            //Valida si el registro es igual a 1 o 0, por lo cual solo existe en la BD el registro 
             //que se va a modificar
-            if (cantRegistros == 1)
+            if (cantRegistros <= 1)
                 retVal = ContactosUsuarioValidos(empleado);
             else
+                retVal = false;
+            if (retVal)
                 retVal = dal.ActualizarEmpleado(empleado);
             return retVal;
         }
@@ -91,7 +91,6 @@ namespace BL
             }
             return retVal;
         }
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
         public uint BuscarEmpleado(string cedula, string contrasena)
         {
             return dal.BuscarEmpleado(cedula, contrasena);

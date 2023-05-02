@@ -470,34 +470,24 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\marti\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\cotor\\.nuget\\packages\\": {}
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
+    "C:\\Users\\Estudiante-14\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj",
+      "projectUniqueName": "C:\\Users\\Estudiante-14\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
       "projectName": "ET",
-      "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj",
-      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\obj\\",
+      "projectPath": "C:\\Users\\Estudiante-14\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
+      "packagesPath": "C:\\Users\\Estudiante-14\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Estudiante-14\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
-      "projectName": "ET",
-      "projectPath": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
-      "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
+        "C:\\Users\\Estudiante-14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -505,6 +495,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -544,12 +535,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Estudiante-14\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

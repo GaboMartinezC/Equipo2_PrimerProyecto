@@ -23,14 +23,9 @@ namespace BL
             {
                 //Llena la string de descripcion con la consulta y la compara con el nuevo registro
                 //Si este se encuentra, el valor de retorno es falso
-<<<<<<< HEAD
-                descripcion = consultaIdiomas.Rows[i]["DESCRIPCION"].ToString();
+                descripcion = listaIdiomas.Rows[i]["DESCRIPCION"].ToString();
                 if (descripcion.Equals(idioma.Descripcion))
                 {
-=======
-                descripcion = listaIdiomas.Rows[i]["DESCRIPCION"].ToString();
-                if (idioma.Descripcion.Equals(descripcion))
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
                     retVal = false;
                     //Finaliza el ciclo
                     break;
@@ -69,26 +64,7 @@ namespace BL
         }
         public bool BorrarIdioma(int id)
         {
-            //Valor de retorno
-            bool retVal = false;
-            // Instancia una datatable que se llena con los datos existentes en BD de los autores
-            DataTable listaIdiomas = dal.BuscarTodoIdioma();
-            //Variable temporal que guarda los datos a validar
-            string descripcion = "";
-            for (int i = 0; i < listaIdiomas.Rows.Count; i++)
-            {
-                //recorrido a la lista de idiomas para encontrar el id ingresado
-                descripcion = listaIdiomas.Rows[i][id].ToString();
-                if (id.Equals(descripcion))
-                {
-                    retVal = true;
-                }
-            }
-            //si el idioma existe el valor es true por lo que permite borrarlo
-            //de no ser encontrado no se podrá borrar algo inexistente por lo que solo retornará false
-            if (retVal)
-                retVal = dal.BorrarIdioma(id);
-            return retVal;
+            return dal.BorrarIdioma(id);
         }
         public DataTable BuscarTodoIdioma() 
         {
