@@ -489,11 +489,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\marti\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\cotor\\.nuget\\packages\\": {}
+>>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj",
       "projectName": "DAL",
       "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj",
@@ -502,6 +507,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
+      "projectName": "DAL",
+      "projectPath": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\DAL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -515,8 +530,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj": {
               "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj"
+=======
+            "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+              "projectPath": "C:\\Users\\cotor\\Documents\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
+>>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
             }
           }
         }
@@ -552,7 +572,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
       }
     }
   }
