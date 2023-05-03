@@ -28,6 +28,7 @@ F:\Proyecto1erTrimestreProgramacion_Equipo2\DAL\obj\Debug\net6.0\DAL.dll
 F:\Proyecto1erTrimestreProgramacion_Equipo2\DAL\obj\Debug\net6.0\refint\DAL.dll
 F:\Proyecto1erTrimestreProgramacion_Equipo2\DAL\obj\Debug\net6.0\DAL.pdb
 F:\Proyecto1erTrimestreProgramacion_Equipo2\DAL\obj\Debug\net6.0\ref\DAL.dll
+<<<<<<< HEAD
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.deps.json
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.dll
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.pdb
@@ -43,3 +44,20 @@ C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\refint\DAL.dll
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.pdb
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\ref\DAL.dll
+=======
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\ET.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\ET.pdb
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\cotor\Documents\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\ref\DAL.dll
+>>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3

@@ -4,7 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+<<<<<<< HEAD
 using System.Runtime.InteropServices;
+=======
+>>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +20,7 @@ namespace GUI
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -53,5 +57,7 @@ namespace GUI
         private void panelSalir_Paint(object sender, PaintEventArgs e)
         {
         }
+=======
+>>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
     }
 }

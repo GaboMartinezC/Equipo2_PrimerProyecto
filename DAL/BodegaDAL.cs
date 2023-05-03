@@ -103,9 +103,9 @@ namespace DAL
             return retVal;
         }
         //Busca un producto específico en una sucursal específica
-        public DataTable BuscarProductoSucursal(Bodega bodega)
+        public Bodega BuscarProductoSucursal(Bodega bodega)
         {
-            DataTable retVal = new DataTable();
+            Bodega retVal = new Bodega();
             using (var cn = GetConnection())
             {
                 try
@@ -122,10 +122,14 @@ namespace DAL
                          */
                         cmd.Parameters.Add(new SqlParameter("@idProd", Convert.ToInt32(bodega.IdProducto)));
                         cmd.Parameters.Add(new SqlParameter("@idSuc", Convert.ToInt32(bodega.IdSucursal)));
+                        SqlParameter cant = new SqlParameter("@cant", SqlDbType.Int);
+                        cant.Direction = ParameterDirection.Output;
+                        cmd.Parameters.Add(cant);
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
-                        da.Fill(retVal);
-                    }
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        retVal.Cantidad = Convert.ToUInt32(cant);
+;                    }
                 }
                 catch (Exception ex)
                 {

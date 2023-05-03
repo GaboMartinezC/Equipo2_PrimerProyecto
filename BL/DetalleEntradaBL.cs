@@ -1,12 +1,14 @@
 ﻿using ET;
 using DAL;
 using System.Data;
-
 namespace BL
 {
     public class DetalleEntradaBL
     {
-        private DetalleEntradaDAL dal = new DetalleEntradaDAL();
+        private DetalleEntradaDAL detalleDal = new DetalleEntradaDAL();
+        private BodegaDAL bodegaDal = new BodegaDAL();
+        //genera una instancia que permite acceder a los métodos de DetalleEntradaDAL
+        private DetalleEntradaDAL det = new DetalleEntradaDAL();
         public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
         {
             //Variables bandera que alojarán las cantidades máximas y mínimas, más la nueva cantidad
@@ -38,25 +40,28 @@ namespace BL
                         cantidadesMaximasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MAXIMO"]);
                         cantidadesMinimasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MINIMO"]);
                         //Llama al SP de busqueda 
-                        DataTable dtBusquedaProdSuc = bodegaDAL.BuscarProductoSucursal(bodega);
                         //nueva cantidad es igual a la cantidad existente del producto en la sucursal
                         //más la cantidad ingresada
-                        nuevaCantidad = Convert.ToUInt32(dtBusquedaProdSuc.Rows[0]["CANTIDAD"]) + de.Cantidad;
+                        nuevaCantidad = bodegaDAL.BuscarProductoSucursal(bodega).Cantidad + de.Cantidad;
                         //Si se cumple la condición, retorna un falso y sale del método
                         if (nuevaCantidad < cantidadesMinimasProducto || nuevaCantidad > cantidadesMaximasProducto)
                             return false;
                         else
-                            de.Cantidad = nuevaCantidad;
+                        {
+                            bodega.Cantidad = nuevaCantidad;
+                            bodegaDal.AumentarInventario(bodega);
+                        }
+                            
                         break;
                     }
                 }
             }
             //Si no encontró ningún problema y no salió del método, ingresa la lista
-            return dal.IngresarDetalleEntrada(ListaDetalles);
+            return detalleDal.IngresarDetalleEntrada(ListaDetalles);
         }
         public DataTable VerTodoRegistroEntradas()
         {
-            return dal.VerTodoRegistroEntradas();
+            return detalleDal.VerTodoRegistroEntradas();
         }
     }
 }

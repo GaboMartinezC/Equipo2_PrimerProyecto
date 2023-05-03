@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+<<<<<<< HEAD
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+=======
+>>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
+    <Compile Update="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,12 +1,15 @@
 ﻿using ET;
 using DAL;
 using System.Data;
-
 namespace BL
 {
     public class LibroBL : ProductoBL
     {
-        private LibroDAL dal = new LibroDAL();
+
+        //genera una instancia que permite acceder a los métodos de LibroDAL
+        private LibroDAL libroDal = new LibroDAL();
+        //genera una instancia que permite acceder a los métodos de ProductoDAL
+        private ProductoDAL productoDal = new ProductoDAL();
         public bool IngresarLibro(Libro libro)
         {
             //Valor de retorno
@@ -20,7 +23,7 @@ namespace BL
                 retVal = false;
             //Si no, el valor de retorno es lo que retorne el método de ingreso
             else
-                retVal = dal.IngresarLibro(libro);
+                retVal = libroDal.IngresarLibro(libro);
             return retVal;
         }
         public bool ActualizarLibro(Libro libro)
@@ -31,17 +34,16 @@ namespace BL
             if (!esEditorial || libro.StockMaximo < libro.StockMinimo)
                 retVal = false;
             else
-                retVal = dal.ActualizarLibro(libro);
+                retVal = libroDal.ActualizarLibro(libro);
             return retVal;
         }
         public DataTable BuscarLibroIdioma(int idIdi)
         {
-            return dal.BuscarLibroIdioma(idIdi);
+            return libroDal.BuscarLibroIdioma(idIdi);
         }
         public DataTable BuscarLibroAutor(int idAut)
         {
-            return dal.BuscarLibroAutor(idAut);
+            return libroDal.BuscarLibroAutor(idAut);
         }
-
     }
 }

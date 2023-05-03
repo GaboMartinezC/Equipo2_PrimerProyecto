@@ -58,6 +58,7 @@ F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equ
 F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.pdb
 F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
+<<<<<<< HEAD
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.exe
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.deps.json
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
@@ -89,3 +90,6 @@ C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestre
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Principal.resources
+=======
+C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+>>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
