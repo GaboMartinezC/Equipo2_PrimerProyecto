@@ -5,32 +5,54 @@ namespace BL
 {
     public class DetalleCategoriaBL
     {
-         /*
-          * !!! FIXME !!!
-          * Validar producto != editorial
-          */
-
         //genera una instancia que permite acceder a los métodos de DetalleCategoriaDAL
         private DetalleCategoriaDAL dal = new DetalleCategoriaDAL();
-        private CategoriaDAL det = new CategoriaDAL();
+        
         public bool IngresarListaDetalles(List<DetalleCategoria> ListaCategorias)
         {
             //Valor de retorno 
             bool retVal = true;
-            // Instancia una datatable que se llena con los datos existentes en BD 
-            DataTable listaDetalles = det.BuscarTodoCategoria();
-            //Variable temporal que guarda los datos a validar
-            string descripcion = "";
-            for (int i = 0; i < listaDetalles.Rows.Count; i++)
+            //Instancia los dal de producto y categoria para compararlos
+            CategoriaDAL cat = new CategoriaDAL();
+            ProductoDAL prod = new ProductoDAL();
+            // Instancia una datatable que se llena con las categorias
+            DataTable listaCategorias = cat.BuscarTodoCategoria();
+            // Instancia una datatable que se llena con los productos
+            DataTable listaProductos = prod.BuscarTodoProductoGeneral();
+            //Recorre la lista de productos
+            for(int i = 0; i < listaProductos.Rows.Count; i++)
             {
-                //Llena la string de descripcion con la consulta y la compara con el nuevo registro
-                //Si este se encuentra, el valor de retorno es falso
-                descripcion = listaDetalles.Rows[i]["ID"].ToString();
-                if (ListaCategorias.Equals(descripcion))
-                    retVal = false;
+                //Para cada producto, extrae en una variable la cantidad de paginas del producto
+                //pues esta variable es indicativo en el registro en base de datos de si este es un libro o no
+                uint cantPaginasProducto = Convert.ToUInt32(listaProductos.Rows[i]["CANTIDAD_PAGINAS"]);
+                //Para cada producto, recorre una vez la lista de categorías
+                foreach (DetalleCategoria dc in ListaCategorias)
+                {
+                    //Si el id es el mismo en producto y en categoria, empieza a recorrer la lista de categoría
+                    if (Convert.ToUInt32(listaProductos.Rows[i]["ID"]) == dc.IdProducto)
+                    {
+                        for (int j = 0; j < listaCategorias.Rows.Count; j++)
+                        {
+                            //Valida coincidencias en las categorías de la lista y de la tabla 
+                            if (Convert.ToUInt32(listaCategorias.Rows[i]["ID"]) == dc.IdCategoria)
+                            {
+                                //Valida que a un producto no se le asignen generos literarios
+                                if (cantPaginasProducto > 0)
+                                {
+                                    if (Convert.ToBoolean(listaCategorias.Rows[i]["ES_GENERO"]))
+                                        return false;
+                                }
+                                //Valida que a un libro no se le asignen categorias de producto
+                                else
+                                {
+                                    if (!Convert.ToBoolean(listaCategorias.Rows[i]["ES_GENERO"]))
+                                        return false;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            if (retVal)
-                retVal = dal.IngresarDetallesCategoria(ListaCategorias);
             return retVal;
         }
         public bool BorrarDetalle(int id)
