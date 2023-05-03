@@ -93,3 +93,4 @@ C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestre
 =======
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
 >>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
+C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources

@@ -13,13 +13,10 @@ namespace BL
             //Valida lógicamente que el stock máximo no sea menor al mínimo
             if (producto.StockMaximo < producto.StockMinimo)
                 retVal = false;
-<<<<<<< HEAD
            //Si el proveedor es una editorial, al pertenecer a superclase producto
            //retorna un falso
-=======
             //Si el proveedor es una editorial, al pertenecer a superclase producto
             //retorna un falso
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
             if (ProveedorEsEditorial(producto.IdProveedor))
                 retVal = false;
             //Si ninguna de las condicionales anteriores se cumple, ingresa el producto
@@ -65,54 +62,16 @@ namespace BL
                 {
                     //Convierte el dato booleano de la datatable al valor de retorno
                     retVal = Convert.ToBoolean(proveedores.Rows[i]["ES_EDITORIAL"]);
-<<<<<<< HEAD
                      //Finaliza el ciclo
-=======
-                    //Finaliza el ciclo
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
                     break;
                 }
             }
             return retVal;
         }
-<<<<<<< HEAD
         public bool BorrarProducto(int id)
         {
             return dal.BorrarProducto(id);
         }
-        public DataTable BuscarTodoProducto() 
-        {
-            return dal.BuscarTodoProducto();
-        }
-        public DataTable BuscarTodoProductoGeneral()
-        {
-            return dal.BuscarTodoProductoGeneral();
-        }
-        public DataTable BuscarProducto(string descrip)
-        {
-            return dal.BuscarProducto(descrip);
-        }
-        public DataTable BuscarProductoProveedor(int idProv)
-        {
-            return dal.BuscarProductoProveedor(idProv);
-        }
-=======
-        public bool BorrarPrducto(int id)
-        {
-            bool retVal = false;
-            DataTable listaProductos = dal.BuscarTodoProducto();
-            string descripcion = "";
-            for (int i = 0; i < listaProductos.Rows.Count; i++)
-            {
-                descripcion = listaProductos.Rows[i][id].ToString();
-                if (id.Equals(descripcion))
-                    retVal = true;
-            }
-            if (retVal)
-                retVal = dal.BorrarProducto(id);
-            return retVal;
-        }
-
         /*Los metodos tipo DataTable solo van a retornar una instancia a los metodos
         correspondientes de dal ya que,
         no necesita confirmar existencia, solo mostrarla*/
@@ -128,6 +87,9 @@ namespace BL
         {
             return dal.BuscarProducto(descripcion);
         }
->>>>>>> 22ec82dd7793dd24a6b9793f9f1b21ffd209a172
+        public DataTable BuscarTodoProducto()
+        {
+            return dal.BuscarTodoProducto();
+        }
     }
 }

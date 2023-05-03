@@ -91,12 +91,10 @@ namespace BL
         {
             return dal.BuscarAutorApellido(nombre);
         }
-
         public DataTable BuscarAutorApellido(string apellido)
         {
             return dal.BuscarAutorApellido(apellido);
         }
-
         public DataTable BuscarTodos()
         {
             return dal.BuscarTodos();

@@ -23,17 +23,18 @@ namespace BL
                 if (rolUsuario.Equals(descripcion))
                     retVal = false;
             }
-            //si el valor de retorno es true permite ingresar la categoria debido a que no existe
+            //si el valor de retorno es true permite ingresar el rol de usuario debido a que no existe
             if (retVal)
                 retVal = dal.IngresarRolUsuario(rolUsuario);
             return retVal;
         }
-
         public bool ActualizarRolUsuario(RolUsuario rolUsuario)
         {
             bool retVal = false;
             //Busca todos las sucursales disponibles en la BD
             DataTable listaRolUsuarios = dal.BuscarTodos();
+            //Contador de los
+            uint cantRegistros = 0;
             string descripcion = "";
             //recorre la base de datos hasta encontrar la sucursal a actualizar
             for (int i = 0; i < listaRolUsuarios.Rows.Count; i++)
@@ -42,35 +43,27 @@ namespace BL
                 //Si este se encuentra, el valor de retorno es true
                 descripcion = listaRolUsuarios.Rows[i]["DESCRIPCION"].ToString();
                 if (rolUsuario.Equals(descripcion))
-                    retVal = true;
+                    cantRegistros++;
+                if (cantRegistros > 1)
+                {
+                    retVal = false; 
+                    break;
+                }
             }
-            //si la sucursal ha sido encontrada se ejecuta un metodo en DAL, sino solo retorna falso
-            if (retVal)
+            //Si la cantidad de registros es solo una (el que se va a actualizar)
+            //Procede con la actualización
+            if (cantRegistros <= 1)
                 retVal = dal.ActualizarRolUsuario(rolUsuario);
             return retVal;
         }
-
         public bool BorrarRolUsuario(int id)
         {
-            bool retVal = true;
-            DataTable listaRolUsuario = dal.BuscarTodos();
-            string descripcion = "";
-            for (int i = 0; i < listaRolUsuario.Rows.Count; i++)
-            {
-                descripcion = listaRolUsuario.Rows[i][id].ToString();
-                if (id.Equals(descripcion))
-                    retVal = true;
-            }
-            if (retVal)
-                retVal = dal.BorrarRolUsuario(id);
-            return retVal;
+            return dal.BorrarRolUsuario(id);
         }
-
         public DataTable BuscarTodo()
         {
             return dal.BuscarTodos();
         }
-
         public DataTable BuscarRolUsuario(string descrip)
         {
             return dal.BuscarRolUsuario(descrip);

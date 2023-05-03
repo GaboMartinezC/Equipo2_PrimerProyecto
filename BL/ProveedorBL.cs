@@ -1,6 +1,5 @@
 ﻿using ET;
 using DAL;
-using System.Data.SqlClient;
 using System.Data;
 
 namespace BL
@@ -54,20 +53,8 @@ namespace BL
         }
         public bool BorrarProveedor(int id)
         {
-            bool retVal = false;
-            DataTable listaProveedores = dal.BuscarTodo();
-            string descripcion = "";
-            for (int i = 0; i < listaProveedores.Rows.Count; i++)
-            {
-                descripcion = listaProveedores.Rows[i][id].ToString();
-                if (id.Equals(descripcion))
-                    retVal = true;
-            }
-            if (retVal)
-                retVal = dal.BorrarProveedor(id);
             return dal.BorrarProveedor(id);
         }
-
         /*Los metodos tipo DataTable solo van a retornar una instancia a los metodos
         correspondientes de dal ya que,
         no necesita confirmar existencia, solo mostrarla*/
