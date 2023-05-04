@@ -29,120 +29,110 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutorGUI));
-            panelNuevoProveedor = new Panel();
-            btnNuevoProveedor = new PictureBox();
-            panelBTNBuscarProveedor = new Panel();
-            btnBuscarProveedor = new PictureBox();
-            panel1 = new Panel();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
-            panelNuevoProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnNuevoProveedor).BeginInit();
-            panelBTNBuscarProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            this.panelNuevoProveedor = new System.Windows.Forms.Panel();
+            this.btnNuevoProveedor = new System.Windows.Forms.PictureBox();
+            this.panelBTNBuscarProveedor = new System.Windows.Forms.Panel();
+            this.btnBuscarProveedor = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBuscarAutor = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panelNuevoProveedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoProveedor)).BeginInit();
+            this.panelBTNBuscarProveedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscarProveedor)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panelNuevoProveedor
             // 
-            panelNuevoProveedor.Controls.Add(btnNuevoProveedor);
-            panelNuevoProveedor.Dock = DockStyle.Left;
-            panelNuevoProveedor.Location = new Point(0, 0);
-            panelNuevoProveedor.Margin = new Padding(3, 4, 3, 4);
-            panelNuevoProveedor.Name = "panelNuevoProveedor";
-            panelNuevoProveedor.Size = new Size(173, 760);
-            panelNuevoProveedor.TabIndex = 0;
+            this.panelNuevoProveedor.Controls.Add(this.btnNuevoProveedor);
+            this.panelNuevoProveedor.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelNuevoProveedor.Location = new System.Drawing.Point(0, 0);
+            this.panelNuevoProveedor.Name = "panelNuevoProveedor";
+            this.panelNuevoProveedor.Size = new System.Drawing.Size(151, 570);
+            this.panelNuevoProveedor.TabIndex = 0;
             // 
             // btnNuevoProveedor
             // 
-            btnNuevoProveedor.Image = (Image)resources.GetObject("btnNuevoProveedor.Image");
-            btnNuevoProveedor.Location = new Point(49, 33);
-            btnNuevoProveedor.Margin = new Padding(3, 4, 3, 4);
-            btnNuevoProveedor.Name = "btnNuevoProveedor";
-            btnNuevoProveedor.Size = new Size(80, 112);
-            btnNuevoProveedor.SizeMode = PictureBoxSizeMode.Zoom;
-            btnNuevoProveedor.TabIndex = 0;
-            btnNuevoProveedor.TabStop = false;
-            btnNuevoProveedor.Click += btnNuevoProveedor_Click;
+            this.btnNuevoProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoProveedor.Image")));
+            this.btnNuevoProveedor.Location = new System.Drawing.Point(43, 25);
+            this.btnNuevoProveedor.Name = "btnNuevoProveedor";
+            this.btnNuevoProveedor.Size = new System.Drawing.Size(70, 84);
+            this.btnNuevoProveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnNuevoProveedor.TabIndex = 0;
+            this.btnNuevoProveedor.TabStop = false;
             // 
             // panelBTNBuscarProveedor
             // 
-            panelBTNBuscarProveedor.Controls.Add(btnBuscarProveedor);
-            panelBTNBuscarProveedor.Dock = DockStyle.Right;
-            panelBTNBuscarProveedor.Location = new Point(778, 0);
-            panelBTNBuscarProveedor.Margin = new Padding(3, 4, 3, 4);
-            panelBTNBuscarProveedor.Name = "panelBTNBuscarProveedor";
-            panelBTNBuscarProveedor.Size = new Size(136, 760);
-            panelBTNBuscarProveedor.TabIndex = 1;
-            panelBTNBuscarProveedor.Paint += panelBTNBuscarProveedor_Paint;
+            this.panelBTNBuscarProveedor.Controls.Add(this.btnBuscarProveedor);
+            this.panelBTNBuscarProveedor.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBTNBuscarProveedor.Location = new System.Drawing.Point(681, 0);
+            this.panelBTNBuscarProveedor.Name = "panelBTNBuscarProveedor";
+            this.panelBTNBuscarProveedor.Size = new System.Drawing.Size(119, 570);
+            this.panelBTNBuscarProveedor.TabIndex = 1;
             // 
             // btnBuscarProveedor
             // 
-            btnBuscarProveedor.Image = (Image)resources.GetObject("btnBuscarProveedor.Image");
-            btnBuscarProveedor.Location = new Point(21, 48);
-            btnBuscarProveedor.Margin = new Padding(3, 4, 3, 4);
-            btnBuscarProveedor.Name = "btnBuscarProveedor";
-            btnBuscarProveedor.Size = new Size(47, 80);
-            btnBuscarProveedor.SizeMode = PictureBoxSizeMode.Zoom;
-            btnBuscarProveedor.TabIndex = 0;
-            btnBuscarProveedor.TabStop = false;
+            this.btnBuscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarProveedor.Image")));
+            this.btnBuscarProveedor.Location = new System.Drawing.Point(18, 36);
+            this.btnBuscarProveedor.Name = "btnBuscarProveedor";
+            this.btnBuscarProveedor.Size = new System.Drawing.Size(41, 60);
+            this.btnBuscarProveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBuscarProveedor.TabIndex = 0;
+            this.btnBuscarProveedor.TabStop = false;
             // 
             // panel1
             // 
-            panel1.Controls.Add(textBox1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(173, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(605, 104);
-            panel1.TabIndex = 2;
+            this.panel1.Controls.Add(this.txtBuscarAutor);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(151, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(530, 78);
+            this.panel1.TabIndex = 2;
             // 
-            // textBox1
+            // txtBuscarAutor
             // 
-            textBox1.BackColor = Color.LightGray;
-            textBox1.Dock = DockStyle.Bottom;
-            textBox1.Location = new Point(0, 77);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(605, 27);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Search Autor...";
+            this.txtBuscarAutor.BackColor = System.Drawing.Color.LightGray;
+            this.txtBuscarAutor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtBuscarAutor.Location = new System.Drawing.Point(0, 55);
+            this.txtBuscarAutor.Name = "txtBuscarAutor";
+            this.txtBuscarAutor.PlaceholderText = "Ingrese el autor que desea buscar";
+            this.txtBuscarAutor.Size = new System.Drawing.Size(530, 23);
+            this.txtBuscarAutor.TabIndex = 0;
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(178, 148);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(594, 493);
-            dataGridView1.TabIndex = 3;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(156, 111);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(520, 370);
+            this.dataGridView1.TabIndex = 3;
             // 
             // AutorGUI
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(248, 248, 243);
-            ClientSize = new Size(914, 760);
-            Controls.Add(dataGridView1);
-            Controls.Add(panel1);
-            Controls.Add(panelBTNBuscarProveedor);
-            Controls.Add(panelNuevoProveedor);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "AutorGUI";
-            Text = "AutorGUI";
-            panelNuevoProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnNuevoProveedor).EndInit();
-            panelBTNBuscarProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.ClientSize = new System.Drawing.Size(800, 570);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBTNBuscarProveedor);
+            this.Controls.Add(this.panelNuevoProveedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "AutorGUI";
+            this.Text = "AutorGUI";
+            this.panelNuevoProveedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoProveedor)).EndInit();
+            this.panelBTNBuscarProveedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscarProveedor)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -152,7 +142,7 @@
         private Panel panelBTNBuscarProveedor;
         private PictureBox btnBuscarProveedor;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txtBuscarAutor;
         private DataGridView dataGridView1;
     }
 }

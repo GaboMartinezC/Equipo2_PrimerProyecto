@@ -58,9 +58,6 @@
     <Compile Update="FrmNuevoCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmNuevoIdioma.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmNuevoAutor.cs">
       <SubType>Form</SubType>
     </Compile>

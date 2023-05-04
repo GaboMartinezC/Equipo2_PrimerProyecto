@@ -14,10 +14,16 @@ namespace GUI
     {
         private Form active = null;
 
+        //para hacer el drag de la ventana
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
         public Principal()
         {
             InitializeComponent();
@@ -70,6 +76,70 @@ namespace GUI
         {
             ProductoGUI p = new ProductoGUI();
             OpenChildFormInPanel(p);
+        }
+
+        private void panelProveedor_Click(object sender, EventArgs e)
+        {
+            ProveedorGUI p = new ProveedorGUI();
+            OpenChildFormInPanel(p);
+        }
+
+        private void panelAutor_Click(object sender, EventArgs e)
+        {
+            AutorGUI a = new AutorGUI();
+            OpenChildFormInPanel(a);
+        }
+
+        private void panelIdiomas_Click(object sender, EventArgs e)
+        {
+            IdiomaGUI i = new IdiomaGUI();
+            OpenChildFormInPanel(i);
+        }
+
+        private void panelCategoria_Click(object sender, EventArgs e)
+        {
+            CategoriaGUI c = new CategoriaGUI();
+            OpenChildFormInPanel(c);    
+        }
+
+        private void panelSucursal_Click(object sender, EventArgs e)
+        {
+            SucursalGUI s = new SucursalGUI();
+            OpenChildFormInPanel(s);
+        }
+
+        private void panelEmpleados_Click(object sender, EventArgs e)
+        {
+            EmpleadoGUI em = new EmpleadoGUI(); 
+            OpenChildFormInPanel(em);
+        }
+
+        private void panelSalir_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void panelSalir_Click(object sender, EventArgs e)
+        {
+            if (active != null)
+            {
+                active.Close();
+                active = null;
+            }
+        }
+
+        private void panelIdiomas_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelBarraControles_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -16,13 +16,40 @@ namespace GUI
         {
             InitializeComponent();
         }
-
+        private Form active = null;
         private void btnNuevoProveedor_Click(object sender, EventArgs e)
         {
 
         }
 
         private void panelBTNBuscarProveedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelFrmNuevoProveedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
+        {
+            /*FrmNuevoProducto f = new FrmNuevoProducto();
+            panelFrmNuevoProveedor.Visible= true;
+            OpenChildFormInPanel(f);*/
+            FrmNuevoProducto f = new FrmNuevoProducto();
+            f.Show();
+            f.Location = FrmNuevoProducto.btn;
+        }
+        private void CloseChildForm()
+        {
+            if(active != null)
+            {
+                active.Close();
+                active = null;
+            }
+        }
+        private void panelNuevoProveedor_Paint(object sender, PaintEventArgs e)
         {
 
         }

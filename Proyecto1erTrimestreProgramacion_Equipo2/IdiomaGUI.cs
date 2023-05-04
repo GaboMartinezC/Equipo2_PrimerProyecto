@@ -25,8 +25,6 @@ namespace GUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            IdiomaBL idiomaBl = new IdiomaBL();
-            DataTable idiomas = idiomaBl.BuscarTodoIdioma();
 
         }
 
@@ -34,7 +32,10 @@ namespace GUI
         {
            
         }
+        private void dataGridView1_Paint(object sender, PaintEventArgs e) 
+        { 
 
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
@@ -47,9 +48,7 @@ namespace GUI
 
         private void btnBuscarProveedor_Click(object sender, EventArgs e)
         {
-            /*string descripcion = txtBuscarIdioma.Text;
-            IdiomaBL idiomaBl = new IdiomaBL();
-            idiomaBl.BuscarIdioma(descripcion);*/
+
         }
     }
 }

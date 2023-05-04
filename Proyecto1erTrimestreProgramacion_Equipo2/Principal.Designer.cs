@@ -53,16 +53,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panelIdiomas = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelIdioma = new System.Windows.Forms.Label();
             this.panelAutor = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelAutor = new System.Windows.Forms.Label();
             this.panelProveedor = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelProveedorr = new System.Windows.Forms.Label();
             this.panelProductos = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelProducto = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.logoEsquina = new System.Windows.Forms.PictureBox();
             this.panelPadre = new System.Windows.Forms.Panel();
@@ -100,12 +100,14 @@
             // panelBarraControles
             // 
             this.panelBarraControles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(166)))), ((int)(((byte)(172)))));
+            this.panelBarraControles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelBarraControles.Controls.Add(this.panel4);
             this.panelBarraControles.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraControles.Location = new System.Drawing.Point(0, 0);
             this.panelBarraControles.Name = "panelBarraControles";
             this.panelBarraControles.Size = new System.Drawing.Size(1000, 30);
             this.panelBarraControles.TabIndex = 1;
+            this.panelBarraControles.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBarraControles_Paint);
             this.panelBarraControles.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraControles_MouseDown_1);
             // 
             // panel4
@@ -115,9 +117,9 @@
             this.panel4.Controls.Add(this.btnSalir);
             this.panel4.Controls.Add(this.btnMaximizar);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(871, 0);
+            this.panel4.Location = new System.Drawing.Point(869, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(129, 30);
+            this.panel4.Size = new System.Drawing.Size(129, 28);
             this.panel4.TabIndex = 4;
             // 
             // btnRestaurar
@@ -170,10 +172,12 @@
             this.panelSalir.Controls.Add(this.panelIconSalir);
             this.panelSalir.Controls.Add(this.label8);
             this.panelSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelSalir.Location = new System.Drawing.Point(0, 526);
+            this.panelSalir.Location = new System.Drawing.Point(0, 524);
             this.panelSalir.Name = "panelSalir";
-            this.panelSalir.Size = new System.Drawing.Size(200, 44);
+            this.panelSalir.Size = new System.Drawing.Size(198, 44);
             this.panelSalir.TabIndex = 9;
+            this.panelSalir.Click += new System.EventHandler(this.panelSalir_Click);
+            this.panelSalir.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSalir_Paint);
             // 
             // panelIconSalir
             // 
@@ -197,6 +201,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Enabled = false;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(54, 19);
             this.label8.Name = "label8";
@@ -207,6 +212,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(208)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panelSalir);
             this.panel2.Controls.Add(this.panelEmpleados);
             this.panel2.Controls.Add(this.panelSucursal);
@@ -229,8 +235,9 @@
             this.panelEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEmpleados.Location = new System.Drawing.Point(0, 409);
             this.panelEmpleados.Name = "panelEmpleados";
-            this.panelEmpleados.Size = new System.Drawing.Size(200, 44);
+            this.panelEmpleados.Size = new System.Drawing.Size(198, 44);
             this.panelEmpleados.TabIndex = 8;
+            this.panelEmpleados.Click += new System.EventHandler(this.panelEmpleados_Click);
             // 
             // pictureBox11
             // 
@@ -245,6 +252,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(44, 16);
             this.label7.Name = "label7";
@@ -261,8 +269,9 @@
             this.panelSucursal.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSucursal.Location = new System.Drawing.Point(0, 365);
             this.panelSucursal.Name = "panelSucursal";
-            this.panelSucursal.Size = new System.Drawing.Size(200, 44);
+            this.panelSucursal.Size = new System.Drawing.Size(198, 44);
             this.panelSucursal.TabIndex = 7;
+            this.panelSucursal.Click += new System.EventHandler(this.panelSucursal_Click);
             // 
             // pictureBox10
             // 
@@ -291,6 +300,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Enabled = false;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(44, 13);
             this.label6.Name = "label6";
@@ -305,8 +315,9 @@
             this.panelCategoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCategoria.Location = new System.Drawing.Point(0, 321);
             this.panelCategoria.Name = "panelCategoria";
-            this.panelCategoria.Size = new System.Drawing.Size(200, 44);
+            this.panelCategoria.Size = new System.Drawing.Size(198, 44);
             this.panelCategoria.TabIndex = 6;
+            this.panelCategoria.Click += new System.EventHandler(this.panelCategoria_Click);
             // 
             // pictureBox9
             // 
@@ -321,6 +332,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Enabled = false;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(44, 16);
             this.label5.Name = "label5";
@@ -331,12 +343,14 @@
             // panelIdiomas
             // 
             this.panelIdiomas.Controls.Add(this.pictureBox8);
-            this.panelIdiomas.Controls.Add(this.label4);
+            this.panelIdiomas.Controls.Add(this.labelIdioma);
             this.panelIdiomas.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelIdiomas.Location = new System.Drawing.Point(0, 277);
             this.panelIdiomas.Name = "panelIdiomas";
-            this.panelIdiomas.Size = new System.Drawing.Size(200, 44);
+            this.panelIdiomas.Size = new System.Drawing.Size(198, 44);
             this.panelIdiomas.TabIndex = 5;
+            this.panelIdiomas.Click += new System.EventHandler(this.panelIdiomas_Click);
+            this.panelIdiomas.Paint += new System.Windows.Forms.PaintEventHandler(this.panelIdiomas_Paint);
             // 
             // pictureBox8
             // 
@@ -348,25 +362,27 @@
             this.pictureBox8.TabIndex = 1;
             this.pictureBox8.TabStop = false;
             // 
-            // label4
+            // labelIdioma
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(44, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Idiomas";
+            this.labelIdioma.AutoSize = true;
+            this.labelIdioma.Enabled = false;
+            this.labelIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelIdioma.Location = new System.Drawing.Point(44, 13);
+            this.labelIdioma.Name = "labelIdioma";
+            this.labelIdioma.Size = new System.Drawing.Size(62, 16);
+            this.labelIdioma.TabIndex = 0;
+            this.labelIdioma.Text = "Idiomas";
             // 
             // panelAutor
             // 
             this.panelAutor.Controls.Add(this.pictureBox7);
-            this.panelAutor.Controls.Add(this.label3);
+            this.panelAutor.Controls.Add(this.labelAutor);
             this.panelAutor.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAutor.Location = new System.Drawing.Point(0, 233);
             this.panelAutor.Name = "panelAutor";
-            this.panelAutor.Size = new System.Drawing.Size(200, 44);
+            this.panelAutor.Size = new System.Drawing.Size(198, 44);
             this.panelAutor.TabIndex = 4;
+            this.panelAutor.Click += new System.EventHandler(this.panelAutor_Click);
             // 
             // pictureBox7
             // 
@@ -378,25 +394,27 @@
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
             // 
-            // label3
+            // labelAutor
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(44, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Autor";
+            this.labelAutor.AutoSize = true;
+            this.labelAutor.Enabled = false;
+            this.labelAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelAutor.Location = new System.Drawing.Point(44, 12);
+            this.labelAutor.Name = "labelAutor";
+            this.labelAutor.Size = new System.Drawing.Size(43, 16);
+            this.labelAutor.TabIndex = 0;
+            this.labelAutor.Text = "Autor";
             // 
             // panelProveedor
             // 
             this.panelProveedor.Controls.Add(this.pictureBox5);
-            this.panelProveedor.Controls.Add(this.label2);
+            this.panelProveedor.Controls.Add(this.labelProveedorr);
             this.panelProveedor.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelProveedor.Location = new System.Drawing.Point(0, 189);
             this.panelProveedor.Name = "panelProveedor";
-            this.panelProveedor.Size = new System.Drawing.Size(200, 44);
+            this.panelProveedor.Size = new System.Drawing.Size(198, 44);
             this.panelProveedor.TabIndex = 3;
+            this.panelProveedor.Click += new System.EventHandler(this.panelProveedor_Click);
             // 
             // pictureBox5
             // 
@@ -408,24 +426,25 @@
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
-            // label2
+            // labelProveedorr
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(44, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Proveedor";
+            this.labelProveedorr.AutoSize = true;
+            this.labelProveedorr.Enabled = false;
+            this.labelProveedorr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelProveedorr.Location = new System.Drawing.Point(44, 12);
+            this.labelProveedorr.Name = "labelProveedorr";
+            this.labelProveedorr.Size = new System.Drawing.Size(80, 16);
+            this.labelProveedorr.TabIndex = 0;
+            this.labelProveedorr.Text = "Proveedor";
             // 
             // panelProductos
             // 
             this.panelProductos.Controls.Add(this.pictureBox4);
-            this.panelProductos.Controls.Add(this.label1);
+            this.panelProductos.Controls.Add(this.labelProducto);
             this.panelProductos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelProductos.Location = new System.Drawing.Point(0, 145);
             this.panelProductos.Name = "panelProductos";
-            this.panelProductos.Size = new System.Drawing.Size(200, 44);
+            this.panelProductos.Size = new System.Drawing.Size(198, 44);
             this.panelProductos.TabIndex = 2;
             this.panelProductos.Click += new System.EventHandler(this.panelProductos_Click);
             // 
@@ -439,15 +458,16 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
-            // label1
+            // labelProducto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(44, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Productos";
+            this.labelProducto.AutoSize = true;
+            this.labelProducto.Enabled = false;
+            this.labelProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelProducto.Location = new System.Drawing.Point(44, 13);
+            this.labelProducto.Name = "labelProducto";
+            this.labelProducto.Size = new System.Drawing.Size(77, 16);
+            this.labelProducto.TabIndex = 2;
+            this.labelProducto.Text = "Productos";
             // 
             // panel3
             // 
@@ -455,7 +475,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 145);
+            this.panel3.Size = new System.Drawing.Size(198, 145);
             this.panel3.TabIndex = 1;
             // 
             // logoEsquina
@@ -464,7 +484,7 @@
             this.logoEsquina.Image = ((System.Drawing.Image)(resources.GetObject("logoEsquina.Image")));
             this.logoEsquina.Location = new System.Drawing.Point(0, 0);
             this.logoEsquina.Name = "logoEsquina";
-            this.logoEsquina.Size = new System.Drawing.Size(200, 143);
+            this.logoEsquina.Size = new System.Drawing.Size(198, 143);
             this.logoEsquina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoEsquina.TabIndex = 0;
             this.logoEsquina.TabStop = false;
@@ -480,6 +500,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
@@ -488,6 +509,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // Principal
             // 
@@ -568,16 +590,16 @@
         private Label label5;
         private Panel panelIdiomas;
         private PictureBox pictureBox8;
-        private Label label4;
+        private Label labelIdioma;
         private Panel panelAutor;
         private PictureBox pictureBox7;
-        private Label label3;
+        private Label labelAutor;
         private Panel panelProveedor;
         private PictureBox pictureBox5;
-        private Label label2;
+        private Label labelProveedorr;
         private Panel panelProductos;
         private PictureBox pictureBox4;
-        private Label label1;
+        private Label labelProducto;
         private Panel panel3;
         private PictureBox logoEsquina;
         private Panel panelPadre;
