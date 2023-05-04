@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Principal
+    partial class NuevoProveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoProveedor));
             this.panelBarraControles = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -106,7 +106,7 @@
             this.panelBarraControles.Name = "panelBarraControles";
             this.panelBarraControles.Size = new System.Drawing.Size(1000, 30);
             this.panelBarraControles.TabIndex = 1;
-            this.panelBarraControles.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraControles_MouseDown);
+            this.panelBarraControles.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraControles_MouseDown_1);
             // 
             // panel4
             // 
@@ -130,7 +130,6 @@
             this.btnRestaurar.TabIndex = 8;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // btnMinimizar
             // 
@@ -141,7 +140,6 @@
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 7;
             this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnSalir
             // 
@@ -152,7 +150,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 5;
             this.btnSalir.TabStop = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // btnMaximizar
             // 
@@ -163,7 +161,6 @@
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 6;
             this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click_1);
             // 
             // panelSalir
             // 
@@ -174,7 +171,6 @@
             this.panelSalir.Name = "panelSalir";
             this.panelSalir.Size = new System.Drawing.Size(200, 44);
             this.panelSalir.TabIndex = 9;
-            this.panelSalir.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSalir_Paint);
             // 
             // panelIconSalir
             // 
@@ -488,8 +484,9 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
             // 
-            // Principal
+            // NuevoProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -499,7 +496,8 @@
             this.Controls.Add(this.panelBarraControles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Principal";
+            this.IsMdiContainer = true;
+            this.Name = "NuevoProveedor";
             this.Text = "Principal";
             this.panelBarraControles.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -581,10 +579,5 @@
         private PictureBox logoEsquina;
         private Panel panelPadre;
         private PictureBox pictureBox6;
-        this.components = new System.ComponentModel.Container();
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "Principal";
-        }
     }
 }

@@ -2,7 +2,8 @@ using ET;
 using BL;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-
+using System.Security.Permissions;
+using Accessibility;
 namespace Proyecto1erTrimestreProgramacion_Equipo2
 {
     internal static class Program
@@ -13,10 +14,11 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            //ApplicationConfiguration.Initialize();
-            //Application.Run(new GUI.Principal());
+            ApplicationConfiguration.Initialize();
+           // Application.Run(new FrmBuscarProveedor());
+            //Application.Run(new GUI.ProveedorGUI());
+            Application.Run(new GUI.NuevoProveedor());
+
         }
     }
 }

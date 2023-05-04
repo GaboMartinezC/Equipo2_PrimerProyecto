@@ -17,4 +17,71 @@
     <ProjectReference Include="..\ET\ET.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="FrmBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductoGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EmpleadoGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmBuscarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmBuscarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNuevoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNuevoSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SucursalGUI.cs" />
+    <Compile Update="CategoriaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmBuscarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmBuscarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmBuscarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNuevoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNuevoIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNuevoAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="AutorGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="IdiomaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

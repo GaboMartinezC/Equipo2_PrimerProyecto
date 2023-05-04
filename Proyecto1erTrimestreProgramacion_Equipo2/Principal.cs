@@ -4,23 +4,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-<<<<<<< HEAD
 using System.Runtime.InteropServices;
-=======
->>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace GUI
 {
-    public partial class Principal : Form
+    public partial class NuevoProveedor : Form
     {
-        public Principal()
+        public NuevoProveedor()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -57,7 +52,30 @@ namespace GUI
         private void panelSalir_Paint(object sender, PaintEventArgs e)
         {
         }
-=======
->>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panelProductos_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelBarraControles_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }
