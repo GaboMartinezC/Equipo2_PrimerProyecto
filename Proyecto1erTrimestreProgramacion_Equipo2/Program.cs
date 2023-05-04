@@ -15,9 +15,7 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-           // Application.Run(new FrmBuscarProveedor());
-            //Application.Run(new GUI.ProveedorGUI());
-            Application.Run(new GUI.NuevoProveedor());
+            Application.Run(new GUI.Principal());
 
         }
     }
