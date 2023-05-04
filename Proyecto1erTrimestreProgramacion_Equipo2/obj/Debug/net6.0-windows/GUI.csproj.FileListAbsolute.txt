@@ -58,7 +58,6 @@ F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equ
 F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.pdb
 F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 F:\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
-<<<<<<< HEAD
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.exe
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.deps.json
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
@@ -90,7 +89,162 @@ C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestre
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Principal.resources
-=======
-C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
->>>>>>> 56eff4af18e918f10b2bf791ed446d57af13a8b3
-C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.exe
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.deps.json
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\BL.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\ET.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\BL.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\ET.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.ProveedorGUI.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.GenerateResource.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\refint\GUI.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.NuevoProveedor.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmConfirmarCambios.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarProveedor.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoProveedor.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AutorGUI.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.CategoriaGUI.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarAutor.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarCategoria.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarIdioma.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoAutor.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoCategoria.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoIdioma.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.IdiomaGUI.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.SucursalGUI.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.EmpleadoGUI.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarEmpleado.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarProducto.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarSucursal.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoEmpleado.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoProducto.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoSucursal.resources
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.ProductoGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AutorGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.CategoriaGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.EmpleadoGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarAutor.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarCategoria.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarEmpleado.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarIdioma.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarProducto.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarProveedor.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarSucursal.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmConfirmarCambios.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoAutor.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoCategoria.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoEmpleado.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoIdioma.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoProducto.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoProveedor.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoSucursal.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.IdiomaGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.NuevoProveedor.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.ProductoGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.ProveedorGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.SucursalGUI.resources
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.GenerateResource.cache
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\refint\GUI.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.pdb
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.exe
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.deps.json
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.pdb
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\BL.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\DAL.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\ET.dll
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\BL.pdb
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\ET.pdb
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\DAL.pdb
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+D:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.exe
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.deps.json
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\GUI.pdb
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\BL.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\DAL.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\ET.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\BL.pdb
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\ET.pdb
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\bin\Debug\net6.0-windows\DAL.pdb
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AutorGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.CategoriaGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.EmpleadoGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarAutor.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarCategoria.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarEmpleado.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarIdioma.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarProducto.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarProveedor.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\Proyecto1erTrimestreProgramacion_Equipo2.FrmBuscarSucursal.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmConfirmarCambios.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoAutor.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoCategoria.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoEmpleado.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoIdioma.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoProducto.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoProveedor.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.FrmNuevoSucursal.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.IdiomaGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.NuevoProveedor.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.ProductoGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.ProveedorGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.SucursalGUI.resources
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.GenerateResource.cache
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\refint\GUI.dll
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.pdb
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+F:\8\6\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
