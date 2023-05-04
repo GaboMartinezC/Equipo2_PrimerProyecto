@@ -427,6 +427,7 @@
             this.panelProductos.Name = "panelProductos";
             this.panelProductos.Size = new System.Drawing.Size(200, 44);
             this.panelProductos.TabIndex = 2;
+            this.panelProductos.Click += new System.EventHandler(this.panelProductos_Click);
             // 
             // pictureBox4
             // 
