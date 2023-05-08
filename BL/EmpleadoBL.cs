@@ -92,5 +92,9 @@ namespace BL
         {
             return dal.BuscarEmpleado(cedula, contrasena);
         }
+        public DataTable BuscarTodos()
+        {
+            return dal.BuscarTodos();
+        }
     }
 }

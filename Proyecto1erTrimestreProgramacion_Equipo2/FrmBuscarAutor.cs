@@ -1,3 +1,4 @@
+using BL;
 using System.Runtime.InteropServices;
 
 namespace Proyecto1erTrimestreProgramacion_Equipo2
@@ -52,6 +53,13 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            AutorBL autorBl = new AutorBL();
+
+            
         }
     }
 }

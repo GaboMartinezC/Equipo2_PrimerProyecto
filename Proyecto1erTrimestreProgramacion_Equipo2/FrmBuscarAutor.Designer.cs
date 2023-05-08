@@ -99,6 +99,7 @@
             txtNombre.ReadOnly = true;
             txtNombre.Size = new Size(175, 23);
             txtNombre.TabIndex = 5;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // label2
             // 

@@ -1,4 +1,6 @@
-﻿using Proyecto1erTrimestreProgramacion_Equipo2;
+﻿using BL;
+using ET;
+using Proyecto1erTrimestreProgramacion_Equipo2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +15,28 @@ namespace GUI
 {
     public partial class AutorGUI : Form
     {
+        private AutorBL bl = new AutorBL();
+        private DataTable dtAutor = null;
         public AutorGUI()
         {
             InitializeComponent();
+            FormatoDT();
         }
-
+        private void FormatoDT()
+        {
+            try
+            {
+                this.dtAutor = bl.BuscarTodos();
+                this.dgvTodosAutor.DataSource = dtAutor;
+                for (int i = 0; i < 3; i++)
+                    this.dgvTodosAutor.Columns[i].ReadOnly = true;
+                this.dgvTodosAutor.Columns[3].Visible = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void btnNuevoProveedor_Click(object sender, EventArgs e)
         {
 
@@ -54,10 +73,8 @@ namespace GUI
 
         private void btnBuscarProveedor_Click(object sender, EventArgs e)
         {
-            FrmBuscarAutor f = new FrmBuscarAutor();    
-            AutorGUI a = new AutorGUI();    
-            f.Location = a.Location;
-            f.Show();
+            
+            
         }
     }
 }

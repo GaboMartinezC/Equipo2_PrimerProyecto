@@ -35,13 +35,13 @@
             btnBuscarProveedor = new PictureBox();
             panel1 = new Panel();
             txtBuscarAutor = new TextBox();
-            dataGridView1 = new DataGridView();
+            dgvTodosAutor = new DataGridView();
             panelNuevoProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnNuevoAutor).BeginInit();
             panelBTNBuscarProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTodosAutor).BeginInit();
             SuspendLayout();
             // 
             // panelNuevoProveedor
@@ -104,15 +104,15 @@
             txtBuscarAutor.Size = new Size(530, 23);
             txtBuscarAutor.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvTodosAutor
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(156, 111);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(520, 370);
-            dataGridView1.TabIndex = 3;
+            dgvTodosAutor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTodosAutor.Location = new Point(156, 111);
+            dgvTodosAutor.Name = "dgvTodosAutor";
+            dgvTodosAutor.RowHeadersWidth = 51;
+            dgvTodosAutor.RowTemplate.Height = 25;
+            dgvTodosAutor.Size = new Size(520, 370);
+            dgvTodosAutor.TabIndex = 3;
             // 
             // AutorGUI
             // 
@@ -120,7 +120,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 248, 243);
             ClientSize = new Size(800, 570);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvTodosAutor);
             Controls.Add(panel1);
             Controls.Add(panelBTNBuscarProveedor);
             Controls.Add(panelNuevoProveedor);
@@ -133,7 +133,7 @@
             ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTodosAutor).EndInit();
             ResumeLayout(false);
         }
 
@@ -144,7 +144,7 @@
         private PictureBox btnBuscarProveedor;
         private Panel panel1;
         private TextBox txtBuscarAutor;
-        private DataGridView dataGridView1;
+        private DataGridView dgvTodosAutor;
         private PictureBox btnNuevoAutor;
     }
 }

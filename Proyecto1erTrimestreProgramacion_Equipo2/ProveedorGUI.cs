@@ -29,7 +29,12 @@ namespace GUI
                 this.dtProducto = bl.BuscarTodo();
                 this.dgvTodosProveedor.DataSource = dtProducto;
                 for (int i = 0; i < 5; i++)
+                {
+                    if (i == 1)
+                        dgvTodosProveedor.Columns[i].Visible = false;
                     this.dgvTodosProveedor.Columns[i].ReadOnly = true;
+                }
+                    
                 this.dgvTodosProveedor.Columns[5].Visible = false;
             }
             catch (Exception ex)
