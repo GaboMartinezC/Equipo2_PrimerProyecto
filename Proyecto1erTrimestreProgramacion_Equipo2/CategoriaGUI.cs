@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto1erTrimestreProgramacion_Equipo2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,22 @@ namespace GUI
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
+        {
+            FrmNuevoCategoria f = new FrmNuevoCategoria();
+            CategoriaGUI c = new CategoriaGUI();
+            f.Location = c.Location;
+            f.Show();
+        }
+
+        private void btnBuscarProveedor_Click(object sender, EventArgs e)
+        {
+            FrmBuscarCategoria f = new FrmBuscarCategoria();
+            CategoriaGUI c = new CategoriaGUI();
+            f.Location = c.Location;
+            f.Show();
         }
     }
 }

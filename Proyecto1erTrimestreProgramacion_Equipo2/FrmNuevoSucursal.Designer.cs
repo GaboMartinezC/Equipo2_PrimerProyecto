@@ -32,6 +32,9 @@
             panelPadreNuevoProveedor = new Panel();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
+            pictureBox4 = new PictureBox();
+            textBox3 = new TextBox();
+            label3 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             textBox2 = new TextBox();
@@ -39,31 +42,28 @@
             textBox1 = new TextBox();
             label1 = new Label();
             panel6 = new Panel();
-            panel2 = new Panel();
+            panelBarraSuperior = new Panel();
             panel1 = new Panel();
             panel4 = new Panel();
             panelBtnSalir = new Panel();
             btnSalir = new PictureBox();
             panel3 = new Panel();
-            label3 = new Label();
-            textBox3 = new TextBox();
-            pictureBox4 = new PictureBox();
             panelPadreNuevoProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             panelBtnSalir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSalir).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // panelPadreNuevoProveedor
             // 
             panelPadreNuevoProveedor.Controls.Add(pictureBox1);
             panelPadreNuevoProveedor.Controls.Add(panel5);
-            panelPadreNuevoProveedor.Controls.Add(panel2);
+            panelPadreNuevoProveedor.Controls.Add(panelBarraSuperior);
             panelPadreNuevoProveedor.Controls.Add(panel1);
             panelPadreNuevoProveedor.Dock = DockStyle.Fill;
             panelPadreNuevoProveedor.Location = new Point(0, 0);
@@ -100,6 +100,35 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(310, 248);
             panel5.TabIndex = 3;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(46, 177);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(23, 23);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.LightGray;
+            textBox3.Location = new Point(74, 177);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(220, 23);
+            textBox3.TabIndex = 10;
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(127, 152);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 16);
+            label3.TabIndex = 9;
+            label3.Text = "Telefono";
             // 
             // pictureBox3
             // 
@@ -166,13 +195,15 @@
             panel6.Size = new Size(37, 248);
             panel6.TabIndex = 0;
             // 
-            // panel2
+            // panelBarraSuperior
             // 
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(310, 45);
-            panel2.TabIndex = 2;
+            panelBarraSuperior.Dock = DockStyle.Top;
+            panelBarraSuperior.Location = new Point(0, 0);
+            panelBarraSuperior.Name = "panelBarraSuperior";
+            panelBarraSuperior.Size = new Size(310, 45);
+            panelBarraSuperior.TabIndex = 2;
+            panelBarraSuperior.Paint += panelBarraSuperior_Paint;
+            panelBarraSuperior.MouseDown += panelBarraSuperior_MouseDown;
             // 
             // panel1
             // 
@@ -212,6 +243,7 @@
             btnSalir.SizeMode = PictureBoxSizeMode.Zoom;
             btnSalir.TabIndex = 7;
             btnSalir.TabStop = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // panel3
             // 
@@ -220,35 +252,6 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(15, 45);
             panel3.TabIndex = 0;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(127, 152);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 16);
-            label3.TabIndex = 9;
-            label3.Text = "Telefono";
-            // 
-            // textBox3
-            // 
-            textBox3.BackColor = Color.LightGray;
-            textBox3.Location = new Point(74, 177);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(220, 23);
-            textBox3.TabIndex = 10;
-            textBox3.TextChanged += textBox3_TextChanged;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(46, 177);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(23, 23);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 11;
-            pictureBox4.TabStop = false;
             // 
             // FrmNuevoSucursal
             // 
@@ -264,12 +267,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             panelBtnSalir.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnSalir).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -284,7 +287,7 @@
         private Panel panel5;
         private Label label1;
         private Panel panel6;
-        private Panel panel2;
+        private Panel panelBarraSuperior;
         private PictureBox pictureBox1;
         private Label label2;
         private TextBox textBox1;

@@ -1,4 +1,5 @@
 ﻿using BL;
+using Proyecto1erTrimestreProgramacion_Equipo2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,7 +49,18 @@ namespace GUI
 
         private void btnBuscarProveedor_Click(object sender, EventArgs e)
         {
+            FrmBuscarIdioma f = new FrmBuscarIdioma();
+            IdiomaGUI i = new IdiomaGUI();
+            f.Location = i.Location;
+            f.Show();
+        }
 
+        private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
+        {
+            FrmNuevoidioma f = new FrmNuevoidioma();
+            IdiomaGUI i = new IdiomaGUI();
+            f.Location = i.Location;    
+            f.Show();   
         }
     }
 }

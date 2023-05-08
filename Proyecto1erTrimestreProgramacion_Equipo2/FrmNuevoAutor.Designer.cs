@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoAutor));
             panelPadreNuevoProveedor = new Panel();
+            pictureBox1 = new PictureBox();
             panel5 = new Panel();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -38,18 +39,17 @@
             textBox1 = new TextBox();
             label1 = new Label();
             panel6 = new Panel();
-            panel2 = new Panel();
-            pictureBox1 = new PictureBox();
+            panelBarraSuperior = new Panel();
             panel1 = new Panel();
             panel4 = new Panel();
             panelBtnSalir = new Panel();
             btnSalir = new PictureBox();
             panel3 = new Panel();
             panelPadreNuevoProveedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panelBtnSalir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSalir).BeginInit();
@@ -59,7 +59,7 @@
             // 
             panelPadreNuevoProveedor.Controls.Add(pictureBox1);
             panelPadreNuevoProveedor.Controls.Add(panel5);
-            panelPadreNuevoProveedor.Controls.Add(panel2);
+            panelPadreNuevoProveedor.Controls.Add(panelBarraSuperior);
             panelPadreNuevoProveedor.Controls.Add(panel1);
             panelPadreNuevoProveedor.Dock = DockStyle.Fill;
             panelPadreNuevoProveedor.Location = new Point(0, 0);
@@ -67,6 +67,17 @@
             panelPadreNuevoProveedor.Size = new Size(316, 271);
             panelPadreNuevoProveedor.TabIndex = 0;
             panelPadreNuevoProveedor.Paint += panelPadreNuevoProveedor_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(235, 208);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(61, 32);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel5
             // 
@@ -148,24 +159,14 @@
             panel6.Size = new Size(48, 163);
             panel6.TabIndex = 0;
             // 
-            // panel2
+            // panelBarraSuperior
             // 
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(287, 45);
-            panel2.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(235, 208);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(61, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            panelBarraSuperior.Dock = DockStyle.Top;
+            panelBarraSuperior.Location = new Point(0, 0);
+            panelBarraSuperior.Name = "panelBarraSuperior";
+            panelBarraSuperior.Size = new Size(287, 45);
+            panelBarraSuperior.TabIndex = 2;
+            panelBarraSuperior.MouseDown += panelBarraSuperior_MouseDown;
             // 
             // panel1
             // 
@@ -205,6 +206,7 @@
             btnSalir.SizeMode = PictureBoxSizeMode.Zoom;
             btnSalir.TabIndex = 7;
             btnSalir.TabStop = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // panel3
             // 
@@ -225,11 +227,11 @@
             Name = "FrmNuevoAutor";
             Text = "FrmNuevoAutor";
             panelPadreNuevoProveedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panelBtnSalir.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnSalir).EndInit();
@@ -247,7 +249,7 @@
         private Panel panel5;
         private Label label1;
         private Panel panel6;
-        private Panel panel2;
+        private Panel panelBarraSuperior;
         private PictureBox pictureBox1;
         private Label label2;
         private TextBox textBox1;

@@ -53,7 +53,7 @@ namespace GUI
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             ProductoBL productoBL = new ProductoBL();
-            
+
         }
 
         private void pnlIngresar_Click(object sender, EventArgs e)

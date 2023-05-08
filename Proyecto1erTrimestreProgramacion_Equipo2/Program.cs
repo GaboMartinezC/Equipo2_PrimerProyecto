@@ -15,7 +15,7 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new GUI.Principal());
+            Application.Run(new GUI.LoginGUI());
 
         }
     }

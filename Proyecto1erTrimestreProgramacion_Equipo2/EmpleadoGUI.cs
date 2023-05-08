@@ -1,4 +1,5 @@
 ﻿using BL;
+using Proyecto1erTrimestreProgramacion_Equipo2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,6 +33,22 @@ namespace GUI
         private void panelBTNBuscarProveedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
+        {
+            FrmNuevoEmpleado f = new FrmNuevoEmpleado();
+            EmpleadoGUI em = new EmpleadoGUI();
+            f.Location = em.Location;
+            f.Show();
+        }
+
+        private void btnBuscarProveedor_Click(object sender, EventArgs e)
+        {
+            FrmBuscarEmpleado f = new FrmBuscarEmpleado();
+            EmpleadoGUI em = new EmpleadoGUI();
+            f.Location = em.Location;
+            f.Show();
         }
     }
 }
