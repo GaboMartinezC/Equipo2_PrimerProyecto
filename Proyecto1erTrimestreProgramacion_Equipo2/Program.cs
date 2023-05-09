@@ -16,7 +16,6 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new GUI.LoginGUI());
-
         }
     }
 }

@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\keyla\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\keyla\\.nuget\\packages",
+      "C:\\Users\\Laboratorio Web-02\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Laboratorio Web-02\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

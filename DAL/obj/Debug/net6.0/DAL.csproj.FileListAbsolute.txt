@@ -136,3 +136,18 @@ C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1e
 C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\13\DAL\obj\Debug\net6.0\refint\DAL.dll
 C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\13\DAL\obj\Debug\net6.0\DAL.pdb
 C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\1er Trimestre\Proyecto\13\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\ET.dll
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\ET.pdb
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\ref\DAL.dll

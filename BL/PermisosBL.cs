@@ -19,7 +19,7 @@ namespace BL
         }
         /*Los metodos tipo DataTable solo van a retornar una instancia a los metodos
         correspondientes de dal ya que, no necesita confirmar existencia, solo mostrarla*/
-        public DataTable BuscarPermisoRol(int idRol)
+        public bool[] BuscarPermisoRol(int idRol)
         {
             return dal.BuscarPermisoRol(idRol);
         }

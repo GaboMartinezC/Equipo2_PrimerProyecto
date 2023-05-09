@@ -116,9 +116,10 @@ namespace DAL
             return retVal;
         }
         //Busca los modulos asociados a un rol de usuario
-        public DataTable BuscarPermisoRol(int idRol)
+        public bool[] BuscarPermisoRol(int idRol)
         {
-            DataTable retVal = new DataTable();
+
+            bool[] retVal = new bool[6];
             using (var cn = GetConnection())
             {
                 try
@@ -128,10 +129,37 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@idRolUs", idRol));
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
+                        //Parámetros que indican de manera booleana si un rol de usuario tiene permiso de acceder a un modulo
+                        SqlParameter perMod1 = new SqlParameter("@permisoMod1", SqlDbType.Bit);
+                        SqlParameter perMod2 = new SqlParameter("@permisoMod2", SqlDbType.Bit);
+                        SqlParameter perMod3 = new SqlParameter("@permisoMod3", SqlDbType.Bit);
+                        SqlParameter perMod4 = new SqlParameter("@permisoMod4", SqlDbType.Bit);
+                        SqlParameter perMod5 = new SqlParameter("@permisoMod5", SqlDbType.Bit);
+                        SqlParameter perMod6 = new SqlParameter("@permisoMod6", SqlDbType.Bit);
+                        //Se indica que son parámetros de salida
+                        perMod1.Direction = ParameterDirection.Output;
+                        perMod2.Direction = ParameterDirection.Output;
+                        perMod3.Direction = ParameterDirection.Output;
+                        perMod4.Direction = ParameterDirection.Output;
+                        perMod5.Direction = ParameterDirection.Output;
+                        perMod6.Direction = ParameterDirection.Output;
+                        //ID del rol a evaluar
+                        cmd.Parameters.Add(new SqlParameter("@idRol", idRol));
+                        //Añade los parámetros
+                        cmd.Parameters.Add(perMod1);
+                        cmd.Parameters.Add(perMod2);
+                        cmd.Parameters.Add(perMod3);
+                        cmd.Parameters.Add(perMod4);
+                        cmd.Parameters.Add(perMod5);
+                        cmd.Parameters.Add(perMod6);
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        //Convierte los parámetros de salida al arreglo booleano
+                        retVal[0] = Convert.ToBoolean(perMod1.Value);
+                        retVal[1] = Convert.ToBoolean(perMod2.Value);
+                        retVal[2] = Convert.ToBoolean(perMod3.Value);
+                        retVal[3] = Convert.ToBoolean(perMod4.Value);
+                        retVal[4] = Convert.ToBoolean(perMod5.Value);
+                        retVal[5] = Convert.ToBoolean(perMod6.Value);
                     }
                 }
                 catch (Exception ex)

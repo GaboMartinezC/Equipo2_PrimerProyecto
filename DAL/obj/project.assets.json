@@ -489,23 +489,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\keyla\\.nuget\\packages\\": {},
+    "C:\\Users\\Laboratorio Web-02\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\keyla\\OneDrive\\Documentos\\COVAO\\11 Undécimo\\Técnicas\\Programación\\1er Trimestre\\Proyecto\\13\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Laboratorio Web-02\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\keyla\\OneDrive\\Documentos\\COVAO\\11 Undécimo\\Técnicas\\Programación\\1er Trimestre\\Proyecto\\13\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\keyla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\keyla\\OneDrive\\Documentos\\COVAO\\11 Undécimo\\Técnicas\\Programación\\1er Trimestre\\Proyecto\\13\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\Laboratorio Web-02\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Laboratorio Web-02\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Laboratorio Web-02\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\keyla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Laboratorio Web-02\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -521,8 +521,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\keyla\\OneDrive\\Documentos\\COVAO\\11 Undécimo\\Técnicas\\Programación\\1er Trimestre\\Proyecto\\13\\ET\\ET.csproj": {
-              "projectPath": "C:\\Users\\keyla\\OneDrive\\Documentos\\COVAO\\11 Undécimo\\Técnicas\\Programación\\1er Trimestre\\Proyecto\\13\\ET\\ET.csproj"
+            "C:\\Users\\Laboratorio Web-02\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+              "projectPath": "C:\\Users\\Laboratorio Web-02\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
             }
           }
         }
@@ -558,7 +558,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
