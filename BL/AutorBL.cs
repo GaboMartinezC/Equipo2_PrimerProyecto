@@ -40,25 +40,7 @@ namespace BL
 
         public bool BorrarAutor(int idAut)
         {
-            //Valor de retorno
-            bool retVal = false;
-            // Instancia una datatable que se llena con los datos existentes en BD de los autores
-            DataTable listaAutores = dal.BuscarTodos();
-            //Variable temporal que guarda los datos a validar
-            string descripcion = "";
-            for (int i = 0; i < listaAutores.Rows.Count; i++)
-            {
-                //recorrido a la lista de autores
-                descripcion = listaAutores.Rows[i][idAut].ToString();
-                if(idAut.Equals(descripcion))
-                {
-                    retVal=true;
-                }
-            }
-            //retorna true en caso de que el id haya sido encontrado para seguidamente borrarlo
-            if (retVal)
-                retVal= dal.BorrarAutor(idAut);
-            return retVal;
+            return dal.BorrarAutor(idAut);
         }
 
         public bool ActualizarAutor(Autor autor)
