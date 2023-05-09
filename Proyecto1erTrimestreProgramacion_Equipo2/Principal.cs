@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BL;
+using ET;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +15,7 @@ namespace GUI
     public partial class Principal : Form
     {
         private Form active = null;
-
+        private Empleado empleadoLogeado;
         //para hacer el drag de la ventana
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -24,9 +26,30 @@ namespace GUI
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        public Principal()
+        private void ValidarPermisos(uint idRol)
+        {
+            PermisosBL pBl = new PermisosBL();
+            bool[] lsPermisos = pBl.BuscarPermisoRol(Convert.ToInt32(idRol));
+            if (!lsPermisos[0])
+            {
+                panelAutor.Visible = false;
+                panelIdiomas.Visible = false;
+                panelCategoria.Visible = false;
+            }
+            if (!lsPermisos[1])
+                panelProveedor.Visible = false;
+            if (!lsPermisos[2])
+                panelSucursal.Visible = false;
+            if (!lsPermisos[3])
+                panelProductos.Visible = false;
+            if (!lsPermisos[5])
+                panelEmpleados.Visible = false;
+        }
+        public Principal(Empleado empleado)
         {
             InitializeComponent();
+            this.empleadoLogeado = empleado;
+            this.ValidarPermisos(empleado.IdRol);
         }
         private void OpenChildFormInPanel(Form childForm)
         {
