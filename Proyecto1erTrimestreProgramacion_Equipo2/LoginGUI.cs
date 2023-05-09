@@ -22,57 +22,21 @@ namespace GUI
         }
         private bool ValidarCampos()
         {
-            EmpleadoBL em = new EmpleadoBL();
-            RolUsuarioBL rol = new RolUsuarioBL();
-            DataTable empleados = em.BuscarTodos();
-            DataTable roles = rol.BuscarTodo();
-            bool retVal = false;
-            for (int i = 0; i < empleados.Rows.Count; i++)
-            {
-                // compara la cedula ingresada con todas las cedulas de empleados en la DB
-                if (txtUsuario.Text == empleados.Rows[i]["Cedula"].ToString())
-                {
-                    // se comprueban todas las contrasenas en la DB con la ingresada
-                    if (txtContrasena.Text == empleados.Rows[i]["Contrasena"].ToString())
-                    {
-                        // si se encontro alguna coincidencia se permite el acceso
-                        retVal = true;
-                        break;
-                    }
-                }
-                // si no se encontro ninguna coincidencia se niega el acceso
-                if (!retVal)
-                {
-                    MessageBox.Show("Alguno de los datos ingresados es invalido");
-                    txtUsuario.Text = "";
-                    txtContrasena.Text = "";
-                    txtUsuario.Focus();
-                }
-
-
-            }
-            return retVal;
+            if (txtUsuario.Text.Equals(string.Empty) || txtContrasena.Text.Equals(string.Empty))
+                return true;
+            else return false;
         }
-        private bool ValidarPermisos()
+        private bool ValidarUsuario()
         {
-            bool retVal = true;
-            EmpleadoBL emp = new EmpleadoBL();
-            RolUsuarioBL ol = new RolUsuarioBL();
-            DataTable empleados = emp.BuscarTodos();
-            DataTable roles = ol.BuscarTodo();
-            for (int i = 0; i < empleados.Rows.Count; i++)
-            {
-                for (int j = 0; j < roles.Rows.Count; j++)
-                {
-
-                }
-
-            }
-            return retVal;
+            EmpleadoBL bl = new EmpleadoBL();
+            if (bl.BuscarEmpleado(txtUsuario.Text, txtContrasena.Text) != 0)
+                return true;
+            else
+                return false;
         }
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-
+             
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -91,78 +55,16 @@ namespace GUI
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
+
+        private void pbxIngresar_Click_1(object sender, EventArgs e)
         {
-
-        }
-        private void panelBarraSuperior_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelBarraSuperior_MouseDown_1(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void btnRestaurar_Click_1(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnMaximizar_Click_1(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtContrasena_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void pbxIngresar_Click(object sender, EventArgs e)
-        {
-            if (ValidarCampos() && ValidarPermisos())
+            if (ValidarCampos() && ValidarUsuario())
             {
                 Principal principal = new Principal();
                 principal.Show();
             }
-
         }
-
-        private void pbxIngresar_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
+        private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
         {
 
         }
