@@ -151,3 +151,18 @@ C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\
 C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\refint\DAL.dll
 C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.pdb
 C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\ET.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\bin\Debug\net6.0\ET.pdb
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\DAL\obj\Debug\net6.0\ref\DAL.dll

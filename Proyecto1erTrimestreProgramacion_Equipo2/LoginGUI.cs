@@ -1,4 +1,5 @@
 ﻿using BL;
+using ET;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace GUI
 {
     public partial class LoginGUI : Form
     {
+        private uint rol;
         public LoginGUI()
         {
             InitializeComponent();
@@ -29,8 +31,13 @@ namespace GUI
         private bool ValidarUsuario()
         {
             EmpleadoBL bl = new EmpleadoBL();
-            if (bl.BuscarEmpleado(txtUsuario.Text, txtContrasena.Text) != 0)
+            uint rol = bl.BuscarEmpleado(txtUsuario.Text, txtContrasena.Text);
+            if (rol != 0)
+            {
+                this.rol = rol; 
                 return true;
+            }
+                
             else
                 return false;
         }
@@ -60,7 +67,11 @@ namespace GUI
         {
             if (ValidarCampos() && ValidarUsuario())
             {
-                Principal principal = new Principal();
+                Empleado em = new Empleado();
+                em.Cedula = txtUsuario.Text;
+                em.Contrasena = txtContrasena.Text;
+                em.IdRol = this.rol;
+                Principal principal = new Principal(em);
                 principal.Show();
             }
         }

@@ -15,7 +15,10 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new GUI.LoginGUI());
+            Empleado empleado = new Empleado();
+            empleado.IdRol = 1;
+            //Application.Run(new GUI.LoginGUI());
+            Application.Run(new GUI.Principal(empleado));
         }
     }
 }

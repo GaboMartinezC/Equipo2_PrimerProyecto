@@ -121,3 +121,15 @@ C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\D
 C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\refint\ET.dll
 C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.pdb
 C:\Users\Laboratorio Web-02\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ref\ET.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\bin\Debug\net6.0\ET.deps.json
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\bin\Debug\net6.0\ET.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\bin\Debug\net6.0\ET.pdb
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.csproj.AssemblyReference.cache
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.AssemblyInfoInputs.cache
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.AssemblyInfo.cs
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\refint\ET.dll
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.pdb
+C:\Users\marti\source\repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ref\ET.dll
