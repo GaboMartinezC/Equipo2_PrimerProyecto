@@ -32,6 +32,7 @@
             panelPadreNuevoProveedor = new Panel();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
+            pictureBox8 = new PictureBox();
             textBox1 = new TextBox();
             label1 = new Label();
             panel6 = new Panel();
@@ -41,14 +42,13 @@
             panelBtnSalir = new Panel();
             btnSalir = new PictureBox();
             panel3 = new Panel();
-            pictureBox8 = new PictureBox();
             panelPadreNuevoProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel1.SuspendLayout();
             panelBtnSalir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSalir).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // panelPadreNuevoProveedor
@@ -86,6 +86,16 @@
             panel5.Size = new Size(287, 87);
             panel5.TabIndex = 3;
             // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(56, 45);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(22, 16);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 8;
+            pictureBox8.TabStop = false;
+            // 
             // textBox1
             // 
             textBox1.BackColor = Color.LightGray;
@@ -93,6 +103,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(195, 23);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -169,16 +180,6 @@
             panel3.Size = new Size(15, 45);
             panel3.TabIndex = 0;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(56, 45);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(22, 16);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 8;
-            pictureBox8.TabStop = false;
-            // 
             // FrmNuevoidioma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -193,10 +194,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel1.ResumeLayout(false);
             panelBtnSalir.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnSalir).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
         }
 

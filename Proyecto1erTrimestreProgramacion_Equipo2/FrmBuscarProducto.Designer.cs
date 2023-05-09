@@ -53,6 +53,7 @@
             panel2 = new Panel();
             btnSalir = new PictureBox();
             panel1 = new Panel();
+            label3 = new Label();
             panelPadreBuscarProveedor.SuspendLayout();
             panel6.SuspendLayout();
             panel7.SuspendLayout();
@@ -93,11 +94,11 @@
             // 
             cbxEstudiantil.AutoSize = true;
             cbxEstudiantil.Enabled = false;
-            cbxEstudiantil.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            cbxEstudiantil.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbxEstudiantil.Location = new Point(141, 285);
             cbxEstudiantil.Name = "cbxEstudiantil";
             cbxEstudiantil.RightToLeft = RightToLeft.Yes;
-            cbxEstudiantil.Size = new Size(98, 19);
+            cbxEstudiantil.Size = new Size(123, 24);
             cbxEstudiantil.TabIndex = 16;
             cbxEstudiantil.Text = "Es estudiantil";
             cbxEstudiantil.UseVisualStyleBackColor = true;
@@ -106,10 +107,10 @@
             // labelPrecio
             // 
             labelPrecio.AutoSize = true;
-            labelPrecio.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelPrecio.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelPrecio.Location = new Point(83, 253);
             labelPrecio.Name = "labelPrecio";
-            labelPrecio.Size = new Size(45, 15);
+            labelPrecio.Size = new Size(57, 20);
             labelPrecio.TabIndex = 13;
             labelPrecio.Text = "Precio:";
             labelPrecio.Click += label3_Click;
@@ -125,10 +126,10 @@
             // labelDescripcion
             // 
             labelDescripcion.AutoSize = true;
-            labelDescripcion.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelDescripcion.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelDescripcion.Location = new Point(68, 215);
             labelDescripcion.Name = "labelDescripcion";
-            labelDescripcion.Size = new Size(75, 15);
+            labelDescripcion.Size = new Size(96, 20);
             labelDescripcion.TabIndex = 11;
             labelDescripcion.Text = "Descripcion:";
             // 
@@ -143,10 +144,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(73, 179);
             label2.Name = "label2";
-            label2.Size = new Size(66, 15);
+            label2.Size = new Size(83, 20);
             label2.TabIndex = 9;
             label2.Text = "Stock Min:";
             // 
@@ -161,10 +162,10 @@
             // labelStockMax
             // 
             labelStockMax.AutoSize = true;
-            labelStockMax.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelStockMax.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelStockMax.Location = new Point(72, 143);
             labelStockMax.Name = "labelStockMax";
-            labelStockMax.Size = new Size(69, 15);
+            labelStockMax.Size = new Size(87, 20);
             labelStockMax.TabIndex = 7;
             labelStockMax.Text = "Stock Max:";
             // 
@@ -179,10 +180,10 @@
             // labelProductoProveedor
             // 
             labelProductoProveedor.AutoSize = true;
-            labelProductoProveedor.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelProductoProveedor.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelProductoProveedor.Location = new Point(76, 107);
             labelProductoProveedor.Name = "labelProductoProveedor";
-            labelProductoProveedor.Size = new Size(69, 15);
+            labelProductoProveedor.Size = new Size(85, 20);
             labelProductoProveedor.TabIndex = 5;
             labelProductoProveedor.Text = "Proveedor:";
             // 
@@ -236,6 +237,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(label3);
             panel4.Controls.Add(label1);
             panel4.Controls.Add(panel5);
             panel4.Dock = DockStyle.Top;
@@ -247,12 +249,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(13, 15);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(50, 0);
             label1.Name = "label1";
-            label1.Size = new Size(385, 15);
+            label1.Size = new Size(307, 20);
             label1.TabIndex = 0;
-            label1.Text = "Los datos que ingresó coinciden con el siguiente producto:";
+            label1.Text = "Los datos que ingresó coinciden con ";
             // 
             // panel5
             // 
@@ -310,6 +312,16 @@
             panel1.Size = new Size(18, 396);
             panel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(100, 20);
+            label3.Name = "label3";
+            label3.Size = new Size(186, 20);
+            label3.TabIndex = 2;
+            label3.Text = "el siguiente proveedor";
+            // 
             // FrmBuscarProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -359,5 +371,6 @@
         private Label labelPrecio;
         private TextBox txtPrecio;
         private CheckBox cbxEstudiantil;
+        private Label label3;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace GUI
 {
     public partial class FrmNuevoidioma : Form
     {
+        IdiomaBL idiomaBl = new IdiomaBL();
         public FrmNuevoidioma()
         {
             InitializeComponent();
@@ -55,6 +57,16 @@ namespace GUI
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void ValidarCampos()
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            ValidarCampos();
+
         }
     }
 }

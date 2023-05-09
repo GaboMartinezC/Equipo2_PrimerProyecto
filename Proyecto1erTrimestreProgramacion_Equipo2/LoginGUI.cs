@@ -20,14 +20,14 @@ namespace GUI
         {
             InitializeComponent();
         }
-        private bool ValidarCampos() 
+        private bool ValidarCampos()
         {
             EmpleadoBL em = new EmpleadoBL();
             RolUsuarioBL rol = new RolUsuarioBL();
             DataTable empleados = em.BuscarTodos();
             DataTable roles = rol.BuscarTodo();
             bool retVal = false;
-            for(int i = 0; i < empleados.Rows.Count;i++)
+            for (int i = 0; i < empleados.Rows.Count; i++)
             {
                 // compara la cedula ingresada con todas las cedulas de empleados en la DB
                 if (txtUsuario.Text == empleados.Rows[i]["Cedula"].ToString())
@@ -41,17 +41,17 @@ namespace GUI
                     }
                 }
                 // si no se encontro ninguna coincidencia se niega el acceso
-                if(!retVal)
+                if (!retVal)
                 {
                     MessageBox.Show("Alguno de los datos ingresados es invalido");
                     txtUsuario.Text = "";
                     txtContrasena.Text = "";
                     txtUsuario.Focus();
                 }
-                   
-                
+
+
             }
-            return retVal; 
+            return retVal;
         }
         private bool ValidarPermisos()
         {
@@ -60,13 +60,13 @@ namespace GUI
             RolUsuarioBL ol = new RolUsuarioBL();
             DataTable empleados = emp.BuscarTodos();
             DataTable roles = ol.BuscarTodo();
-            for(int i = 0; i < empleados.Rows.Count; i++)
+            for (int i = 0; i < empleados.Rows.Count; i++)
             {
-                for(int j= 0; j < roles.Rows.Count;j++)
+                for (int j = 0; j < roles.Rows.Count; j++)
                 {
-                    
+
                 }
-                
+
             }
             return retVal;
         }
@@ -108,8 +108,6 @@ namespace GUI
 
         private void btnRestaurar_Click_1(object sender, EventArgs e)
         {
-            btnMaximizar.Visible = true;
-            btnRestaurar.Visible = false;
             this.WindowState = FormWindowState.Normal;
         }
 
@@ -120,8 +118,6 @@ namespace GUI
 
         private void btnMaximizar_Click_1(object sender, EventArgs e)
         {
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -158,7 +154,17 @@ namespace GUI
 
         private void pbxIngresar_MouseHover(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

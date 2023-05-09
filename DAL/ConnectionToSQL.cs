@@ -24,10 +24,11 @@ namespace DAL
         {
             try
             {
-                    // !!!CAMBIAR SEGÚN LA COMPUTADORA!!!
-                    // Compu de Gabo: _connectionString = (@"Server=DESKTOP-9G4D1TG;Database=SISTEMALIBRERIA_EQUIPO211E;Trusted_Connection=true");
-                    // Compu 3 del laboratorio: _connectionString = (@"Server=DESKTOP-LQCGSEG;Database=SISTEMALIBRERIA_EQUIPO211E;Trusted_Connection=true");
-                     _connectionString = (@"Server=Vega;Database=SISTEMALIBRERIA_EQUIPO211E; Trusted_Connection = true");
+                // !!!CAMBIAR SEGÚN LA COMPUTADORA!!!
+                // Compu de Gabo: _connectionString = (@"Server=DESKTOP-9G4D1TG;Database=SISTEMALIBRERIA_EQUIPO211E;Trusted_Connection=true");
+                // Compu 3 del laboratorio: _connectionString = (@"Server=DESKTOP-LQCGSEG;Database=SISTEMALIBRERIA_EQUIPO211E;Trusted_Connection=true");
+                //_connectionString = (@"Server=Vega;Database=SISTEMALIBRERIA_EQUIPO211E; Trusted_Connection = true");
+                _connectionString = (@"Server=LAPTOP-8NS52HEM;Database=SISTEMALIBRERIA_EQUIPO211E; Trusted_Connection=true");
                 //_connectionString = (@"Server =DESKTOP-9G4D1TG;Database=SISTEMALIBRERIA_EQUIPO211E;Trusted_Connection=true");
             }
             catch (Exception ex)
