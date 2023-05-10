@@ -17,6 +17,11 @@ namespace GUI
 {
     public partial class LoginGUI : Form
     {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private uint rol;
         public LoginGUI()
         {
@@ -25,7 +30,10 @@ namespace GUI
         private bool ValidarCampos()
         {
             if (txtUsuario.Text.Equals(string.Empty) || txtContrasena.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Asegurese de llenar todos los espacios");
                 return true;
+            }
             else return false;
         }
         private bool ValidarUsuario()
@@ -37,33 +45,19 @@ namespace GUI
                 this.rol = rol; 
                 return true;
             }
-                
             else
+            {
+                MessageBox.Show("Usuario no encontrado");
+                txtContrasena.Text = string.Empty;
+                txtUsuario.Text = string.Empty;
                 return false;
-        }
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-             
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
-
+            }
         }
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void pbxIngresar_Click_1(object sender, EventArgs e)
+        private void Ingresar()
         {
             if (ValidarCampos() && ValidarUsuario())
             {
@@ -75,9 +69,27 @@ namespace GUI
                 principal.Show();
             }
         }
+        private void pbxIngresar_Click_1(object sender, EventArgs e)
+        {
+            Ingresar();
+        }
         private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
         {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Ingresar();
         }
     }
 }

@@ -91,6 +91,7 @@
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 7;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnSalir
             // 
@@ -101,6 +102,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 5;
             this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label1
             // 
@@ -184,6 +186,7 @@
             this.label5.Size = new System.Drawing.Size(99, 16);
             this.label5.TabIndex = 11;
             this.label5.Text = "Iniciar sesión";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel2
             // 

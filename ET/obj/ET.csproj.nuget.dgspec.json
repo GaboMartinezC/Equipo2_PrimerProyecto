@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {}
+    "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+    "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
+        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
         "projectName": "ET",
-        "projectPath": "C:\\Users\\marti\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
+        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
+        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sa00Nd9BFZq7MRBgg9XruMUMGye9S/p1vATDHSgW3wnU7WNMHDmz1w7rWm/HyMnwlauwzC/UL1w6esj4vT3Vtg==",
+  "dgSpecHash": "2NIyh2RBs1VtTuooObEmQFoMuMD/IvSY0hO5n64iQwpiDX0a/XWuRDSDChWG6sFIkXyvemFkOPGJOGeCNGnBxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marti\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
