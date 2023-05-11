@@ -29,12 +29,17 @@ namespace GUI
         }
         private bool ValidarCampos()
         {
+            // comprueba 
             if (txtUsuario.Text.Equals(string.Empty) || txtContrasena.Text.Equals(string.Empty))
             {
                 MessageBox.Show("Asegurese de llenar todos los espacios");
+                return false;
+            }
+            else
+            {
                 return true;
             }
-            else return false;
+
         }
         private bool ValidarUsuario()
         {
@@ -42,7 +47,7 @@ namespace GUI
             uint rol = bl.BuscarEmpleado(txtUsuario.Text, txtContrasena.Text);
             if (rol != 0)
             {
-                this.rol = rol; 
+                this.rol = rol;
                 return true;
             }
             else
@@ -50,6 +55,7 @@ namespace GUI
                 MessageBox.Show("Usuario no encontrado");
                 txtContrasena.Text = string.Empty;
                 txtUsuario.Text = string.Empty;
+                txtContrasena.Focus();
                 return false;
             }
         }
@@ -72,6 +78,7 @@ namespace GUI
         private void pbxIngresar_Click_1(object sender, EventArgs e)
         {
             Ingresar();
+            Hide();
         }
         private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
         {
@@ -85,7 +92,7 @@ namespace GUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         private void label5_Click(object sender, EventArgs e)
         {

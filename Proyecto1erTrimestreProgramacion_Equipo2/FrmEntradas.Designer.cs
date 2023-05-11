@@ -28,31 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEntradas));
+            cbxSucursales = new ComboBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtCantidad = new TextBox();
             label3 = new Label();
             dgvProductosEntrada = new DataGridView();
             btnRealizarEntrada = new Button();
+            cbxProductos = new ComboBox();
+            pbxAgregarDetalle = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvProductosEntrada).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxAgregarDetalle).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // cbxSucursales
             // 
-            textBox1.Location = new Point(233, 75);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(261, 23);
-            textBox1.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(397, 36);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(163, 23);
-            comboBox1.TabIndex = 4;
+            cbxSucursales.FormattingEnabled = true;
+            cbxSucursales.Location = new Point(397, 36);
+            cbxSucursales.Name = "cbxSucursales";
+            cbxSucursales.Size = new Size(163, 23);
+            cbxSucursales.TabIndex = 4;
+            cbxSucursales.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -74,12 +71,12 @@
             label2.TabIndex = 5;
             label2.Text = "Ingrese el producto: ";
             // 
-            // textBox2
+            // txtCantidad
             // 
-            textBox2.Location = new Point(601, 75);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(55, 23);
-            textBox2.TabIndex = 6;
+            txtCantidad.Location = new Point(601, 75);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(55, 23);
+            txtCantidad.TabIndex = 6;
             // 
             // label3
             // 
@@ -112,37 +109,58 @@
             btnRealizarEntrada.Text = "Realizar entrada";
             btnRealizarEntrada.UseVisualStyleBackColor = false;
             // 
+            // cbxProductos
+            // 
+            cbxProductos.FormattingEnabled = true;
+            cbxProductos.Location = new Point(233, 78);
+            cbxProductos.Name = "cbxProductos";
+            cbxProductos.Size = new Size(266, 23);
+            cbxProductos.TabIndex = 10;
+            // 
+            // pbxAgregarDetalle
+            // 
+            pbxAgregarDetalle.Image = (Image)resources.GetObject("pbxAgregarDetalle.Image");
+            pbxAgregarDetalle.Location = new Point(664, 69);
+            pbxAgregarDetalle.Name = "pbxAgregarDetalle";
+            pbxAgregarDetalle.Size = new Size(61, 32);
+            pbxAgregarDetalle.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxAgregarDetalle.TabIndex = 12;
+            pbxAgregarDetalle.TabStop = false;
+            pbxAgregarDetalle.Click += pbxAgregarDetalle_Click;
+            // 
             // FrmEntradas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 248, 243);
             ClientSize = new Size(800, 450);
+            Controls.Add(pbxAgregarDetalle);
+            Controls.Add(cbxProductos);
             Controls.Add(btnRealizarEntrada);
             Controls.Add(dgvProductosEntrada);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(txtCantidad);
             Controls.Add(label2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
+            Controls.Add(cbxSucursales);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmEntradas";
             Text = "FrmEntradas";
             ((System.ComponentModel.ISupportInitialize)dgvProductosEntrada).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxAgregarDetalle).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox textBox1;
-        private ComboBox comboBox1;
+        private ComboBox cbxSucursales;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtCantidad;
         private Label label3;
         private DataGridView dgvProductosEntrada;
         private Button btnRealizarEntrada;
+        private ComboBox cbxProductos;
+        private PictureBox pbxAgregarDetalle;
     }
 }
