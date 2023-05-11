@@ -18,23 +18,11 @@ namespace GUI
         {
             InitializeComponent();
         }
-
-        private void btnNuevoProveedor_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             EmpleadoBL empleadoBl = new EmpleadoBL();
 
         }
-
-        private void panelBTNBuscarProveedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
         {
             FrmNuevoEmpleado f = new FrmNuevoEmpleado();

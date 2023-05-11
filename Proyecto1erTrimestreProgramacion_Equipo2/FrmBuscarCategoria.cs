@@ -14,23 +14,9 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
         {
-
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (txtDescripcion.ReadOnly)
@@ -45,26 +31,6 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
                 txtDescripcion.ReadOnly = true;
                 cbxEsGenero.Enabled = true;
             }
-        }
-
-        private void btnSalir_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void panel3_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void panelBarraSuperior_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

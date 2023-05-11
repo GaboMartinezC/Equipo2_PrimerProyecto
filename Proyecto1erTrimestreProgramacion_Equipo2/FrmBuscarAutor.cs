@@ -14,17 +14,6 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         {
             Application.Exit();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (txtNombre.ReadOnly)
@@ -54,7 +43,6 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             AutorBL autorBl = new AutorBL();

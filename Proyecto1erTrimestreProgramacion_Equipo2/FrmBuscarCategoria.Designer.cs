@@ -29,232 +29,228 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscarCategoria));
-            panelPadreBuscarProveedor = new Panel();
-            txtDescripcion = new TextBox();
-            cbxEsGenero = new CheckBox();
-            label3 = new Label();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            pbxEditarCategoria = new PictureBox();
-            pictureBox1 = new PictureBox();
-            panel4 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            panel5 = new Panel();
-            panelBarraSuperior = new Panel();
-            panelBtnSalir = new Panel();
-            panel2 = new Panel();
-            btnSalir = new PictureBox();
-            panel1 = new Panel();
-            panelPadreBuscarProveedor.SuspendLayout();
-            panel6.SuspendLayout();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbxEditarCategoria).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel4.SuspendLayout();
-            panelBtnSalir.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnSalir).BeginInit();
-            SuspendLayout();
+            this.panelPadreBuscarProveedor = new System.Windows.Forms.Panel();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.cbxEsGenero = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pbxEditarCategoria = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelBarraSuperior = new System.Windows.Forms.Panel();
+            this.panelBtnSalir = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPadreBuscarProveedor.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEditarCategoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panelBtnSalir.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            this.SuspendLayout();
             // 
             // panelPadreBuscarProveedor
             // 
-            panelPadreBuscarProveedor.BackColor = Color.FromArgb(248, 248, 243);
-            panelPadreBuscarProveedor.Controls.Add(txtDescripcion);
-            panelPadreBuscarProveedor.Controls.Add(cbxEsGenero);
-            panelPadreBuscarProveedor.Controls.Add(label3);
-            panelPadreBuscarProveedor.Controls.Add(panel6);
-            panelPadreBuscarProveedor.Controls.Add(panel4);
-            panelPadreBuscarProveedor.Controls.Add(panelBarraSuperior);
-            panelPadreBuscarProveedor.Controls.Add(panelBtnSalir);
-            panelPadreBuscarProveedor.Dock = DockStyle.Fill;
-            panelPadreBuscarProveedor.Location = new Point(0, 0);
-            panelPadreBuscarProveedor.Name = "panelPadreBuscarProveedor";
-            panelPadreBuscarProveedor.Size = new Size(437, 269);
-            panelPadreBuscarProveedor.TabIndex = 0;
+            this.panelPadreBuscarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtDescripcion);
+            this.panelPadreBuscarProveedor.Controls.Add(this.cbxEsGenero);
+            this.panelPadreBuscarProveedor.Controls.Add(this.label3);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panel6);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panel4);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panelBarraSuperior);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panelBtnSalir);
+            this.panelPadreBuscarProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPadreBuscarProveedor.Location = new System.Drawing.Point(0, 0);
+            this.panelPadreBuscarProveedor.Name = "panelPadreBuscarProveedor";
+            this.panelPadreBuscarProveedor.Size = new System.Drawing.Size(437, 269);
+            this.panelPadreBuscarProveedor.TabIndex = 0;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(171, 116);
-            txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.ReadOnly = true;
-            txtDescripcion.Size = new Size(147, 23);
-            txtDescripcion.TabIndex = 6;
+            this.txtDescripcion.Location = new System.Drawing.Point(171, 116);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.ReadOnly = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(147, 23);
+            this.txtDescripcion.TabIndex = 6;
             // 
             // cbxEsGenero
             // 
-            cbxEsGenero.AutoSize = true;
-            cbxEsGenero.Enabled = false;
-            cbxEsGenero.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            cbxEsGenero.Location = new Point(106, 154);
-            cbxEsGenero.Name = "cbxEsGenero";
-            cbxEsGenero.RightToLeft = RightToLeft.Yes;
-            cbxEsGenero.Size = new Size(178, 24);
-            cbxEsGenero.TabIndex = 5;
-            cbxEsGenero.Text = "Es un género literario";
-            cbxEsGenero.UseVisualStyleBackColor = true;
+            this.cbxEsGenero.AutoSize = true;
+            this.cbxEsGenero.Enabled = false;
+            this.cbxEsGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxEsGenero.Location = new System.Drawing.Point(106, 154);
+            this.cbxEsGenero.Name = "cbxEsGenero";
+            this.cbxEsGenero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbxEsGenero.Size = new System.Drawing.Size(178, 24);
+            this.cbxEsGenero.TabIndex = 5;
+            this.cbxEsGenero.Text = "Es un género literario";
+            this.cbxEsGenero.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(96, 116);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Nombre:";
-            label3.Click += label3_Click;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(96, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Nombre:";
             // 
             // panel6
             // 
-            panel6.Controls.Add(panel7);
-            panel6.Dock = DockStyle.Bottom;
-            panel6.Location = new Point(0, 196);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(392, 73);
-            panel6.TabIndex = 3;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 196);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(392, 73);
+            this.panel6.TabIndex = 3;
             // 
             // panel7
             // 
-            panel7.Controls.Add(pbxEditarCategoria);
-            panel7.Controls.Add(pictureBox1);
-            panel7.Dock = DockStyle.Right;
-            panel7.Location = new Point(276, 0);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(116, 73);
-            panel7.TabIndex = 0;
+            this.panel7.Controls.Add(this.pbxEditarCategoria);
+            this.panel7.Controls.Add(this.pictureBox1);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(276, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(116, 73);
+            this.panel7.TabIndex = 0;
             // 
             // pbxEditarCategoria
             // 
-            pbxEditarCategoria.Image = (Image)resources.GetObject("pbxEditarCategoria.Image");
-            pbxEditarCategoria.Location = new Point(33, 3);
-            pbxEditarCategoria.Name = "pbxEditarCategoria";
-            pbxEditarCategoria.Size = new Size(33, 33);
-            pbxEditarCategoria.SizeMode = PictureBoxSizeMode.Zoom;
-            pbxEditarCategoria.TabIndex = 1;
-            pbxEditarCategoria.TabStop = false;
-            pbxEditarCategoria.Click += pictureBox2_Click;
+            this.pbxEditarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("pbxEditarCategoria.Image")));
+            this.pbxEditarCategoria.Location = new System.Drawing.Point(33, 3);
+            this.pbxEditarCategoria.Name = "pbxEditarCategoria";
+            this.pbxEditarCategoria.Size = new System.Drawing.Size(33, 33);
+            this.pbxEditarCategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxEditarCategoria.TabIndex = 1;
+            this.pbxEditarCategoria.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(82, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(33, 33);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(82, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel4
             // 
-            panel4.Controls.Add(label1);
-            panel4.Controls.Add(label2);
-            panel4.Controls.Add(panel5);
-            panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(0, 46);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(392, 43);
-            panel4.TabIndex = 2;
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 46);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(392, 43);
+            this.panel4.TabIndex = 2;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(54, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(326, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Los datos que ingresó coinciden con la ";
-            label1.Click += label1_Click_1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(54, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(326, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Los datos que ingresó coinciden con la ";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(122, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(162, 20);
-            label2.TabIndex = 2;
-            label2.Text = "siguiente categoria";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(122, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "siguiente categoria";
             // 
             // panel5
             // 
-            panel5.Dock = DockStyle.Left;
-            panel5.Location = new Point(0, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(10, 43);
-            panel5.TabIndex = 1;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 43);
+            this.panel5.TabIndex = 1;
             // 
             // panelBarraSuperior
             // 
-            panelBarraSuperior.Dock = DockStyle.Top;
-            panelBarraSuperior.Location = new Point(0, 0);
-            panelBarraSuperior.Name = "panelBarraSuperior";
-            panelBarraSuperior.Size = new Size(392, 46);
-            panelBarraSuperior.TabIndex = 1;
-            panelBarraSuperior.Paint += panelBarraSuperior_Paint;
-            panelBarraSuperior.MouseDown += panel3_MouseDown;
+            this.panelBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelBarraSuperior.Name = "panelBarraSuperior";
+            this.panelBarraSuperior.Size = new System.Drawing.Size(392, 46);
+            this.panelBarraSuperior.TabIndex = 1;
+            this.panelBarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraSuperior_MouseDown);
             // 
             // panelBtnSalir
             // 
-            panelBtnSalir.Controls.Add(panel2);
-            panelBtnSalir.Controls.Add(panel1);
-            panelBtnSalir.Dock = DockStyle.Right;
-            panelBtnSalir.Location = new Point(392, 0);
-            panelBtnSalir.Name = "panelBtnSalir";
-            panelBtnSalir.Size = new Size(45, 269);
-            panelBtnSalir.TabIndex = 0;
+            this.panelBtnSalir.Controls.Add(this.panel2);
+            this.panelBtnSalir.Controls.Add(this.panel1);
+            this.panelBtnSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBtnSalir.Location = new System.Drawing.Point(392, 0);
+            this.panelBtnSalir.Name = "panelBtnSalir";
+            this.panelBtnSalir.Size = new System.Drawing.Size(45, 269);
+            this.panelBtnSalir.TabIndex = 0;
             // 
             // panel2
             // 
-            panel2.Controls.Add(btnSalir);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(27, 46);
-            panel2.TabIndex = 1;
+            this.panel2.Controls.Add(this.btnSalir);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(27, 46);
+            this.panel2.TabIndex = 1;
             // 
             // btnSalir
             // 
-            btnSalir.Dock = DockStyle.Right;
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
-            btnSalir.Location = new Point(16, 0);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(11, 46);
-            btnSalir.SizeMode = PictureBoxSizeMode.Zoom;
-            btnSalir.TabIndex = 6;
-            btnSalir.TabStop = false;
-            btnSalir.Click += btnSalir_Click_1;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(16, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(11, 46);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.TabStop = false;
             // 
             // panel1
             // 
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(27, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(18, 269);
-            panel1.TabIndex = 0;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(27, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(18, 269);
+            this.panel1.TabIndex = 0;
             // 
             // FrmBuscarCategoria
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(437, 269);
-            Controls.Add(panelPadreBuscarProveedor);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmBuscarCategoria";
-            Text = "FrmBuscarCategoria";
-            panelPadreBuscarProveedor.ResumeLayout(false);
-            panelPadreBuscarProveedor.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbxEditarCategoria).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panelBtnSalir.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnSalir).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(437, 269);
+            this.Controls.Add(this.panelPadreBuscarProveedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmBuscarCategoria";
+            this.Text = "FrmBuscarCategoria";
+            this.panelPadreBuscarProveedor.ResumeLayout(false);
+            this.panelPadreBuscarProveedor.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEditarCategoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panelBtnSalir.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

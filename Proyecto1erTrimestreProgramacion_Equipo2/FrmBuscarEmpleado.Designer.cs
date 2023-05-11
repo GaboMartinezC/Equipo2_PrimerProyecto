@@ -257,7 +257,6 @@
             label1.Size = new Size(389, 15);
             label1.TabIndex = 0;
             label1.Text = "Los datos que ingresó coinciden con el siguiente empleado";
-            label1.Click += label1_Click_1;
             // 
             // panel5
             // 
@@ -274,7 +273,6 @@
             panelBarraSuperior.Name = "panelBarraSuperior";
             panelBarraSuperior.Size = new Size(392, 46);
             panelBarraSuperior.TabIndex = 1;
-            panelBarraSuperior.Paint += panelBarraSuperior_Paint;
             panelBarraSuperior.MouseDown += panelBarraSuperior_MouseDown;
             // 
             // panelBtnSalir

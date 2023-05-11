@@ -17,44 +17,11 @@ namespace GUI
         {
             InitializeComponent();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelPadreNuevoProveedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         //para hacer el drag de la ventana
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
-        private void panelBarraSuperior_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
         {

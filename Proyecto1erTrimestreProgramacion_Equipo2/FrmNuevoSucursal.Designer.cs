@@ -70,7 +70,6 @@
             panelPadreNuevoProveedor.Name = "panelPadreNuevoProveedor";
             panelPadreNuevoProveedor.Size = new Size(339, 358);
             panelPadreNuevoProveedor.TabIndex = 0;
-            panelPadreNuevoProveedor.Paint += panelPadreNuevoProveedor_Paint;
             // 
             // pictureBox1
             // 
@@ -80,8 +79,7 @@
             pictureBox1.Size = new Size(61, 32);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.TabStop = false
             // 
             // panel5
             // 
@@ -118,7 +116,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(220, 23);
             textBox3.TabIndex = 10;
-            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label3
             // 
@@ -167,7 +164,6 @@
             label2.Size = new Size(77, 16);
             label2.TabIndex = 3;
             label2.Text = "Ubicación";
-            label2.Click += label2_Click;
             // 
             // textBox1
             // 
@@ -202,7 +198,6 @@
             panelBarraSuperior.Name = "panelBarraSuperior";
             panelBarraSuperior.Size = new Size(310, 45);
             panelBarraSuperior.TabIndex = 2;
-            panelBarraSuperior.Paint += panelBarraSuperior_Paint;
             panelBarraSuperior.MouseDown += panelBarraSuperior_MouseDown;
             // 
             // panel1

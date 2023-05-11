@@ -52,7 +52,6 @@
             panelNuevoProveedor.Name = "panelNuevoProveedor";
             panelNuevoProveedor.Size = new Size(151, 570);
             panelNuevoProveedor.TabIndex = 0;
-            panelNuevoProveedor.Click += panelNuevoProveedor_Click;
             // 
             // btnNuevoAutor
             // 
@@ -83,7 +82,6 @@
             btnBuscarProveedor.SizeMode = PictureBoxSizeMode.Zoom;
             btnBuscarProveedor.TabIndex = 0;
             btnBuscarProveedor.TabStop = false;
-            btnBuscarProveedor.Click += btnBuscarProveedor_Click;
             // 
             // panel1
             // 

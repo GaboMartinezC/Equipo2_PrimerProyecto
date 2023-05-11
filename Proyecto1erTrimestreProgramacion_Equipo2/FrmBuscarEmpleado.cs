@@ -12,18 +12,7 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
+        } 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (txtCedula.ReadOnly)
@@ -47,15 +36,9 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
                 txtTelefono.ReadOnly = true;
             }
         }
-
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void panelBarraSuperior_Paint(object sender, PaintEventArgs e)
-        {
-
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();

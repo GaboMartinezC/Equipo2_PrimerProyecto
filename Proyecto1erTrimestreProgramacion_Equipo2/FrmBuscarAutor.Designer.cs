@@ -170,7 +170,6 @@
             label1.Size = new Size(358, 15);
             label1.TabIndex = 0;
             label1.Text = "Los datos que ingresó coinciden con el siguiente autor";
-            label1.Click += label1_Click_1;
             // 
             // panel5
             // 
