@@ -64,9 +64,6 @@ namespace BL
         {
             return dal.BuscarTodos();
         }
-        public DataTable BuscarRolUsuario(string descrip)
-        {
-            return dal.BuscarRolUsuario(descrip);
-        }
+        
     }
 }

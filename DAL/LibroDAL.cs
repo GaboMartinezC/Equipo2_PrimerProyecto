@@ -87,55 +87,6 @@ namespace DAL
             }
             return retVal;
         }
-        //Busca los libros en cierto idioma
-        public DataTable BuscarLibroIdioma(int idIdi)
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarLibroIdioma", cn))
-                    {
-                        cmd.Connection = cn;
-                        cmd.Parameters.Add(new SqlParameter("@idIdi", idIdi));
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
-        //Busca los libros de un autor
-        public DataTable BuscarLibroAutor(int idAut)
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarLibroAutor", cn))
-                    {
-                        cmd.Connection = cn;
-                        cmd.Parameters.Add(new SqlParameter("@idAut", idAut));
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
+        
     }
 }

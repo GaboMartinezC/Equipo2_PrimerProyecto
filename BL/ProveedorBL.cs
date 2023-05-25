@@ -62,9 +62,6 @@ namespace BL
         {
             return dal.BuscarTodo();
         }
-        public DataTable BuscarProveedor(string descrip)
-        {
-            return dal.BuscarProveedor(descrip);
-        }
+        
     }
 }

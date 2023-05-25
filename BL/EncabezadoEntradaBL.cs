@@ -31,10 +31,6 @@ namespace BL
         {
             return detalleDal.VerTodoRegistroEntradas();
         }
-        //Busca las entradas por fecha
-        public DataTable BuscarEntradasFecha(DateOnly fecha)
-        {
-            return dal.BuscarEntradasFecha(fecha);
-        }
+        
     }
 }

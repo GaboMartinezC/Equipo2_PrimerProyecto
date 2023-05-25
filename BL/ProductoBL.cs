@@ -79,10 +79,7 @@ namespace BL
         {
             return dal.BuscarProductoProveedor(id);
         }
-        public DataTable BuscarTodoProductoGeneral()
-        {
-            return dal.BuscarTodoProductoGeneral();
-        }
+        
         public DataTable BuscarProducto(string descripcion)
         {
             return dal.BuscarProducto(descripcion);

@@ -19,9 +19,6 @@ namespace BL
         {
             return dal.BuscarProductoSucursal(bodega);
         }
-        public DataTable VerBodega(int idSuc)
-        {
-            return dal.VerBodega(idSuc);
-        }
+       
     }
 }

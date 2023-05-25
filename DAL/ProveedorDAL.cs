@@ -116,30 +116,6 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarProveedor(string descrip)
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarProveedor", cn))
-                    {
-                        cmd.Connection = cn;
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
+        
     }
 }

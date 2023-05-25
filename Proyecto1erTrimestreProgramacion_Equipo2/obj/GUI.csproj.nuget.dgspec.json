@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj": {}
+    "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj": {
+    "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\Estudiante-16\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estudiante-16\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\BL\\obj\\",
+        "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Estudiante-16\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,18 +22,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj"
+              "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
-                "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
+              "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj": {
+                "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj"
               }
             }
           }
@@ -73,25 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj": {
+    "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Estudiante-16\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estudiante-16\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Estudiante-16\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,15 +90,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
-                "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
+              "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj": {
+                "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj"
               }
             }
           }
@@ -143,25 +133,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+    "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
+        "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj",
         "projectName": "ET",
-        "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
-        "packagesPath": "C:\\Users\\Estudiante-16\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estudiante-16\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
+        "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj",
+        "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Estudiante-16\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -169,7 +155,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -209,25 +194,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj": {
+    "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+        "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
-        "packagesPath": "C:\\Users\\Estudiante-16\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\obj\\",
+        "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+        "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Estudiante-16\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,18 +216,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj": {
-                "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj"
+              "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj": {
+                "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj"
               },
-              "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
-                "projectPath": "C:\\Users\\Estudiante-16\\source\\repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
+              "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj": {
+                "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj"
               }
             }
           }
@@ -285,7 +265,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

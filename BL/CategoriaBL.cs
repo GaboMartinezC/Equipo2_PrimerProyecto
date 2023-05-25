@@ -75,11 +75,5 @@ namespace BL
         {
             return dal.BuscarTodoCategoria();
         }
-
-        public DataTable BuscarCategoria(string descrip)
-        {
-            return dal.BuscarCategoria(descrip);
-        }
-
     }
 }

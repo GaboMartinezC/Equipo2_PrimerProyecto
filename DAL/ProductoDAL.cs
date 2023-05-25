@@ -142,30 +142,7 @@ namespace DAL
             }
             return retVal;
         }
-        //Selecciona los datos de producto, contando los libros
-        public DataTable BuscarTodoProductoGeneral()
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarTodoProductoGeneral", cn))
-                    {
-                        cmd.Connection = cn;
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
+        
         //Busca todos los productos dados un id de proveedor
         public DataTable BuscarProductoProveedor(int id)
         {

@@ -37,13 +37,6 @@ namespace BL
                 retVal = libroDal.ActualizarLibro(libro);
             return retVal;
         }
-        public DataTable BuscarLibroIdioma(int idIdi)
-        {
-            return libroDal.BuscarLibroIdioma(idIdi);
-        }
-        public DataTable BuscarLibroAutor(int idAut)
-        {
-            return libroDal.BuscarLibroAutor(idAut);
-        }
+        
     }
 }

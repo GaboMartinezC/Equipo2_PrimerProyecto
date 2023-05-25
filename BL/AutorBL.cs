@@ -69,14 +69,7 @@ namespace BL
         /*Los metodos tipo DataTable solo van a retornar una instancia a los metodos
         correspondientes de dal ya que,
         no necesita confirmar existencia, solo mostrarla*/
-        public DataTable BuscarAutorNombre(string nombre) 
-        {
-            return dal.BuscarAutorApellido(nombre);
-        }
-        public DataTable BuscarAutorApellido(string apellido)
-        {
-            return dal.BuscarAutorApellido(apellido);
-        }
+        
         public DataTable BuscarTodos()
         {
             return dal.BuscarTodos();

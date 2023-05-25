@@ -100,11 +100,6 @@ namespace DAL
             }
             return retVal;
         }
-        /* !!PENDIENTE!! */
-        public DataTable BuscarEntradasFecha(DateOnly fecha) 
-        {
-            DataTable retVal = new DataTable();
-            return retVal;
-        }
+        
     }
 }

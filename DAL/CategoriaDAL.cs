@@ -116,34 +116,6 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarCategoria(string descrip)
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBusquedaCategoria", cn))
-                    {
-                        cmd.Connection = cn;
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        /*
-                         * Parámetros, revisar BD, 
-                         * Utiliza el operador LIKE para buscar coincidencias no exactas
-                         * Debe concatenarse con dos "%" a cada lado para su uso correcto
-                         */
-                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        reader.Close();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
+        
     }
 }

@@ -69,9 +69,6 @@ namespace BL
             return dal.BuscarTodoSucursal();
         }
 
-        public DataTable BuscarSucursal(string ubicacion)
-        {
-            return dal.BuscarSucursal(ubicacion);
-        }
+        
     }
 }
