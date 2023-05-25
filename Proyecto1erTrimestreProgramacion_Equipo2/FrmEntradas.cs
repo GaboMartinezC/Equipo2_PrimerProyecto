@@ -58,7 +58,6 @@ namespace GUI
                     de.IdProducto = Convert.ToUInt32(productos.Rows[i]["id"]);
                     
             }
-            ee.IdEmpleado = 
 
         }
         private void dgvProductosEntrada_CellContentClick(object sender, DataGridViewCellEventArgs e)
