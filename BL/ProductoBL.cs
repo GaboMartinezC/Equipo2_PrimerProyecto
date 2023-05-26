@@ -75,18 +75,9 @@ namespace BL
         /*Los metodos tipo DataTable solo van a retornar una instancia a los metodos
         correspondientes de dal ya que,
         no necesita confirmar existencia, solo mostrarla*/
-        public DataTable BuscarProductoProveedor(int id)
+        public DataTable BuscarTodoProductoGeneral()
         {
-            return dal.BuscarProductoProveedor(id);
-        }
-        
-        public DataTable BuscarProducto(string descripcion)
-        {
-            return dal.BuscarProducto(descripcion);
-        }
-        public DataTable BuscarTodoProducto()
-        {
-            return dal.BuscarTodoProducto();
+            return dal.BuscarTodoProductoGeneral();
         }
     }
 }

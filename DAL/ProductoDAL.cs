@@ -118,8 +118,7 @@ namespace DAL
             }
             return retVal;
         }
-        //Selecciona los datos de producto, sin contar los libros
-        public DataTable BuscarTodoProducto()
+        public DataTable BuscarTodoProductoGeneral()
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -127,63 +126,12 @@ namespace DAL
                 try
                 {
                     cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarTodoProducto", cn))
+                    using (var cmd = new SqlCommand("SpBuscarTodoProductoGeneral", cn))
                     {
                         cmd.Connection = cn;
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
-        
-        //Busca todos los productos dados un id de proveedor
-        public DataTable BuscarProductoProveedor(int id)
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarProductoProveedor", cn))
-                    {
-                        cmd.Connection = cn;
-                        cmd.Parameters.Add(new SqlParameter("@idProv", id));
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-            return retVal;
-        }
-        //Busca cualquier tipo de producto según un id
-        public DataTable BuscarProducto(string descrip)
-        {
-            DataTable retVal = new DataTable();
-            using (var cn = GetConnection())
-            {
-                try
-                {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarProducto", cn))
-                    {
-                        cmd.Connection = cn;
-                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);    
                     }
                 }
                 catch (Exception ex)
