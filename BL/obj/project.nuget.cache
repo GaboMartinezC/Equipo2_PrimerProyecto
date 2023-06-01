@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8c5+V88Yu3NIxwcDlVf6OFaXwV2Yc2CEMtIqgGrh88ezQIXpnsEFmrG/wF8RG35MUV8cVL2olEKX38nSRHg0Fw==",
+  "dgSpecHash": "2q91q/FrPRwZmARtq7ZeRpM/E67TKOtpkNGIj5Bcs5k8oGvuFblrRG/vO0uqlVranjRxCN2fw35iw46VLrzTtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj",
+  "projectFilePath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cotor\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\cotor\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

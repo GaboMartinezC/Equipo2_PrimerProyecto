@@ -534,11 +534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+      "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
       "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\obj\\",
+      "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\Proyecto1erTrimestreProgramacion_Equipo2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -555,11 +555,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj": {
-              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj"
+            "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\BL\\BL.csproj"
             },
-            "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj": {
-              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj"
+            "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\ET\\ET.csproj": {
+              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\ET\\ET.csproj"
             }
           }
         }

@@ -514,11 +514,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj",
+      "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\BL.csproj",
+      "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\BL\\BL.csproj",
       "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\BL\\obj\\",
+      "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -535,11 +535,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\DAL\\DAL.csproj"
+            "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj": {
-              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj"
+            "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\ET\\ET.csproj": {
+              "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\Proyecto\\ET\\ET.csproj"
             }
           }
         }
