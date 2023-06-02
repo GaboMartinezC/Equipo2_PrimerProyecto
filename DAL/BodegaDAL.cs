@@ -125,10 +125,9 @@ namespace DAL
                         SqlParameter cant = new SqlParameter("@cant", SqlDbType.Int);
                         cant.Direction = ParameterDirection.Output;
                         cmd.Parameters.Add(cant);
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        da.SelectCommand = cmd;
                         SqlDataReader reader = cmd.ExecuteReader();
-                        retVal.Cantidad = Convert.ToUInt32(cant);
+                        if (cant.Value != DBNull.Value)
+                            retVal.Cantidad = Convert.ToUInt32(cant.Value);
 ;                    }
                 }
                 catch (Exception ex)

@@ -29,332 +29,294 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoEmpleado));
-            panelPadreNuevoProveedor = new Panel();
-            panel5 = new Panel();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            textBox5 = new TextBox();
-            label5 = new Label();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label3 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            panel6 = new Panel();
-            panelBarraSuperior = new Panel();
-            panelBtnGuardarNuevoProveedor = new Panel();
-            pictureBox1 = new PictureBox();
-            panel1 = new Panel();
-            panel4 = new Panel();
-            panelBtnSalir = new Panel();
-            btnSalir = new PictureBox();
-            panel3 = new Panel();
-            panelPadreNuevoProveedor.SuspendLayout();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panelBtnGuardarNuevoProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            panelBtnSalir.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnSalir).BeginInit();
-            SuspendLayout();
+            this.panelPadreNuevoProveedor = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelBarraSuperior = new System.Windows.Forms.Panel();
+            this.panelBtnGuardarNuevoProveedor = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelBtnSalir = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelPadreNuevoProveedor.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelBtnGuardarNuevoProveedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panelBtnSalir.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            this.SuspendLayout();
             // 
             // panelPadreNuevoProveedor
             // 
-            panelPadreNuevoProveedor.Controls.Add(panel5);
-            panelPadreNuevoProveedor.Controls.Add(panelBarraSuperior);
-            panelPadreNuevoProveedor.Controls.Add(panelBtnGuardarNuevoProveedor);
-            panelPadreNuevoProveedor.Controls.Add(panel1);
-            panelPadreNuevoProveedor.Dock = DockStyle.Fill;
-            panelPadreNuevoProveedor.Location = new Point(0, 0);
-            panelPadreNuevoProveedor.Name = "panelPadreNuevoProveedor";
-            panelPadreNuevoProveedor.Size = new Size(411, 435);
-            panelPadreNuevoProveedor.TabIndex = 0;
+            this.panelPadreNuevoProveedor.Controls.Add(this.panel5);
+            this.panelPadreNuevoProveedor.Controls.Add(this.panelBarraSuperior);
+            this.panelPadreNuevoProveedor.Controls.Add(this.panelBtnGuardarNuevoProveedor);
+            this.panelPadreNuevoProveedor.Controls.Add(this.panel1);
+            this.panelPadreNuevoProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPadreNuevoProveedor.Location = new System.Drawing.Point(0, 0);
+            this.panelPadreNuevoProveedor.Name = "panelPadreNuevoProveedor";
+            this.panelPadreNuevoProveedor.Size = new System.Drawing.Size(411, 435);
+            this.panelPadreNuevoProveedor.TabIndex = 0;
             // 
             // panel5
             // 
-            panel5.Controls.Add(pictureBox6);
-            panel5.Controls.Add(pictureBox5);
-            panel5.Controls.Add(textBox5);
-            panel5.Controls.Add(label5);
-            panel5.Controls.Add(textBox4);
-            panel5.Controls.Add(label4);
-            panel5.Controls.Add(pictureBox4);
-            panel5.Controls.Add(pictureBox3);
-            panel5.Controls.Add(pictureBox2);
-            panel5.Controls.Add(label3);
-            panel5.Controls.Add(textBox3);
-            panel5.Controls.Add(textBox2);
-            panel5.Controls.Add(label2);
-            panel5.Controls.Add(textBox1);
-            panel5.Controls.Add(label1);
-            panel5.Controls.Add(panel6);
-            panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(0, 45);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(379, 328);
-            panel5.TabIndex = 3;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(74, 283);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(21, 18);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 15;
-            pictureBox6.TabStop = false;
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.txtEmail);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.pictureBox4);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.txtTelefono);
+            this.panel5.Controls.Add(this.txtCedula);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.txtNombre);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 45);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(379, 328);
+            this.panel5.TabIndex = 3;
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(75, 220);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(21, 18);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 14;
-            pictureBox5.TabStop = false;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(79, 241);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
             // 
-            // textBox5
+            // txtEmail
             // 
-            textBox5.BackColor = Color.LightGray;
-            textBox5.Location = new Point(108, 219);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(215, 23);
-            textBox5.TabIndex = 13;
+            this.txtEmail.BackColor = System.Drawing.Color.LightGray;
+            this.txtEmail.Location = new System.Drawing.Point(112, 240);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(215, 23);
+            this.txtEmail.TabIndex = 13;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(183, 198);
-            label5.Name = "label5";
-            label5.Size = new Size(46, 16);
-            label5.TabIndex = 12;
-            label5.Text = "Email";
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = Color.LightGray;
-            textBox4.Location = new Point(108, 283);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(215, 23);
-            textBox4.TabIndex = 11;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(179, 262);
-            label4.Name = "label4";
-            label4.Size = new Size(56, 16);
-            label4.TabIndex = 10;
-            label4.Text = "Estado";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(187, 219);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 16);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Email";
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(73, 158);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(28, 20);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(77, 179);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(28, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(74, 98);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(27, 19);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 8;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(78, 119);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(27, 19);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(74, 32);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(28, 20);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 7;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(78, 53);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(171, 135);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 16);
-            label3.TabIndex = 6;
-            label3.Text = "Teléfono";
-            label3.Click += label3_Click;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(175, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 16);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Teléfono";
             // 
-            // textBox3
+            // txtTelefono
             // 
-            textBox3.BackColor = Color.LightGray;
-            textBox3.Location = new Point(108, 158);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(215, 23);
-            textBox3.TabIndex = 5;
+            this.txtTelefono.BackColor = System.Drawing.Color.LightGray;
+            this.txtTelefono.Location = new System.Drawing.Point(112, 179);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(215, 23);
+            this.txtTelefono.TabIndex = 5;
             // 
-            // textBox2
+            // txtCedula
             // 
-            textBox2.BackColor = Color.LightGray;
-            textBox2.Location = new Point(108, 92);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(215, 23);
-            textBox2.TabIndex = 4;
+            this.txtCedula.BackColor = System.Drawing.Color.LightGray;
+            this.txtCedula.Location = new System.Drawing.Point(112, 113);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(215, 23);
+            this.txtCedula.TabIndex = 4;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(176, 72);
-            label2.Name = "label2";
-            label2.Size = new Size(56, 16);
-            label2.TabIndex = 3;
-            label2.Text = "Cédula";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(180, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Cédula";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.BackColor = Color.LightGray;
-            textBox1.Location = new Point(108, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(215, 23);
-            textBox1.TabIndex = 2;
+            this.txtNombre.BackColor = System.Drawing.Color.LightGray;
+            this.txtNombre.Location = new System.Drawing.Point(112, 53);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(215, 23);
+            this.txtNombre.TabIndex = 2;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(145, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(130, 16);
-            label1.TabIndex = 1;
-            label1.Text = "Nombre completo";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(149, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nombre completo";
             // 
             // panel6
             // 
-            panel6.Dock = DockStyle.Left;
-            panel6.Location = new Point(0, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(58, 328);
-            panel6.TabIndex = 0;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(58, 328);
+            this.panel6.TabIndex = 0;
             // 
             // panelBarraSuperior
             // 
-            panelBarraSuperior.Dock = DockStyle.Top;
-            panelBarraSuperior.Location = new Point(0, 0);
-            panelBarraSuperior.Name = "panelBarraSuperior";
-            panelBarraSuperior.Size = new Size(379, 45);
-            panelBarraSuperior.TabIndex = 2;
-            panelBarraSuperior.MouseDown += panelBarraSuperior_MouseDown_1;
+            this.panelBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelBarraSuperior.Name = "panelBarraSuperior";
+            this.panelBarraSuperior.Size = new System.Drawing.Size(379, 45);
+            this.panelBarraSuperior.TabIndex = 2;
+            this.panelBarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraSuperior_MouseDown);
             // 
             // panelBtnGuardarNuevoProveedor
             // 
-            panelBtnGuardarNuevoProveedor.Controls.Add(pictureBox1);
-            panelBtnGuardarNuevoProveedor.Dock = DockStyle.Bottom;
-            panelBtnGuardarNuevoProveedor.Location = new Point(0, 376);
-            panelBtnGuardarNuevoProveedor.Name = "panelBtnGuardarNuevoProveedor";
-            panelBtnGuardarNuevoProveedor.Size = new Size(379, 59);
-            panelBtnGuardarNuevoProveedor.TabIndex = 1;
+            this.panelBtnGuardarNuevoProveedor.Controls.Add(this.pictureBox1);
+            this.panelBtnGuardarNuevoProveedor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBtnGuardarNuevoProveedor.Location = new System.Drawing.Point(0, 376);
+            this.panelBtnGuardarNuevoProveedor.Name = "panelBtnGuardarNuevoProveedor";
+            this.panelBtnGuardarNuevoProveedor.Size = new System.Drawing.Size(379, 59);
+            this.panelBtnGuardarNuevoProveedor.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(325, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(61, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(325, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(61, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel4);
-            panel1.Controls.Add(panelBtnSalir);
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(379, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(32, 435);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panelBtnSalir);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(379, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(32, 435);
+            this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
-            panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 349);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(32, 86);
-            panel4.TabIndex = 1;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 349);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(32, 86);
+            this.panel4.TabIndex = 1;
             // 
             // panelBtnSalir
             // 
-            panelBtnSalir.Controls.Add(btnSalir);
-            panelBtnSalir.Controls.Add(panel3);
-            panelBtnSalir.Dock = DockStyle.Top;
-            panelBtnSalir.Location = new Point(0, 0);
-            panelBtnSalir.Name = "panelBtnSalir";
-            panelBtnSalir.Size = new Size(32, 45);
-            panelBtnSalir.TabIndex = 0;
+            this.panelBtnSalir.Controls.Add(this.btnSalir);
+            this.panelBtnSalir.Controls.Add(this.panel3);
+            this.panelBtnSalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBtnSalir.Location = new System.Drawing.Point(0, 0);
+            this.panelBtnSalir.Name = "panelBtnSalir";
+            this.panelBtnSalir.Size = new System.Drawing.Size(32, 45);
+            this.panelBtnSalir.TabIndex = 0;
             // 
             // btnSalir
             // 
-            btnSalir.Dock = DockStyle.Right;
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
-            btnSalir.Location = new Point(6, 0);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(11, 45);
-            btnSalir.SizeMode = PictureBoxSizeMode.Zoom;
-            btnSalir.TabIndex = 7;
-            btnSalir.TabStop = false;
-            btnSalir.Click += btnSalir_Click;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(6, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(11, 45);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalir.TabIndex = 7;
+            this.btnSalir.TabStop = false;
             // 
             // panel3
             // 
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(17, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(15, 45);
-            panel3.TabIndex = 0;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(17, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(15, 45);
+            this.panel3.TabIndex = 0;
             // 
             // FrmNuevoEmpleado
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(248, 248, 243);
-            ClientSize = new Size(411, 435);
-            Controls.Add(panelPadreNuevoProveedor);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmNuevoEmpleado";
-            Text = "FrmNuevoEmpleado";
-            panelPadreNuevoProveedor.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panelBtnGuardarNuevoProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panelBtnSalir.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnSalir).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.ClientSize = new System.Drawing.Size(411, 435);
+            this.Controls.Add(this.panelPadreNuevoProveedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmNuevoEmpleado";
+            this.Text = "FrmNuevoEmpleado";
+            this.panelPadreNuevoProveedor.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelBtnGuardarNuevoProveedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panelBtnSalir.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -372,18 +334,15 @@
         private Panel panelBtnGuardarNuevoProveedor;
         private PictureBox pictureBox1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtNombre;
         private Label label3;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtTelefono;
+        private TextBox txtCedula;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private TextBox textBox5;
+        private TextBox txtEmail;
         private Label label5;
-        private TextBox textBox4;
-        private Label label4;
-        private PictureBox pictureBox6;
         private PictureBox pictureBox5;
     }
 }

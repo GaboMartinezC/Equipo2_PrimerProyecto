@@ -5,21 +5,19 @@ namespace BL
 {
     public class DetalleEntradaBL
     {
-        private DetalleEntradaDAL detalleDal = new DetalleEntradaDAL();
-        private BodegaDAL bodegaDal = new BodegaDAL();
         //genera una instancia que permite acceder a los métodos de DetalleEntradaDAL
-        private DetalleEntradaDAL det = new DetalleEntradaDAL();
-        public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
+        private DetalleEntradaDAL detalleDal = new DetalleEntradaDAL();
+        //genera una instancia que permite acceder a los métodos de BodegaDAL
+        private BodegaDAL bodegaDal = new BodegaDAL();
+        public uint IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
         {
             //Variables bandera que alojarán las cantidades máximas y mínimas, más la nueva cantidad
-            uint cantidadesMaximasProducto = 0, cantidadesMinimasProducto = 0, nuevaCantidad = 0;
+            uint cantidadesMaximasProducto = 0, cantidadesMinimasProducto = 0,
+            nuevaCantidad = 0, cantActual = 0, cantidadErrores = 0;
             //Instancia del DAL de producto y una datatable con
             //un listado de productos generales
             ProductoDAL pDal = new ProductoDAL();
             DataTable dtProducto = pDal.BuscarTodoProductoGeneral();
-            //Instancia de un DAL de Bodega, para acceder al metodo
-            //de busqueda de producto en una sucursal
-            BodegaDAL bodegaDAL = new BodegaDAL();
             //Recorre el listado de productos
             for (int i = 0; i < dtProducto.Rows.Count; i++)
             {
@@ -39,25 +37,52 @@ namespace BL
                         //requieran procesar a unsigned int
                         cantidadesMaximasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MAXIMO"]);
                         cantidadesMinimasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MINIMO"]);
-                        //Llama al SP de busqueda 
+                        //Llama al SP de busqueda para verificar que hayan productos de esa clase en la bodega
+                        cantActual = bodegaDal.BuscarProductoSucursal(bodega).Cantidad;
                         //nueva cantidad es igual a la cantidad existente del producto en la sucursal
                         //más la cantidad ingresada
-                        nuevaCantidad = bodegaDAL.BuscarProductoSucursal(bodega).Cantidad + de.Cantidad;
-                        //Si se cumple la condición, retorna un falso y sale del método
+                        nuevaCantidad = cantActual + de.Cantidad;
+                        //Si se cumple la condición, cuenta como fallida la operacion de ingresar la entrada
                         if (nuevaCantidad < cantidadesMinimasProducto || nuevaCantidad > cantidadesMaximasProducto)
-                            return false;
+                            cantidadErrores++;
                         else
                         {
                             bodega.Cantidad = nuevaCantidad;
-                            bodegaDal.AumentarInventario(bodega);
+                            //Si ya hay productos, aumenta inventario
+                            if (cantActual != 0)
+                                bodegaDal.AumentarInventario(bodega);
+                            //Si no hay productos, ingresa bodega
+                            else
+                                bodegaDal.IngresarBodega(bodega);
+                            //Registra el detalle de entrada
+                            detalleDal.IngresarDetalleEntrada(de);
+                            break;
                         }
-                            
-                        break;
                     }
                 }
             }
-            //Si no encontró ningún problema y no salió del método, ingresa la lista
-            return detalleDal.IngresarDetalleEntrada(ListaDetalles);
+            //Retorna la cantidad de errores de ingreso por stock
+            return cantidadErrores;
+        }
+        //Busca la cantidad de producto que existe en una sucursal
+        public uint BuscarProductoSucursal(Bodega bodega)
+        {
+            //Llena una datatable con el inventario
+            DataTable listaBodegas = bodegaDal.VerInventario();
+            //variables que alojan datos temporales, solo funcionan para legibilidad de codigo
+            uint idProd = 0, idSuc = 0;
+            //recorre la datatable
+            for (int i = 0; i < listaBodegas.Rows.Count; i++)
+            {
+                //llena las variables con los datos del registro consultado
+                idProd = Convert.ToUInt32(listaBodegas.Rows[i]["ID_PRODUCTO"].ToString());
+                idSuc = Convert.ToUInt32(listaBodegas.Rows[i]["ID_SUCURSAL"].ToString());
+                //si hay coincidencias, retorna la cantidad
+                if (idProd == bodega.IdProducto && idSuc == bodega.IdSucursal)
+                    return Convert.ToUInt32(listaBodegas.Rows[i]["CANTIDAD"].ToString());
+            }
+            //si no encuentra nada, retorna un 0
+            return 0;
         }
         public DataTable VerTodoRegistroEntradas()
         {

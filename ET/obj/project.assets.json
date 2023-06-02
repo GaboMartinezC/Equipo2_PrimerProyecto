@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cotor\\.nuget\\packages\\": {}
+    "C:\\Users\\marti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
       "projectName": "ET",
-      "projectPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\ET.csproj",
-      "packagesPath": "C:\\Users\\cotor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cotor\\OneDrive\\Escritorio\\proyecto\\ET\\obj\\",
+      "projectPath": "C:\\Users\\marti\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marti\\Source\\Repos\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cotor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -529,7 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
