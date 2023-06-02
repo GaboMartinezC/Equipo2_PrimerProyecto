@@ -31,6 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoEmpleado));
             this.panelPadreNuevoProveedor = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbRolUsuario = new System.Windows.Forms.ComboBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +52,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelBarraSuperior = new System.Windows.Forms.Panel();
             this.panelBtnGuardarNuevoProveedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnIngresar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelBtnSalir = new System.Windows.Forms.Panel();
@@ -54,12 +60,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelPadreNuevoProveedor.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelBtnGuardarNuevoProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIngresar)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelBtnSalir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
@@ -79,6 +87,12 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.pictureBox6);
+            this.panel5.Controls.Add(this.txtContrasena);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Controls.Add(this.cbRolUsuario);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.txtEmail);
             this.panel5.Controls.Add(this.label5);
@@ -98,10 +112,66 @@
             this.panel5.Size = new System.Drawing.Size(379, 328);
             this.panel5.TabIndex = 3;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(58, 197);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(27, 19);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 20;
+            this.pictureBox6.TabStop = false;
+            // 
+            // txtContrasena
+            // 
+            this.txtContrasena.BackColor = System.Drawing.Color.LightGray;
+            this.txtContrasena.Location = new System.Drawing.Point(90, 193);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(215, 23);
+            this.txtContrasena.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(154, 174);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 16);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Contraseña";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(149, 286);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 16);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Rol de Usuario";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(53, 305);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cbRolUsuario
+            // 
+            this.cbRolUsuario.FormattingEnabled = true;
+            this.cbRolUsuario.Location = new System.Drawing.Point(91, 305);
+            this.cbRolUsuario.Name = "cbRolUsuario";
+            this.cbRolUsuario.Size = new System.Drawing.Size(217, 23);
+            this.cbRolUsuario.TabIndex = 15;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(79, 241);
+            this.pictureBox5.Location = new System.Drawing.Point(60, 248);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(21, 18);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +181,7 @@
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.LightGray;
-            this.txtEmail.Location = new System.Drawing.Point(112, 240);
+            this.txtEmail.Location = new System.Drawing.Point(93, 247);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(215, 23);
             this.txtEmail.TabIndex = 13;
@@ -120,7 +190,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(187, 219);
+            this.label5.Location = new System.Drawing.Point(168, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 16);
             this.label5.TabIndex = 12;
@@ -129,7 +199,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(77, 179);
+            this.pictureBox4.Location = new System.Drawing.Point(56, 131);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 20);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -139,7 +209,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(78, 119);
+            this.pictureBox3.Location = new System.Drawing.Point(57, 82);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 19);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +219,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(78, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -160,7 +230,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(175, 156);
+            this.label3.Location = new System.Drawing.Point(154, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 6;
@@ -169,7 +239,7 @@
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.Color.LightGray;
-            this.txtTelefono.Location = new System.Drawing.Point(112, 179);
+            this.txtTelefono.Location = new System.Drawing.Point(90, 137);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(215, 23);
             this.txtTelefono.TabIndex = 5;
@@ -177,7 +247,7 @@
             // txtCedula
             // 
             this.txtCedula.BackColor = System.Drawing.Color.LightGray;
-            this.txtCedula.Location = new System.Drawing.Point(112, 113);
+            this.txtCedula.Location = new System.Drawing.Point(91, 76);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(215, 23);
             this.txtCedula.TabIndex = 4;
@@ -186,7 +256,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(180, 93);
+            this.label2.Location = new System.Drawing.Point(159, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 3;
@@ -195,7 +265,7 @@
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.LightGray;
-            this.txtNombre.Location = new System.Drawing.Point(112, 53);
+            this.txtNombre.Location = new System.Drawing.Point(91, 25);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(215, 23);
             this.txtNombre.TabIndex = 2;
@@ -204,7 +274,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(149, 30);
+            this.label1.Location = new System.Drawing.Point(128, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 16);
             this.label1.TabIndex = 1;
@@ -229,22 +299,23 @@
             // 
             // panelBtnGuardarNuevoProveedor
             // 
-            this.panelBtnGuardarNuevoProveedor.Controls.Add(this.pictureBox1);
+            this.panelBtnGuardarNuevoProveedor.Controls.Add(this.btnIngresar);
             this.panelBtnGuardarNuevoProveedor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelBtnGuardarNuevoProveedor.Location = new System.Drawing.Point(0, 376);
             this.panelBtnGuardarNuevoProveedor.Name = "panelBtnGuardarNuevoProveedor";
             this.panelBtnGuardarNuevoProveedor.Size = new System.Drawing.Size(379, 59);
             this.panelBtnGuardarNuevoProveedor.TabIndex = 1;
             // 
-            // pictureBox1
+            // btnIngresar
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(325, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnIngresar.Image = ((System.Drawing.Image)(resources.GetObject("btnIngresar.Image")));
+            this.btnIngresar.Location = new System.Drawing.Point(325, 3);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(61, 32);
+            this.btnIngresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnIngresar.TabIndex = 0;
+            this.btnIngresar.TabStop = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // panel1
             // 
@@ -284,6 +355,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 7;
             this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // panel3
             // 
@@ -306,12 +378,14 @@
             this.panelPadreNuevoProveedor.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelBtnGuardarNuevoProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIngresar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panelBtnSalir.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
@@ -332,7 +406,7 @@
         private Panel panel6;
         private Panel panelBarraSuperior;
         private Panel panelBtnGuardarNuevoProveedor;
-        private PictureBox pictureBox1;
+        private PictureBox btnIngresar;
         private Label label2;
         private TextBox txtNombre;
         private Label label3;
@@ -344,5 +418,11 @@
         private TextBox txtEmail;
         private Label label5;
         private PictureBox pictureBox5;
+        private Label label4;
+        private PictureBox pictureBox1;
+        private ComboBox cbRolUsuario;
+        private PictureBox pictureBox6;
+        private TextBox txtContrasena;
+        private Label label6;
     }
 }

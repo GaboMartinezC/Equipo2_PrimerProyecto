@@ -7,22 +7,22 @@ namespace BL
     public class ProductoBL
     {
         private ProductoDAL dal = new ProductoDAL();
-        public bool IngresarProducto(Producto producto)
+        public int IngresarProducto(Producto producto)
         {
-            bool retVal = true;
+            int retVal = 0;
             //Valida lógicamente que el stock máximo no sea menor al mínimo
             if (producto.StockMaximo < producto.StockMinimo)
-                retVal = false;
+                retVal = 1;
            //Si el proveedor es una editorial, al pertenecer a superclase producto
            //retorna un falso
             //Si el proveedor es una editorial, al pertenecer a superclase producto
             //retorna un falso
             if (ProveedorEsEditorial(producto.IdProveedor))
-                retVal = false;
+                retVal = 1;
             //Si ninguna de las condicionales anteriores se cumple, ingresa el producto
             //y retorna lo que retorne el método el DAL
-            if (retVal)
-                retVal = dal.IngresarProducto(producto);
+            if (retVal==0)
+                retVal =Convert.ToInt32(dal.IngresarProducto(producto));
             return retVal;
         }
         public bool ActualizarProducto(Producto producto)

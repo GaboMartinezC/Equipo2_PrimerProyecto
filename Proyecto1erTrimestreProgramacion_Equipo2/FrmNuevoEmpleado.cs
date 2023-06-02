@@ -28,5 +28,21 @@ namespace GUI
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            Empleado empleado = new Empleado();
+            empleado.Cedula = txtCedula.Text;
+            empleado.NombreCompleto = txtNombre.Text;
+            empleado.Email = txtEmail.Text;
+            empleado.Contrasena = txtContrasena.Text;
+            empleado.NumeroTelefonico = txtTelefono.Text;
+            empleado.IdRol = Convert.ToUInt32(cbRolUsuario.Text);
+        }
     }
 }
