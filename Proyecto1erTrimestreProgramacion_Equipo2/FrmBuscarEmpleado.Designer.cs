@@ -29,312 +29,310 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscarEmpleado));
-            panelPadreBuscarProveedor = new Panel();
-            label7 = new Label();
-            txtRol = new TextBox();
-            label6 = new Label();
-            txtEstado = new TextBox();
-            label5 = new Label();
-            txtEmail = new TextBox();
-            label4 = new Label();
-            txtTelefono = new TextBox();
-            label3 = new Label();
-            txtNombre = new TextBox();
-            label2 = new Label();
-            txtCedula = new TextBox();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            panel4 = new Panel();
-            label1 = new Label();
-            panel5 = new Panel();
-            panelBarraSuperior = new Panel();
-            panelBtnSalir = new Panel();
-            panel2 = new Panel();
-            btnSalir = new PictureBox();
-            panel1 = new Panel();
-            panelPadreBuscarProveedor.SuspendLayout();
-            panel6.SuspendLayout();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel4.SuspendLayout();
-            panelBtnSalir.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnSalir).BeginInit();
-            SuspendLayout();
+            this.panelPadreBuscarProveedor = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtRol = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelBarraSuperior = new System.Windows.Forms.Panel();
+            this.panelBtnSalir = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPadreBuscarProveedor.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panelBtnSalir.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            this.SuspendLayout();
             // 
             // panelPadreBuscarProveedor
             // 
-            panelPadreBuscarProveedor.BackColor = Color.FromArgb(248, 248, 243);
-            panelPadreBuscarProveedor.Controls.Add(label7);
-            panelPadreBuscarProveedor.Controls.Add(txtRol);
-            panelPadreBuscarProveedor.Controls.Add(label6);
-            panelPadreBuscarProveedor.Controls.Add(txtEstado);
-            panelPadreBuscarProveedor.Controls.Add(label5);
-            panelPadreBuscarProveedor.Controls.Add(txtEmail);
-            panelPadreBuscarProveedor.Controls.Add(label4);
-            panelPadreBuscarProveedor.Controls.Add(txtTelefono);
-            panelPadreBuscarProveedor.Controls.Add(label3);
-            panelPadreBuscarProveedor.Controls.Add(txtNombre);
-            panelPadreBuscarProveedor.Controls.Add(label2);
-            panelPadreBuscarProveedor.Controls.Add(txtCedula);
-            panelPadreBuscarProveedor.Controls.Add(panel6);
-            panelPadreBuscarProveedor.Controls.Add(panel4);
-            panelPadreBuscarProveedor.Controls.Add(panelBarraSuperior);
-            panelPadreBuscarProveedor.Controls.Add(panelBtnSalir);
-            panelPadreBuscarProveedor.Dock = DockStyle.Fill;
-            panelPadreBuscarProveedor.Location = new Point(0, 0);
-            panelPadreBuscarProveedor.Name = "panelPadreBuscarProveedor";
-            panelPadreBuscarProveedor.Size = new Size(437, 447);
-            panelPadreBuscarProveedor.TabIndex = 0;
+            this.panelPadreBuscarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.panelPadreBuscarProveedor.Controls.Add(this.label7);
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtRol);
+            this.panelPadreBuscarProveedor.Controls.Add(this.label6);
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtEstado);
+            this.panelPadreBuscarProveedor.Controls.Add(this.label5);
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtEmail);
+            this.panelPadreBuscarProveedor.Controls.Add(this.label4);
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtTelefono);
+            this.panelPadreBuscarProveedor.Controls.Add(this.label3);
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtNombre);
+            this.panelPadreBuscarProveedor.Controls.Add(this.label2);
+            this.panelPadreBuscarProveedor.Controls.Add(this.txtCedula);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panel6);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panel4);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panelBarraSuperior);
+            this.panelPadreBuscarProveedor.Controls.Add(this.panelBtnSalir);
+            this.panelPadreBuscarProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPadreBuscarProveedor.Location = new System.Drawing.Point(0, 0);
+            this.panelPadreBuscarProveedor.Name = "panelPadreBuscarProveedor";
+            this.panelPadreBuscarProveedor.Size = new System.Drawing.Size(437, 447);
+            this.panelPadreBuscarProveedor.TabIndex = 0;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(114, 321);
-            label7.Name = "label7";
-            label7.Size = new Size(33, 15);
-            label7.TabIndex = 15;
-            label7.Text = "Rol:";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(114, 321);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 15);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Rol:";
             // 
             // txtRol
             // 
-            txtRol.Location = new Point(167, 316);
-            txtRol.Name = "txtRol";
-            txtRol.ReadOnly = true;
-            txtRol.Size = new Size(137, 23);
-            txtRol.TabIndex = 14;
+            this.txtRol.Location = new System.Drawing.Point(167, 316);
+            this.txtRol.Name = "txtRol";
+            this.txtRol.ReadOnly = true;
+            this.txtRol.Size = new System.Drawing.Size(137, 23);
+            this.txtRol.TabIndex = 14;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(100, 277);
-            label6.Name = "label6";
-            label6.Size = new Size(55, 15);
-            label6.TabIndex = 13;
-            label6.Text = "Estado:";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(100, 277);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 15);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Estado:";
             // 
             // txtEstado
             // 
-            txtEstado.Location = new Point(167, 273);
-            txtEstado.Name = "txtEstado";
-            txtEstado.ReadOnly = true;
-            txtEstado.Size = new Size(137, 23);
-            txtEstado.TabIndex = 12;
+            this.txtEstado.Location = new System.Drawing.Point(167, 273);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.ReadOnly = true;
+            this.txtEstado.Size = new System.Drawing.Size(137, 23);
+            this.txtEstado.TabIndex = 12;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(103, 239);
-            label5.Name = "label5";
-            label5.Size = new Size(48, 15);
-            label5.TabIndex = 11;
-            label5.Text = "Email:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(103, 239);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Email:";
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(167, 231);
-            txtEmail.Name = "txtEmail";
-            txtEmail.ReadOnly = true;
-            txtEmail.Size = new Size(137, 23);
-            txtEmail.TabIndex = 10;
+            this.txtEmail.Location = new System.Drawing.Point(167, 231);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(137, 23);
+            this.txtEmail.TabIndex = 10;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(84, 193);
-            label4.Name = "label4";
-            label4.Size = new Size(67, 15);
-            label4.TabIndex = 9;
-            label4.Text = "Teléfono:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(84, 193);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Teléfono:";
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(167, 189);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.ReadOnly = true;
-            txtTelefono.Size = new Size(137, 23);
-            txtTelefono.TabIndex = 8;
+            this.txtTelefono.Location = new System.Drawing.Point(167, 189);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.ReadOnly = true;
+            this.txtTelefono.Size = new System.Drawing.Size(137, 23);
+            this.txtTelefono.TabIndex = 8;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(26, 151);
-            label3.Name = "label3";
-            label3.Size = new Size(125, 15);
-            label3.TabIndex = 7;
-            label3.Text = "Nombre completo:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(26, 151);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Nombre completo:";
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(157, 149);
-            txtNombre.Name = "txtNombre";
-            txtNombre.ReadOnly = true;
-            txtNombre.Size = new Size(239, 23);
-            txtNombre.TabIndex = 6;
+            this.txtNombre.Location = new System.Drawing.Point(167, 149);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ReadOnly = true;
+            this.txtNombre.Size = new System.Drawing.Size(185, 23);
+            this.txtNombre.TabIndex = 6;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(100, 116);
-            label2.Name = "label2";
-            label2.Size = new Size(56, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Cedula:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(100, 116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Cedula:";
             // 
             // txtCedula
             // 
-            txtCedula.Location = new Point(167, 112);
-            txtCedula.Name = "txtCedula";
-            txtCedula.ReadOnly = true;
-            txtCedula.Size = new Size(137, 23);
-            txtCedula.TabIndex = 4;
+            this.txtCedula.Location = new System.Drawing.Point(167, 112);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.ReadOnly = true;
+            this.txtCedula.Size = new System.Drawing.Size(137, 23);
+            this.txtCedula.TabIndex = 4;
             // 
             // panel6
             // 
-            panel6.Controls.Add(panel7);
-            panel6.Dock = DockStyle.Bottom;
-            panel6.Location = new Point(0, 374);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(392, 73);
-            panel6.TabIndex = 3;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 374);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(392, 73);
+            this.panel6.TabIndex = 3;
             // 
             // panel7
             // 
-            panel7.Controls.Add(pictureBox2);
-            panel7.Controls.Add(pictureBox1);
-            panel7.Dock = DockStyle.Right;
-            panel7.Location = new Point(276, 0);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(116, 73);
-            panel7.TabIndex = 0;
+            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Controls.Add(this.pictureBox1);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(276, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(116, 73);
+            this.panel7.TabIndex = 0;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(33, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(33, 33);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(33, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(82, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(33, 33);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(82, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel4
             // 
-            panel4.Controls.Add(label1);
-            panel4.Controls.Add(panel5);
-            panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(0, 46);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(392, 43);
-            panel4.TabIndex = 2;
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 46);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(392, 43);
+            this.panel4.TabIndex = 2;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(7, 16);
-            label1.Name = "label1";
-            label1.Size = new Size(389, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Los datos que ingresó coinciden con el siguiente empleado";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(7, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(389, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Los datos que ingresó coinciden con el siguiente empleado";
             // 
             // panel5
             // 
-            panel5.Dock = DockStyle.Left;
-            panel5.Location = new Point(0, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(15, 43);
-            panel5.TabIndex = 1;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(15, 43);
+            this.panel5.TabIndex = 1;
             // 
             // panelBarraSuperior
             // 
-            panelBarraSuperior.Dock = DockStyle.Top;
-            panelBarraSuperior.Location = new Point(0, 0);
-            panelBarraSuperior.Name = "panelBarraSuperior";
-            panelBarraSuperior.Size = new Size(392, 46);
-            panelBarraSuperior.TabIndex = 1;
-            panelBarraSuperior.MouseDown += panelBarraSuperior_MouseDown;
+            this.panelBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelBarraSuperior.Name = "panelBarraSuperior";
+            this.panelBarraSuperior.Size = new System.Drawing.Size(392, 46);
+            this.panelBarraSuperior.TabIndex = 1;
             // 
             // panelBtnSalir
             // 
-            panelBtnSalir.Controls.Add(panel2);
-            panelBtnSalir.Controls.Add(panel1);
-            panelBtnSalir.Dock = DockStyle.Right;
-            panelBtnSalir.Location = new Point(392, 0);
-            panelBtnSalir.Name = "panelBtnSalir";
-            panelBtnSalir.Size = new Size(45, 447);
-            panelBtnSalir.TabIndex = 0;
+            this.panelBtnSalir.Controls.Add(this.panel2);
+            this.panelBtnSalir.Controls.Add(this.panel1);
+            this.panelBtnSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBtnSalir.Location = new System.Drawing.Point(392, 0);
+            this.panelBtnSalir.Name = "panelBtnSalir";
+            this.panelBtnSalir.Size = new System.Drawing.Size(45, 447);
+            this.panelBtnSalir.TabIndex = 0;
             // 
             // panel2
             // 
-            panel2.Controls.Add(btnSalir);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(27, 46);
-            panel2.TabIndex = 1;
+            this.panel2.Controls.Add(this.btnSalir);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(27, 46);
+            this.panel2.TabIndex = 1;
             // 
             // btnSalir
             // 
-            btnSalir.Dock = DockStyle.Right;
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
-            btnSalir.Location = new Point(16, 0);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(11, 46);
-            btnSalir.SizeMode = PictureBoxSizeMode.Zoom;
-            btnSalir.TabIndex = 6;
-            btnSalir.TabStop = false;
-            btnSalir.Click += btnSalir_Click_1;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(16, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(11, 46);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.TabStop = false;
             // 
             // panel1
             // 
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(27, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(18, 447);
-            panel1.TabIndex = 0;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(27, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(18, 447);
+            this.panel1.TabIndex = 0;
             // 
             // FrmBuscarEmpleado
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(437, 447);
-            Controls.Add(panelPadreBuscarProveedor);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmBuscarEmpleado";
-            Text = "Form1";
-            panelPadreBuscarProveedor.ResumeLayout(false);
-            panelPadreBuscarProveedor.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panelBtnSalir.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnSalir).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(437, 447);
+            this.Controls.Add(this.panelPadreBuscarProveedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmBuscarEmpleado";
+            this.Text = "Form1";
+            this.panelPadreBuscarProveedor.ResumeLayout(false);
+            this.panelPadreBuscarProveedor.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panelBtnSalir.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

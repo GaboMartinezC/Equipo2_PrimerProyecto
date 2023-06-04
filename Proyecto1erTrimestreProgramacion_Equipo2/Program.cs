@@ -19,7 +19,6 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             EmpleadoBL bl = new EmpleadoBL();
             ApplicationConfiguration.Initialize();
             Application.Run(new GUI.LoginGUI());
-            Empleado e = new Empleado();
         }
     }
 }

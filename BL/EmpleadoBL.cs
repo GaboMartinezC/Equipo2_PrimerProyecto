@@ -61,10 +61,10 @@ namespace BL
             //Convierte el email del empleado en una arreglo de caracteres
             char[] email = empleado.Email.ToCharArray();
             //Recorre el arreglo
-            for (int i = 0; i <= email.Length; i++)
+            foreach (char c in empleado.Email)
             {
                 //Busca arrobas en el email
-                if (email[i] == '@')
+                if (c=='@')
                     cantArroba++;
             }
             //Si encuentra más de una o no encuentra, devuelve un falso

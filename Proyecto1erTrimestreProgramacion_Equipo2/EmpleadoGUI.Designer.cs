@@ -30,76 +30,79 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmpleadoGUI));
             this.panelNuevoProveedor = new System.Windows.Forms.Panel();
-            this.btnNuevoProveedor = new System.Windows.Forms.PictureBox();
+            this.btnNuevoEmpleado = new System.Windows.Forms.PictureBox();
             this.panelBTNBuscarProveedor = new System.Windows.Forms.Panel();
-            this.btnBuscarProveedor = new System.Windows.Forms.PictureBox();
+            this.btnBuscarEmpleado = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscarEmpleado = new System.Windows.Forms.TextBox();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
             this.panelNuevoProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoEmpleado)).BeginInit();
             this.panelBTNBuscarProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBuscarProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscarEmpleado)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNuevoProveedor
             // 
-            this.panelNuevoProveedor.Controls.Add(this.btnNuevoProveedor);
+            this.panelNuevoProveedor.Controls.Add(this.btnNuevoEmpleado);
             this.panelNuevoProveedor.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelNuevoProveedor.Location = new System.Drawing.Point(0, 0);
             this.panelNuevoProveedor.Name = "panelNuevoProveedor";
             this.panelNuevoProveedor.Size = new System.Drawing.Size(151, 570);
             this.panelNuevoProveedor.TabIndex = 0;
             // 
-            // btnNuevoProveedor
+            // btnNuevoEmpleado
             // 
-            this.btnNuevoProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoProveedor.Image")));
-            this.btnNuevoProveedor.Location = new System.Drawing.Point(43, 25);
-            this.btnNuevoProveedor.Name = "btnNuevoProveedor";
-            this.btnNuevoProveedor.Size = new System.Drawing.Size(70, 84);
-            this.btnNuevoProveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnNuevoProveedor.TabIndex = 0;
-            this.btnNuevoProveedor.TabStop = false;
+            this.btnNuevoEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoEmpleado.Image")));
+            this.btnNuevoEmpleado.Location = new System.Drawing.Point(43, 25);
+            this.btnNuevoEmpleado.Name = "btnNuevoEmpleado";
+            this.btnNuevoEmpleado.Size = new System.Drawing.Size(70, 84);
+            this.btnNuevoEmpleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnNuevoEmpleado.TabIndex = 0;
+            this.btnNuevoEmpleado.TabStop = false;
+            this.btnNuevoEmpleado.Click += new System.EventHandler(this.btnNuevoEmpleado_Click);
             // 
             // panelBTNBuscarProveedor
             // 
-            this.panelBTNBuscarProveedor.Controls.Add(this.btnBuscarProveedor);
+            this.panelBTNBuscarProveedor.Controls.Add(this.btnBuscarEmpleado);
             this.panelBTNBuscarProveedor.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelBTNBuscarProveedor.Location = new System.Drawing.Point(681, 0);
             this.panelBTNBuscarProveedor.Name = "panelBTNBuscarProveedor";
             this.panelBTNBuscarProveedor.Size = new System.Drawing.Size(119, 570);
             this.panelBTNBuscarProveedor.TabIndex = 1;
             // 
-            // btnBuscarProveedor
+            // btnBuscarEmpleado
             // 
-            this.btnBuscarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarProveedor.Image")));
-            this.btnBuscarProveedor.Location = new System.Drawing.Point(18, 36);
-            this.btnBuscarProveedor.Name = "btnBuscarProveedor";
-            this.btnBuscarProveedor.Size = new System.Drawing.Size(41, 60);
-            this.btnBuscarProveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBuscarProveedor.TabIndex = 0;
-            this.btnBuscarProveedor.TabStop = false;
+            this.btnBuscarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleado.Image")));
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(18, 36);
+            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(41, 60);
+            this.btnBuscarEmpleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBuscarEmpleado.TabIndex = 0;
+            this.btnBuscarEmpleado.TabStop = false;
+            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtBuscarEmpleado);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(151, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(530, 78);
             this.panel1.TabIndex = 2;
             // 
-            // textBox1
+            // txtBuscarEmpleado
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Ingrese el empleado que desea buscar";
-            this.textBox1.Size = new System.Drawing.Size(530, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtBuscarEmpleado.BackColor = System.Drawing.Color.LightGray;
+            this.txtBuscarEmpleado.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtBuscarEmpleado.Location = new System.Drawing.Point(0, 55);
+            this.txtBuscarEmpleado.Name = "txtBuscarEmpleado";
+            this.txtBuscarEmpleado.PlaceholderText = "Ingrese el empleado que desea buscar";
+            this.txtBuscarEmpleado.Size = new System.Drawing.Size(530, 23);
+            this.txtBuscarEmpleado.TabIndex = 0;
+            this.txtBuscarEmpleado.TextChanged += new System.EventHandler(this.txtBuscarEmpleado_TextChanged);
             // 
             // dgvEmpleado
             // 
@@ -124,9 +127,9 @@
             this.Name = "EmpleadoGUI";
             this.Text = "EmpleadoGUI";
             this.panelNuevoProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoEmpleado)).EndInit();
             this.panelBTNBuscarProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnBuscarProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscarEmpleado)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
@@ -137,11 +140,11 @@
         #endregion
 
         private Panel panelNuevoProveedor;
-        private PictureBox btnNuevoProveedor;
+        private PictureBox btnNuevoEmpleado;
         private Panel panelBTNBuscarProveedor;
-        private PictureBox btnBuscarProveedor;
+        private PictureBox btnBuscarEmpleado;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txtBuscarEmpleado;
         private DataGridView dgvEmpleado;
     }
 }
