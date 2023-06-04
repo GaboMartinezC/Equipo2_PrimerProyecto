@@ -115,7 +115,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(58, 197);
+            this.pictureBox6.Location = new System.Drawing.Point(59, 190);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(27, 19);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +125,7 @@
             // txtContrasena
             // 
             this.txtContrasena.BackColor = System.Drawing.Color.LightGray;
-            this.txtContrasena.Location = new System.Drawing.Point(90, 193);
+            this.txtContrasena.Location = new System.Drawing.Point(91, 186);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(215, 23);
             this.txtContrasena.TabIndex = 19;
@@ -134,7 +134,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(154, 174);
+            this.label6.Location = new System.Drawing.Point(155, 167);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 16);
             this.label6.TabIndex = 18;
@@ -144,7 +144,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(149, 286);
+            this.label4.Location = new System.Drawing.Point(150, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 16);
             this.label4.TabIndex = 17;
@@ -153,7 +153,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(53, 305);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 298);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +163,7 @@
             // cbRolUsuario
             // 
             this.cbRolUsuario.FormattingEnabled = true;
-            this.cbRolUsuario.Location = new System.Drawing.Point(91, 305);
+            this.cbRolUsuario.Location = new System.Drawing.Point(92, 298);
             this.cbRolUsuario.Name = "cbRolUsuario";
             this.cbRolUsuario.Size = new System.Drawing.Size(217, 23);
             this.cbRolUsuario.TabIndex = 15;
@@ -171,7 +171,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(60, 248);
+            this.pictureBox5.Location = new System.Drawing.Point(61, 241);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(21, 18);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +181,7 @@
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.LightGray;
-            this.txtEmail.Location = new System.Drawing.Point(93, 247);
+            this.txtEmail.Location = new System.Drawing.Point(94, 240);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(215, 23);
             this.txtEmail.TabIndex = 13;
@@ -190,7 +190,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(168, 226);
+            this.label5.Location = new System.Drawing.Point(169, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 16);
             this.label5.TabIndex = 12;
@@ -199,7 +199,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(56, 131);
+            this.pictureBox4.Location = new System.Drawing.Point(57, 127);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 20);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,7 +230,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(154, 108);
+            this.label3.Location = new System.Drawing.Point(155, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 6;
@@ -239,7 +239,7 @@
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.Color.LightGray;
-            this.txtTelefono.Location = new System.Drawing.Point(90, 137);
+            this.txtTelefono.Location = new System.Drawing.Point(91, 133);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(215, 23);
             this.txtTelefono.TabIndex = 5;

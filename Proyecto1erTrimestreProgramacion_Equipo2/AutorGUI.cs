@@ -29,7 +29,7 @@ namespace GUI
                 this.dtAutor = bl.BuscarTodos();
                 this.dgvTodosAutor.DataSource = dtAutor;
                 for (int i = 0; i < 3; i++)
-                    this.dgvTodosAutor.Columns[i].ReadOnly = true;
+                  this.dgvTodosAutor.Columns[i].ReadOnly = true;
                 this.dgvTodosAutor.Columns[3].Visible = false;
             }
             catch (Exception ex)

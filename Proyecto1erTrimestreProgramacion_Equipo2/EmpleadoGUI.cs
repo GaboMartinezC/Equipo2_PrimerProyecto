@@ -14,14 +14,25 @@ namespace GUI
 {
     public partial class EmpleadoGUI : Form
     {
+        private EmpleadoBL bl = new EmpleadoBL();
+        private DataTable dt = new DataTable();
         public EmpleadoGUI()
         {
             InitializeComponent();
+            FormatoDT();
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FormatoDT()
         {
-            EmpleadoBL empleadoBl = new EmpleadoBL();
+            try
+            {
+                this.dt = bl.BuscarTodos();
+                this.dgvEmpleado.DataSource = dt;
 
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
         {

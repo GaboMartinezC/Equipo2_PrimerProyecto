@@ -14,7 +14,7 @@ namespace DAL
                 try
                 {
                     cn.Open();
-                    using (var cmd = new SqlCommand("SpIngresarAutor", cn))
+                    using (var cmd = new SqlCommand("SpIngresarEmpleado", cn))
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -22,7 +22,7 @@ namespace DAL
                         cmd.Parameters.Add(new SqlParameter("@nombre", empleado.NombreCompleto));
                         cmd.Parameters.Add(new SqlParameter("@contra", empleado.Contrasena));
                         cmd.Parameters.Add(new SqlParameter("@numero", empleado.NumeroTelefonico));
-                        cmd.Parameters.Add(new SqlParameter("@email", empleado.Email));
+                        cmd.Parameters.Add(new SqlParameter("@mail", empleado.Email));
                         //Entero sin signo -> Entero estándar 32 bits
                         cmd.Parameters.Add(new SqlParameter("@idRol", Convert.ToInt32(empleado.IdRol)));
                         SqlDataReader reader = cmd.ExecuteReader();

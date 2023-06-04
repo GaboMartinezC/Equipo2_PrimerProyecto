@@ -18,6 +18,16 @@ namespace GUI
         public FrmNuevoEmpleado()
         {
             InitializeComponent();
+            CargarCombo();
+        }
+        private void CargarCombo()
+        {
+            RolUsuarioBL rubl = new RolUsuarioBL();
+            DataTable dt = rubl.BuscarTodo();
+            cbRolUsuario.DataSource = dt;
+            cbRolUsuario.Text = "Rol de Usuario";
+            cbRolUsuario.DisplayMember = "DESCRIPCION";
+            cbRolUsuario.ValueMember = "ID";
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -36,13 +46,18 @@ namespace GUI
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            EmpleadoBL bl = new EmpleadoBL();
             Empleado empleado = new Empleado();
             empleado.Cedula = txtCedula.Text;
             empleado.NombreCompleto = txtNombre.Text;
             empleado.Email = txtEmail.Text;
             empleado.Contrasena = txtContrasena.Text;
             empleado.NumeroTelefonico = txtTelefono.Text;
-            empleado.IdRol = Convert.ToUInt32(cbRolUsuario.Text);
+            empleado.IdRol = Convert.ToUInt32((int)cbRolUsuario.SelectedValue);
+            if (bl.IngresarEmpleado(empleado))
+                MessageBox.Show("Datos ingresados Correctamente");
+            else
+                MessageBox.Show("Hubo un problema");
         }
     }
 }

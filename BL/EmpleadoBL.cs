@@ -16,15 +16,13 @@ namespace BL
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 //Si las cédulas coinciden en alguna de las instancias, el valor de retorno
-                //es falso y por lo tanto se sale del ciclo
+                //falso y por lo tanto se sale del ciclo
                 if (dt.Rows[i]["CEDULA"].ToString().Equals(empleado.Cedula))
                     return false;
             }
             //Si no se encontró, llama a consultar los datos de contacto
             retVal = this.ContactosUsuarioValidos(empleado);
-            if (retVal)
-                retVal = dal.IngresarEmpleado(empleado);
-            return retVal;
+            return dal.IngresarEmpleado(empleado);
         }
         public bool ActualizarEmpleado(Empleado empleado)
         {
