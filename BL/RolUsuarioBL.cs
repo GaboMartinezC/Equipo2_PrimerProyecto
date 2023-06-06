@@ -7,10 +7,8 @@ namespace BL
     public class RolUsuarioBL
     {
         private RolUsuarioDAL dal = new RolUsuarioDAL();
-        public bool IngresarRolUsuario(RolUsuario rolUsuario)
+        public uint IngresarRolUsuario(RolUsuario rolUsuario)
         {
-            //Valor de retorno
-            bool retVal = true;
             //Instancia una datatable que se  llena con los datos existentes en BD 
             DataTable listaRolUsuarios = dal.BuscarTodos();
             //Variable temporal que guarda los datos a validar
@@ -21,12 +19,9 @@ namespace BL
                 //Si este se encuentra, el valor de retorno es falso
                 descripcion = listaRolUsuarios.Rows[i]["DESCRIPCION"].ToString();
                 if (rolUsuario.Equals(descripcion))
-                    retVal = false;
-            }
-            //si el valor de retorno es true permite ingresar el rol de usuario debido a que no existe
-            if (retVal)
-                retVal = dal.IngresarRolUsuario(rolUsuario);
-            return retVal;
+                    return 0;
+            }   
+            return dal.IngresarRolUsuario(rolUsuario);
         }
         public bool ActualizarRolUsuario(RolUsuario rolUsuario)
         {

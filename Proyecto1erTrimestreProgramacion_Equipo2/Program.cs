@@ -16,9 +16,14 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
         [STAThread]
         static void Main()
         {
-            EmpleadoBL bl = new EmpleadoBL();
-            ApplicationConfiguration.Initialize();
-            Application.Run(new GUI.LoginGUI());
+            //ApplicationConfiguration.Initialize();
+            //Application.Run(new GUI.LoginGUI());
+            Bodega b = new Bodega();
+            BodegaBL bl = new BodegaBL();
+            b.IdProducto = 1;
+            b.IdSucursal = 1;
+            uint i = bl.BuscarProductoSucursal(b).Cantidad;
+            MessageBox.Show(i.ToString());
         }
     }
 }

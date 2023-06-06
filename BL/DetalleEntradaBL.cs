@@ -38,7 +38,7 @@ namespace BL
                         cantidadesMaximasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MAXIMO"]);
                         cantidadesMinimasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MINIMO"]);
                         //Llama al SP de busqueda para verificar que hayan productos de esa clase en la bodega
-                        cantActual = bodegaDal.BuscarProductoSucursal(bodega).Cantidad;
+                        //cantActual = bodegaDal.BuscarProductoSucursal(bodega).Cantidad;
                         //nueva cantidad es igual a la cantidad existente del producto en la sucursal
                         //más la cantidad ingresada
                         nuevaCantidad = cantActual + de.Cantidad;

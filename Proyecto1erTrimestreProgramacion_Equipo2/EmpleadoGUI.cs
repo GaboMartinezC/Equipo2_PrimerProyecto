@@ -19,15 +19,15 @@ namespace GUI
         public EmpleadoGUI()
         {
             InitializeComponent();
-            FormatoDT("0");
+            this.dt = bl.BuscarTodos();
+            FormatoDT("");
         }
         private void FormatoDT(string cedula)
         {
             try
             {
-                if (cedula.Equals("0"))
+                if (cedula.Equals(""))
                 {
-                    this.dt = bl.BuscarTodos();
                     this.dgvEmpleado.DataSource = dt;
                     for (int i = 0; i < dgvEmpleado.ColumnCount; i++)
                         this.dgvEmpleado.Columns[i].ReadOnly = true;
@@ -41,7 +41,7 @@ namespace GUI
                         for (int j = 0; j<cedComparar.Length; j++)
                         {
                             if (ced[j] != cedComparar[j])
-                                dt.Rows[i].Delete();
+                                dgvEmpleado.Rows[i].Visible = false;
                         }
                     }
                     this.dgvEmpleado.DataSource = dt;
@@ -51,7 +51,7 @@ namespace GUI
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                FormatoDT("");
             }
         }
 
@@ -68,7 +68,7 @@ namespace GUI
             FormatoDT(txtCedBuscar);
         }
 
-        private int btnBuscarEmpleado_Click(object sender, EventArgs e)
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
             String txtCedBuscar = txtBuscarEmpleado.Text;
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -79,11 +79,10 @@ namespace GUI
                     EmpleadoGUI em = new EmpleadoGUI();
                     b.Location = em.Location;
                     b.Show();
-                    return 0;
+                    break;
                 }
             }
             MessageBox.Show("No encontrado");
-            return 0;
         }
     }
 }

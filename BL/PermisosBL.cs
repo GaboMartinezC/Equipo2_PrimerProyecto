@@ -8,7 +8,7 @@ namespace BL
     {
         //genera una instancia que permite acceder a los métodos de PermisosDAL
         private PermisosDAL dal = new PermisosDAL();
-        public bool IngresarPermisos(List<Permisos> ListaPermisos, int idRol)
+        public bool IngresarPermisos(List<Permisos> ListaPermisos)
         {
             return dal.IngresarPermisos(ListaPermisos);
 
