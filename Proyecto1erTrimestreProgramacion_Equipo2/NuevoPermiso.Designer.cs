@@ -30,6 +30,7 @@
         {
             this.panelPadreNuevoProveedor = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtPermiso = new System.Windows.Forms.TextBox();
             this.chkProductos = new System.Windows.Forms.CheckBox();
             this.chkSucursales = new System.Windows.Forms.CheckBox();
             this.chkDatos = new System.Windows.Forms.CheckBox();
@@ -57,7 +58,6 @@
             this.panelBtnSalir = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtPermiso = new System.Windows.Forms.TextBox();
             this.panelPadreNuevoProveedor.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -112,6 +112,16 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(379, 328);
             this.panel5.TabIndex = 3;
+            // 
+            // txtPermiso
+            // 
+            this.txtPermiso.BackColor = System.Drawing.Color.LightGray;
+            this.txtPermiso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtPermiso.Location = new System.Drawing.Point(58, 0);
+            this.txtPermiso.Name = "txtPermiso";
+            this.txtPermiso.PlaceholderText = "Descripción del permiso:";
+            this.txtPermiso.Size = new System.Drawing.Size(321, 23);
+            this.txtPermiso.TabIndex = 27;
             // 
             // chkProductos
             // 
@@ -363,16 +373,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(15, 45);
             this.panel3.TabIndex = 0;
-            // 
-            // txtPermiso
-            // 
-            this.txtPermiso.BackColor = System.Drawing.Color.LightGray;
-            this.txtPermiso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtPermiso.Location = new System.Drawing.Point(58, 0);
-            this.txtPermiso.Name = "txtPermiso";
-            this.txtPermiso.PlaceholderText = "Descripción del permiso:";
-            this.txtPermiso.Size = new System.Drawing.Size(321, 23);
-            this.txtPermiso.TabIndex = 27;
             // 
             // NuevoPermiso
             // 

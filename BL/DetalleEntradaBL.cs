@@ -9,11 +9,10 @@ namespace BL
         private DetalleEntradaDAL detalleDal = new DetalleEntradaDAL();
         //genera una instancia que permite acceder a los métodos de BodegaDAL
         private BodegaDAL bodegaDal = new BodegaDAL();
-        public uint IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
+        public bool ValidarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
         {
             //Variables bandera que alojarán las cantidades máximas y mínimas, más la nueva cantidad
-            uint cantidadesMaximasProducto = 0, cantidadesMinimasProducto = 0,
-            nuevaCantidad = 0, cantActual = 0, cantidadErrores = 0;
+            uint stockMax = 0, stockMin = 0, nuevaCantidad = 0;
             //Instancia del DAL de producto y una datatable con
             //un listado de productos generales
             ProductoDAL pDal = new ProductoDAL();
@@ -29,40 +28,21 @@ namespace BL
                     //el stock mínimo y no sobrepase el stock máximo, después finaliza el ciclo
                     if (de.IdProducto == Convert.ToUInt32(dtProducto.Rows[i]["ID"]))
                     {
-                        //Instancia una entidad bodega y se llena con los datos requeridos del objeto en lista
+                        //Instancia un objeto bodega y lo llena con los datos para validar la cantidad
                         Bodega bodega = new Bodega();
                         bodega.IdProducto = de.IdProducto;
                         bodega.IdSucursal = idSuc;
-                        //Convierte los registros actuales del recorrido de la datatable que se 
-                        //requieran procesar a unsigned int
-                        cantidadesMaximasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MAXIMO"]);
-                        cantidadesMinimasProducto = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MINIMO"]);
-                        //Llama al SP de busqueda para verificar que hayan productos de esa clase en la bodega
-                        //cantActual = bodegaDal.BuscarProductoSucursal(bodega).Cantidad;
-                        //nueva cantidad es igual a la cantidad existente del producto en la sucursal
-                        //más la cantidad ingresada
-                        nuevaCantidad = cantActual + de.Cantidad;
-                        //Si se cumple la condición, cuenta como fallida la operacion de ingresar la entrada
-                        if (nuevaCantidad < cantidadesMinimasProducto || nuevaCantidad > cantidadesMaximasProducto)
-                            cantidadErrores++;
-                        else
-                        {
-                            bodega.Cantidad = nuevaCantidad;
-                            //Si ya hay productos, aumenta inventario
-                            if (cantActual != 0)
-                                bodegaDal.AumentarInventario(bodega);
-                            //Si no hay productos, ingresa bodega
-                            else
-                                bodegaDal.IngresarBodega(bodega);
-                            //Registra el detalle de entrada
-                            detalleDal.IngresarDetalleEntrada(de);
-                            break;
-                        }
+                        nuevaCantidad = BuscarProductoSucursal(bodega) + de.Cantidad;
+                        stockMax = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MAXIMO"]);
+                        stockMin = Convert.ToUInt32(dtProducto.Rows[i]["STOCK_MINIMO"]);
+                        //Valida el stock máximo y mínimo
+                        if (nuevaCantidad > stockMax || nuevaCantidad < stockMin)
+                            return false;
                     }
                 }
             }
-            //Retorna la cantidad de errores de ingreso por stock
-            return cantidadErrores;
+            //Retorna verdadero si no encontró errores
+            return true;
         }
         //Busca la cantidad de producto que existe en una sucursal
         public uint BuscarProductoSucursal(Bodega bodega)

@@ -15,10 +15,6 @@ namespace BL
         {
             return dal.VerInventario();
         }
-        public Bodega BuscarProductoSucursal(Bodega bodega)
-        {
-            return dal.BuscarProductoSucursal(bodega);
-        }
        
     }
 }

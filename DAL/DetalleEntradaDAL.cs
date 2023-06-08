@@ -6,39 +6,47 @@ namespace DAL
 {
     public class DetalleEntradaDAL : ConnectionToSQL
     {
-        public bool IngresarDetalleEntrada(DetalleEntrada de)
+        public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
         {
             bool retVal = false;
             int ultimoIdEncabezado = this.UltimoIdEncabezado();
-            using (var cn = GetConnection())
+            /*
+             * Gabriel J.
+             * Recibe una lista con todos los detalles de Entrada 
+             * Los va ingresando a la base de datos con un foreach de cada objeto en la lista
+             */
+            foreach (DetalleEntrada de in ListaDetalles)
             {
-                try
+                using (var cn = GetConnection())
                 {
-                    cn.Open();
-                    using (var cmd = new SqlCommand("SpIngresarDetalle", cn))
+                    try
                     {
-                        cmd.Connection = cn;
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        /*
-                            * Parámetros
-                            * -Convierte de uint (Unsigned Integer) a Int para BD
-                            * metodo Convert.ToInt32() [32 bits, entero estándar]
-                            * -ID de entrada es el ultimo ID registrado de un encabezado de entrada, 
-                            * ver metodo privado hasta abajo de la clase
-                            * Gabriel J.
-                            */
-                        cmd.Parameters.Add(new SqlParameter("@idEnt", ultimoIdEncabezado));
-                        cmd.Parameters.Add(new SqlParameter("@idProdu", Convert.ToInt32(de.IdProducto)));
-                        cmd.Parameters.Add(new SqlParameter("@cant", Convert.ToInt32(de.Cantidad)));
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        reader.Close();
-                        retVal = true;
+                        cn.Open();
+                        using (var cmd = new SqlCommand("SpIngresarDetalle", cn))
+                        {
+                            cmd.Connection = cn;
+                            cmd.CommandType = CommandType.StoredProcedure;
+                            /*
+                             * Parámetros
+                             * -Convierte de uint (Unsigned Integer) a Int para BD
+                             * metodo Convert.ToInt32() [32 bits, entero estándar]
+                             * -ID de entrada es el ultimo ID registrado de un encabezado de entrada, 
+                             * ver metodo privado hasta abajo de la clase
+                             * Gabriel J.
+                             */
+                            cmd.Parameters.Add(new SqlParameter("@idEnt", ultimoIdEncabezado));
+                            cmd.Parameters.Add(new SqlParameter("@idProdu", Convert.ToInt32(de.IdProducto)));
+                            cmd.Parameters.Add(new SqlParameter("@cant", Convert.ToInt32(de.Cantidad)));
+                            SqlDataReader reader = cmd.ExecuteReader();
+                            reader.Close();
+                            retVal = true;
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                    retVal = false;
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        retVal = false;
+                    }
                 }
             }
             return retVal;
