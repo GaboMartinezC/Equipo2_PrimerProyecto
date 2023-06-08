@@ -77,8 +77,8 @@ namespace GUI
         }
         private void pbxIngresar_Click_1(object sender, EventArgs e)
         {
+            this.Hide();
             Ingresar();
-            Hide();
         }
         private void panelBarraSuperior_MouseDown(object sender, MouseEventArgs e)
         {

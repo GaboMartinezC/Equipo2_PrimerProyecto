@@ -1,4 +1,6 @@
-﻿using Proyecto1erTrimestreProgramacion_Equipo2;
+﻿using BL;
+using ET;
+using Proyecto1erTrimestreProgramacion_Equipo2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +15,17 @@ namespace GUI
 {
     public partial class CategoriaGUI : Form
     {
+        private CategoriaBL bl = new CategoriaBL();
+        private DataTable dt;
         public CategoriaGUI()
         {
             InitializeComponent();
+            FormatoDT();
+        }
+        private void FormatoDT()
+        {
+            this.dt = bl.BuscarTodoCategoria();
+            this.dgvCategoria.DataSource = dt;
         }
         private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
         {

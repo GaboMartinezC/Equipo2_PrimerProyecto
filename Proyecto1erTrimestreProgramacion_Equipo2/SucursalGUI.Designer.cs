@@ -35,13 +35,13 @@
             btnBuscarProveedor = new PictureBox();
             panel1 = new Panel();
             textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            dgvSucursales = new DataGridView();
             panelNuevoProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnNuevoProveedor).BeginInit();
             panelBTNBuscarProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvSucursales).BeginInit();
             SuspendLayout();
             // 
             // panelNuevoProveedor
@@ -103,15 +103,15 @@
             textBox1.Size = new Size(530, 23);
             textBox1.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvSucursales
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(155, 115);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(520, 370);
-            dataGridView1.TabIndex = 3;
+            dgvSucursales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSucursales.Location = new Point(155, 115);
+            dgvSucursales.Name = "dgvSucursales";
+            dgvSucursales.RowHeadersWidth = 51;
+            dgvSucursales.RowTemplate.Height = 25;
+            dgvSucursales.Size = new Size(520, 370);
+            dgvSucursales.TabIndex = 3;
             // 
             // SucursalGUI
             // 
@@ -119,7 +119,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 248, 243);
             ClientSize = new Size(800, 570);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvSucursales);
             Controls.Add(panel1);
             Controls.Add(panelBTNBuscarProveedor);
             Controls.Add(panelNuevoProveedor);
@@ -132,7 +132,7 @@
             ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvSucursales).EndInit();
             ResumeLayout(false);
         }
 
@@ -144,6 +144,6 @@
         private PictureBox btnBuscarProveedor;
         private Panel panel1;
         private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvSucursales;
     }
 }
