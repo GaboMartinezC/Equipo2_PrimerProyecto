@@ -12,16 +12,11 @@ namespace BL
         private DetalleEntradaBL bl = new DetalleEntradaBL();
         public bool IngresarEntrada(EncabezadoEntrada encabezado, List<DetalleEntrada> listaDetalle)
         {
-            //Realiza las validaciones correspondientes
-            if (bl.ValidarDetalleEntrada(listaDetalle, encabezado.IdSucursal))
+            //Si no encuentra excepciones en encabezado y detalles devuelve verdadero y sale del metodo
+            if (dal.IngresarEntrada(encabezado)) 
             {
-                //Si no encuentra excepciones en encabezado y detalles devuelve verdadero y sale del metodo
-                if(dal.IngresarEntrada(encabezado));
-                {
-                    if (detalleDal.IngresarDetalleEntrada(listaDetalle))
-                        return true;
-                }
-                return false;
+                if (detalleDal.IngresarDetalleEntrada(listaDetalle))
+                    return true;
             }
             return false;
         }

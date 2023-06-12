@@ -20,8 +20,6 @@ namespace BL
                 if (dt.Rows[i]["CEDULA"].ToString().Equals(empleado.Cedula))
                     return false;
             }
-            //Si no se encontró, llama a consultar los datos de contacto
-            retVal = this.ContactosUsuarioValidos(empleado);
             return dal.IngresarEmpleado(empleado);
         }
         public bool ActualizarEmpleado(Empleado empleado)

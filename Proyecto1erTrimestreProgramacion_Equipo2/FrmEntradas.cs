@@ -15,13 +15,13 @@ namespace GUI
 {
     public partial class FrmEntradas : Form
     {
-        List<DetalleEntrada> listaDetalles;
+        List<DetalleEntrada> listaDetalles = new();
         SucursalesBL sucursalBl = new SucursalesBL();
         ProductoBL productoBl = new ProductoBL();
         DataTable sucursales;
         DataTable productos;
         DataTable lsDetalles;
-        Empleado empleadoResponsable = new ();
+        Empleado empleadoResponsable;
         public FrmEntradas(Empleado e)
         {
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace GUI
         private void CargarComboBox()
         {
             sucursales = sucursalBl.BuscarTodoSucursal();
-            productos = productoBl.BuscarTodoProductoGeneral();
+            this.productos = productoBl.BuscarTodoProductoGeneral();
             for (int i = 0; i < productos.Rows.Count; i++)
             {
                 //se agregan todas las descripciones de producto como una opcion
@@ -57,27 +57,6 @@ namespace GUI
                 //se agregan todas las ubicaciones de sucursal como una opcion
                 cbxSucursales.Items.Add((string)sucursales.Rows[i]["ubicacion"]);
             }
-        }
-        private void pbxAgregarDetalle_Click(object sender, EventArgs e)
-        {
-            DetalleEntrada de = new DetalleEntrada();
-            EncabezadoEntrada ee = new EncabezadoEntrada(); 
-            string ubi = cbxSucursales.Text;
-            string prod = cbxProductos.Text;
-            productos = productoBl.BuscarTodoProductoGeneral();
-            sucursales = sucursalBl.BuscarTodoSucursal();
-            for (int i = 0; i < sucursales.Rows.Count; i++)
-            {
-                if ((string)sucursales.Rows[i]["ubicacion"] == ubi)
-                    ee.IdSucursal = Convert.ToUInt32(sucursales.Rows[i]["id"]);
-            }
-            for(int i = 0;i < productos.Rows.Count;i++)
-            {
-                if ((string)productos.Rows[i]["descripcion"] == prod)
-                    de.IdProducto = Convert.ToUInt32(productos.Rows[i]["id"]);
-                    
-            }
-
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -92,6 +71,115 @@ namespace GUI
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pbxAgregarDetalle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DetalleEntrada de = new DetalleEntrada();
+                string prod = cbxProductos.Text;
+                uint idProd = 0, cantidad = Convert.ToUInt32(txtCantidad.Text);
+                bool productoRegistrado = false;
+                for (int i = 0; i < productos.Rows.Count; i++)
+                {
+                    if (productos.Rows[i]["DESCRIPCION"].ToString().Equals(prod))
+                        idProd = Convert.ToUInt32(productos.Rows[i]["ID"]);
+                }
+                foreach (DetalleEntrada d in listaDetalles)
+                {
+                    if (d.Id == idProd)
+                    {
+                        productoRegistrado = true;
+                        d.Cantidad = d.Cantidad + cantidad;
+                        break;
+                    }
+                }
+                if (!productoRegistrado)
+                {
+                    listaDetalles.Add(new DetalleEntrada
+                    {
+                        IdProducto = idProd,
+                        Cantidad = cantidad
+                    });
+                    lsDetalles.Rows.Add(prod, cbxSucursales.Text, cantidad.ToString());
+                }
+                dgvProductosEntrada.DataSource = lsDetalles;
+            }
+            catch 
+            {
+                MessageBox.Show("Ha habido un problema, registre solo números");
+            }
+        }
+        private uint ConseguirIdEmpleado()
+        {
+            EmpleadoBL bl = new();
+            DataTable dt = bl.BuscarTodos();
+            for (int i = 0; i < dt.Rows.Count; i++) 
+            {
+                if ((string)dt.Rows[i]["CEDULA"] == this.empleadoResponsable.Cedula)
+                    return Convert.ToUInt32(dt.Rows[i]["ID"]);
+            }
+            return 0;
+        }
+        private void btnRealizarEntrada_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EncabezadoEntrada entrada = new();
+                EncabezadoEntradaBL bl = new();
+                DetalleEntradaBL de = new();
+                string sucursal = cbxSucursales.Text;
+                entrada.IdEmpleado = ConseguirIdEmpleado();
+                for (int i = 0; i < sucursales.Rows.Count; i++)
+                {
+                    if ((string)sucursales.Rows[i]["UBICACION"] == sucursal)
+                        entrada.IdSucursal = Convert.ToUInt32(sucursales.Rows[i]["ID"]);
+                }
+                if (!de.ValidarDetalleEntrada(listaDetalles, entrada.IdSucursal))
+                    MessageBox.Show("Hay un problema con el stock máximo y mínimo, revise correctamente");
+                else
+                {
+                    if(bl.IngresarEntrada(entrada, listaDetalles)) 
+                    {
+                        MessageBox.Show("Ingreso correcto");
+                        cbxSucursales.Text = string.Empty;
+                        cbxProductos.Text = string.Empty;
+                        txtCantidad.Text = string.Empty;
+                    }
+                    else
+                        MessageBox.Show("Ha sucedido un problema");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ha habido un problema");
+            }
+            
+        }
+
+        private void btnRegistros_Click(object sender, EventArgs e)
+        {
+            if (pnlRegistro.Visible)
+            {
+                pnlRegistro.Visible = false;
+                btnRealizarEntrada.Visible = true;
+            }
+            else
+            {
+                DetalleEntradaBL bl = new();
+                dgvRegistro.DataSource = bl.VerTodoRegistroEntradas();
+                pnlRegistro.Visible = true;
+                btnRealizarEntrada.Visible = false;
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            cbxSucursales.Text = string.Empty;
+            cbxProductos.Text = string.Empty;
+            txtCantidad.Text = string.Empty;
+            FormatoDT();
         }
     }
 }

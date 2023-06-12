@@ -39,8 +39,15 @@
             this.cbxProductos = new System.Windows.Forms.ComboBox();
             this.pbxAgregarDetalle = new System.Windows.Forms.PictureBox();
             this.panelBarraSuperior = new System.Windows.Forms.Panel();
+            this.btnRegistros = new System.Windows.Forms.Button();
+            this.pnlRegistro = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgvRegistro = new System.Windows.Forms.DataGridView();
+            this.btnBorrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosEntrada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarDetalle)).BeginInit();
+            this.pnlRegistro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // cbxSucursales
@@ -107,6 +114,7 @@
             this.btnRealizarEntrada.TabIndex = 9;
             this.btnRealizarEntrada.Text = "Realizar entrada";
             this.btnRealizarEntrada.UseVisualStyleBackColor = false;
+            this.btnRealizarEntrada.Click += new System.EventHandler(this.btnRealizarEntrada_Click);
             // 
             // cbxProductos
             // 
@@ -125,6 +133,7 @@
             this.pbxAgregarDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxAgregarDetalle.TabIndex = 12;
             this.pbxAgregarDetalle.TabStop = false;
+            this.pbxAgregarDetalle.Click += new System.EventHandler(this.pbxAgregarDetalle_Click);
             // 
             // panelBarraSuperior
             // 
@@ -135,12 +144,68 @@
             this.panelBarraSuperior.TabIndex = 13;
             this.panelBarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraSuperior_MouseDown);
             // 
+            // btnRegistros
+            // 
+            this.btnRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(208)))));
+            this.btnRegistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegistros.Location = new System.Drawing.Point(12, 384);
+            this.btnRegistros.Name = "btnRegistros";
+            this.btnRegistros.Size = new System.Drawing.Size(76, 44);
+            this.btnRegistros.TabIndex = 14;
+            this.btnRegistros.Text = "Ver Registro";
+            this.btnRegistros.UseVisualStyleBackColor = false;
+            this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
+            // 
+            // pnlRegistro
+            // 
+            this.pnlRegistro.Controls.Add(this.label4);
+            this.pnlRegistro.Controls.Add(this.dgvRegistro);
+            this.pnlRegistro.Location = new System.Drawing.Point(77, 36);
+            this.pnlRegistro.Name = "pnlRegistro";
+            this.pnlRegistro.Size = new System.Drawing.Size(660, 334);
+            this.pnlRegistro.TabIndex = 15;
+            this.pnlRegistro.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(210, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(242, 16);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Registro de Entradas de Producto";
+            // 
+            // dgvRegistro
+            // 
+            this.dgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRegistro.Location = new System.Drawing.Point(47, 87);
+            this.dgvRegistro.Name = "dgvRegistro";
+            this.dgvRegistro.RowTemplate.Height = 25;
+            this.dgvRegistro.Size = new System.Drawing.Size(570, 209);
+            this.dgvRegistro.TabIndex = 0;
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(208)))));
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBorrar.Location = new System.Drawing.Point(94, 384);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(76, 44);
+            this.btnBorrar.TabIndex = 16;
+            this.btnBorrar.Text = "Borrar ";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
             // FrmEntradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBorrar);
+            this.Controls.Add(this.pnlRegistro);
+            this.Controls.Add(this.btnRegistros);
             this.Controls.Add(this.panelBarraSuperior);
             this.Controls.Add(this.pbxAgregarDetalle);
             this.Controls.Add(this.cbxProductos);
@@ -156,6 +221,9 @@
             this.Text = "FrmEntradas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosEntrada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarDetalle)).EndInit();
+            this.pnlRegistro.ResumeLayout(false);
+            this.pnlRegistro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +240,10 @@
         private ComboBox cbxProductos;
         private PictureBox pbxAgregarDetalle;
         private Panel panelBarraSuperior;
+        private Button btnRegistros;
+        private Panel pnlRegistro;
+        private Label label4;
+        private DataGridView dgvRegistro;
+        private Button btnBorrar;
     }
 }
