@@ -43,8 +43,6 @@ namespace BL
                         return false;
                 }
             }
-            //Si aún no sale del  metodo, valida los contactos del usuario
-            retVal = this.ContactosUsuarioValidos(empleado);
             //Si es válido, actualiza el registro
             if (retVal)
                 retVal = dal.ActualizarEmpleado(empleado);
@@ -53,38 +51,6 @@ namespace BL
         public void InhabilitarEmpleado(int id)
         {
             dal.InhabilitarEmpleado(id);
-        }
-        private bool ContactosUsuarioValidos(Empleado empleado)
-        {
-            bool retVal = true;
-            int cantArroba = 0;
-            //Convierte el email del empleado en una arreglo de caracteres
-            char[] email = empleado.Email.ToCharArray();
-            //Recorre el arreglo
-            foreach (char c in empleado.Email)
-            {
-                //Busca arrobas en el email
-                if (c=='@')
-                    cantArroba++;
-            }
-            //Si encuentra más de una o no encuentra, devuelve un falso
-            if (cantArroba != 1)
-                retVal = false;
-            //Valida el que siga sin encontrar ninguna anomalía
-            if (retVal)
-            {
-                //Finalmente, recorre el numero telefonico del empleado
-                foreach (char c in empleado.NumeroTelefonico)
-                {
-                    //Si existe algún elemento que no sea un numero, devuelve falso y sale del ciclo
-                    if (!(c >= '0' && c <= '9'))
-                    {
-                        retVal = false;
-                        break;
-                    }
-                }
-            }
-            return retVal;
         }
         public uint BuscarEmpleado(string cedula, string contrasena)
         {

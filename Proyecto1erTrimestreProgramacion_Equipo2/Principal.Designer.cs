@@ -66,6 +66,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.logoEsquina = new System.Windows.Forms.PictureBox();
             this.panelPadre = new System.Windows.Forms.Panel();
+            this.btnInventario = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panelBarraControles.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -94,6 +95,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoEsquina)).BeginInit();
             this.panelPadre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -491,12 +493,26 @@
             // 
             // panelPadre
             // 
+            this.panelPadre.Controls.Add(this.btnInventario);
             this.panelPadre.Controls.Add(this.pictureBox6);
             this.panelPadre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPadre.Location = new System.Drawing.Point(200, 30);
             this.panelPadre.Name = "panelPadre";
             this.panelPadre.Size = new System.Drawing.Size(800, 570);
             this.panelPadre.TabIndex = 3;
+            // 
+            // btnInventario
+            // 
+            this.btnInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInventario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInventario.BackgroundImage")));
+            this.btnInventario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnInventario.Image")));
+            this.btnInventario.Location = new System.Drawing.Point(725, 518);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(75, 52);
+            this.btnInventario.TabIndex = 10;
+            this.btnInventario.TabStop = false;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // pictureBox6
             // 
@@ -559,6 +575,7 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoEsquina)).EndInit();
             this.panelPadre.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnInventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
@@ -604,5 +621,6 @@
         private PictureBox logoEsquina;
         private Panel panelPadre;
         private PictureBox pictureBox6;
+        private PictureBox btnInventario;
     }
 }

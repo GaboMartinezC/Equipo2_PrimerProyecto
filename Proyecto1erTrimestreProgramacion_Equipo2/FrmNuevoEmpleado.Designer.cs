@@ -58,6 +58,7 @@
             this.panelBtnSalir = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnNuevoRol = new System.Windows.Forms.PictureBox();
             this.panelPadreNuevoProveedor.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -71,6 +72,7 @@
             this.panel1.SuspendLayout();
             this.panelBtnSalir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoRol)).BeginInit();
             this.SuspendLayout();
             // 
             // panelPadreNuevoProveedor
@@ -87,6 +89,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.btnNuevoRol);
             this.panel5.Controls.Add(this.pictureBox6);
             this.panel5.Controls.Add(this.txtContrasena);
             this.panel5.Controls.Add(this.label6);
@@ -365,6 +368,17 @@
             this.panel3.Size = new System.Drawing.Size(15, 45);
             this.panel3.TabIndex = 0;
             // 
+            // btnNuevoRol
+            // 
+            this.btnNuevoRol.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoRol.Image")));
+            this.btnNuevoRol.Location = new System.Drawing.Point(312, 293);
+            this.btnNuevoRol.Name = "btnNuevoRol";
+            this.btnNuevoRol.Size = new System.Drawing.Size(61, 32);
+            this.btnNuevoRol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnNuevoRol.TabIndex = 1;
+            this.btnNuevoRol.TabStop = false;
+            this.btnNuevoRol.Click += new System.EventHandler(this.btnNuevoRol_Click);
+            // 
             // FrmNuevoEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -389,6 +403,7 @@
             this.panel1.ResumeLayout(false);
             this.panelBtnSalir.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNuevoRol)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -424,5 +439,6 @@
         private PictureBox pictureBox6;
         private TextBox txtContrasena;
         private Label label6;
+        private PictureBox btnNuevoRol;
     }
 }

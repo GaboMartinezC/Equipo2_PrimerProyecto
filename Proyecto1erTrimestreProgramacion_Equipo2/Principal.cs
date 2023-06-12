@@ -42,6 +42,8 @@ namespace GUI
                 panelSucursal.Visible = false;
             if (!lsPermisos[3])
                 panelProductos.Visible = false;
+            if (!lsPermisos[4])
+                btnInventario.Visible = false;
             if (!lsPermisos[5])
                 panelEmpleados.Visible = false;
         }
@@ -163,6 +165,12 @@ namespace GUI
         private void panelBarraControles_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            FrmEntradas em = new (this.empleadoLogeado);
+            OpenChildFormInPanel(em);
         }
     }
 }

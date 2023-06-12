@@ -29,127 +29,136 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEntradas));
-            cbxSucursales = new ComboBox();
-            label1 = new Label();
-            label2 = new Label();
-            txtCantidad = new TextBox();
-            label3 = new Label();
-            dgvProductosEntrada = new DataGridView();
-            btnRealizarEntrada = new Button();
-            cbxProductos = new ComboBox();
-            pbxAgregarDetalle = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)dgvProductosEntrada).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbxAgregarDetalle).BeginInit();
-            SuspendLayout();
+            this.cbxSucursales = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvProductosEntrada = new System.Windows.Forms.DataGridView();
+            this.btnRealizarEntrada = new System.Windows.Forms.Button();
+            this.cbxProductos = new System.Windows.Forms.ComboBox();
+            this.pbxAgregarDetalle = new System.Windows.Forms.PictureBox();
+            this.panelBarraSuperior = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductosEntrada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarDetalle)).BeginInit();
+            this.SuspendLayout();
             // 
             // cbxSucursales
             // 
-            cbxSucursales.FormattingEnabled = true;
-            cbxSucursales.Location = new Point(397, 36);
-            cbxSucursales.Name = "cbxSucursales";
-            cbxSucursales.Size = new Size(163, 23);
-            cbxSucursales.TabIndex = 4;
-            cbxSucursales.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            this.cbxSucursales.FormattingEnabled = true;
+            this.cbxSucursales.Location = new System.Drawing.Point(397, 36);
+            this.cbxSucursales.Name = "cbxSucursales";
+            this.cbxSucursales.Size = new System.Drawing.Size(163, 23);
+            this.cbxSucursales.TabIndex = 4;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(189, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(202, 16);
-            label1.TabIndex = 2;
-            label1.Text = "Seleccione en que sucursal ";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(189, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Seleccione en que sucursal ";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(78, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(149, 16);
-            label2.TabIndex = 5;
-            label2.Text = "Ingrese el producto: ";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(78, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(149, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Ingrese el producto: ";
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(601, 75);
-            txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(55, 23);
-            txtCantidad.TabIndex = 6;
+            this.txtCantidad.Location = new System.Drawing.Point(601, 75);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(55, 23);
+            this.txtCantidad.TabIndex = 6;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(522, 80);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 16);
-            label3.TabIndex = 7;
-            label3.Text = "Cantidad:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(522, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Cantidad:";
             // 
             // dgvProductosEntrada
             // 
-            dgvProductosEntrada.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProductosEntrada.Location = new Point(77, 123);
-            dgvProductosEntrada.Name = "dgvProductosEntrada";
-            dgvProductosEntrada.RowTemplate.Height = 25;
-            dgvProductosEntrada.Size = new Size(648, 247);
-            dgvProductosEntrada.TabIndex = 8;
-            dgvProductosEntrada.CellContentClick += dgvProductosEntrada_CellContentClick;
+            this.dgvProductosEntrada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductosEntrada.Location = new System.Drawing.Point(77, 123);
+            this.dgvProductosEntrada.Name = "dgvProductosEntrada";
+            this.dgvProductosEntrada.RowTemplate.Height = 25;
+            this.dgvProductosEntrada.Size = new System.Drawing.Size(648, 247);
+            this.dgvProductosEntrada.TabIndex = 8;
             // 
             // btnRealizarEntrada
             // 
-            btnRealizarEntrada.BackColor = Color.FromArgb(189, 205, 208);
-            btnRealizarEntrada.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRealizarEntrada.Location = new Point(301, 384);
-            btnRealizarEntrada.Name = "btnRealizarEntrada";
-            btnRealizarEntrada.Size = new Size(169, 44);
-            btnRealizarEntrada.TabIndex = 9;
-            btnRealizarEntrada.Text = "Realizar entrada";
-            btnRealizarEntrada.UseVisualStyleBackColor = false;
+            this.btnRealizarEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(208)))));
+            this.btnRealizarEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRealizarEntrada.Location = new System.Drawing.Point(301, 384);
+            this.btnRealizarEntrada.Name = "btnRealizarEntrada";
+            this.btnRealizarEntrada.Size = new System.Drawing.Size(169, 44);
+            this.btnRealizarEntrada.TabIndex = 9;
+            this.btnRealizarEntrada.Text = "Realizar entrada";
+            this.btnRealizarEntrada.UseVisualStyleBackColor = false;
             // 
             // cbxProductos
             // 
-            cbxProductos.FormattingEnabled = true;
-            cbxProductos.Location = new Point(233, 78);
-            cbxProductos.Name = "cbxProductos";
-            cbxProductos.Size = new Size(266, 23);
-            cbxProductos.TabIndex = 10;
+            this.cbxProductos.FormattingEnabled = true;
+            this.cbxProductos.Location = new System.Drawing.Point(233, 78);
+            this.cbxProductos.Name = "cbxProductos";
+            this.cbxProductos.Size = new System.Drawing.Size(266, 23);
+            this.cbxProductos.TabIndex = 10;
             // 
             // pbxAgregarDetalle
             // 
-            pbxAgregarDetalle.Image = (Image)resources.GetObject("pbxAgregarDetalle.Image");
-            pbxAgregarDetalle.Location = new Point(664, 69);
-            pbxAgregarDetalle.Name = "pbxAgregarDetalle";
-            pbxAgregarDetalle.Size = new Size(61, 32);
-            pbxAgregarDetalle.SizeMode = PictureBoxSizeMode.Zoom;
-            pbxAgregarDetalle.TabIndex = 12;
-            pbxAgregarDetalle.TabStop = false;
-            pbxAgregarDetalle.Click += pbxAgregarDetalle_Click;
+            this.pbxAgregarDetalle.Image = ((System.Drawing.Image)(resources.GetObject("pbxAgregarDetalle.Image")));
+            this.pbxAgregarDetalle.Location = new System.Drawing.Point(664, 69);
+            this.pbxAgregarDetalle.Name = "pbxAgregarDetalle";
+            this.pbxAgregarDetalle.Size = new System.Drawing.Size(61, 32);
+            this.pbxAgregarDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxAgregarDetalle.TabIndex = 12;
+            this.pbxAgregarDetalle.TabStop = false;
+            // 
+            // panelBarraSuperior
+            // 
+            this.panelBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelBarraSuperior.Name = "panelBarraSuperior";
+            this.panelBarraSuperior.Size = new System.Drawing.Size(800, 30);
+            this.panelBarraSuperior.TabIndex = 13;
+            this.panelBarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraSuperior_MouseDown);
             // 
             // FrmEntradas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(248, 248, 243);
-            ClientSize = new Size(800, 450);
-            Controls.Add(pbxAgregarDetalle);
-            Controls.Add(cbxProductos);
-            Controls.Add(btnRealizarEntrada);
-            Controls.Add(dgvProductosEntrada);
-            Controls.Add(label3);
-            Controls.Add(txtCantidad);
-            Controls.Add(label2);
-            Controls.Add(cbxSucursales);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmEntradas";
-            Text = "FrmEntradas";
-            ((System.ComponentModel.ISupportInitialize)dgvProductosEntrada).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbxAgregarDetalle).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelBarraSuperior);
+            this.Controls.Add(this.pbxAgregarDetalle);
+            this.Controls.Add(this.cbxProductos);
+            this.Controls.Add(this.btnRealizarEntrada);
+            this.Controls.Add(this.dgvProductosEntrada);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbxSucursales);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmEntradas";
+            this.Text = "FrmEntradas";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductosEntrada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarDetalle)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -162,5 +171,6 @@
         private Button btnRealizarEntrada;
         private ComboBox cbxProductos;
         private PictureBox pbxAgregarDetalle;
+        private Panel panelBarraSuperior;
     }
 }

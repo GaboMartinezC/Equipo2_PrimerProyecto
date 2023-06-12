@@ -37,21 +37,6 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
-        private void btnNuevoProveedor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelBTNBuscarProveedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelFrmNuevoProveedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnNuevoProveedor_Click_1(object sender, EventArgs e)
         {
             /*FrmNuevoProducto f = new FrmNuevoProducto();
@@ -67,32 +52,16 @@ namespace GUI
             f.Show();
 
         }
-        private void panelNuevoProveedor_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void btnBuscarProveedor_Click(object sender, EventArgs e)
+        private void btnIngresarEntradas_Click(object sender, EventArgs e)
         {
-            FrmBuscarProducto f = new FrmBuscarProducto();
+            /*FrmEntradas f = new FrmEntradas();
+            // se instancia un form de producto
             ProductoGUI p = new ProductoGUI();
+            // el proposito de esta instancia es porder obtener su posición
             f.Location = p.Location;
-            f.Show();
-        }
-
-        private void txtBusqueda_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvTodosProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvTodosProductos_Paint(object sender, PaintEventArgs e)
-        {
-
+            // se muestra el form de ingreso de producto
+            f.Show();*/
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoPermiso));
             this.panelPadreNuevoProveedor = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtPermiso = new System.Windows.Forms.TextBox();
@@ -56,8 +57,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelBtnSalir = new System.Windows.Forms.Panel();
-            this.btnSalir = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
             this.panelPadreNuevoProveedor.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -179,6 +180,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(58, 196);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(27, 19);
@@ -208,6 +210,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(58, 291);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 20);
@@ -217,6 +220,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(64, 243);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(21, 18);
@@ -236,6 +240,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(57, 145);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 20);
@@ -245,6 +250,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(58, 94);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 19);
@@ -254,6 +260,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(57, 45);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 20);
@@ -319,6 +326,8 @@
             // 
             // btnIngresar
             // 
+            this.btnIngresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresar.BackgroundImage")));
+            this.btnIngresar.Image = ((System.Drawing.Image)(resources.GetObject("btnIngresar.Image")));
             this.btnIngresar.Location = new System.Drawing.Point(325, 3);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(61, 32);
@@ -355,17 +364,6 @@
             this.panelBtnSalir.Size = new System.Drawing.Size(32, 45);
             this.panelBtnSalir.TabIndex = 0;
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSalir.Location = new System.Drawing.Point(6, 0);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(11, 45);
-            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSalir.TabIndex = 7;
-            this.btnSalir.TabStop = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
@@ -373,6 +371,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(15, 45);
             this.panel3.TabIndex = 0;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir.BackgroundImage")));
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSalir.Location = new System.Drawing.Point(0, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(17, 45);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalir.TabIndex = 7;
+            this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // NuevoPermiso
             // 
@@ -408,7 +419,6 @@
         private Panel panel1;
         private Panel panelBtnSalir;
         private Panel panel4;
-        private PictureBox btnSalir;
         private Panel panel3;
         private Panel panel5;
         private Label label1;
@@ -434,5 +444,6 @@
         private CheckBox chkProveeduria;
         private CheckBox chkInventario;
         private TextBox txtPermiso;
+        private PictureBox btnSalir;
     }
 }
