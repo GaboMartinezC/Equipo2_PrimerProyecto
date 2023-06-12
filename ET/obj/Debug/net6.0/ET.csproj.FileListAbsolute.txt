@@ -157,3 +157,15 @@ C:\Users\Estudiante-16\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\
 C:\Users\Estudiante-16\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\refint\ET.dll
 C:\Users\Estudiante-16\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ET.pdb
 C:\Users\Estudiante-16\Source\Repos\Equipo2_ProyectoProgra_1erTrim\ET\obj\Debug\net6.0\ref\ET.dll
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\bin\Debug\net6.0\ET.deps.json
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\bin\Debug\net6.0\ET.dll
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\bin\Debug\net6.0\ET.pdb
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.csproj.AssemblyReference.cache
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.AssemblyInfoInputs.cache
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.AssemblyInfo.cs
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.csproj.CoreCompileInputs.cache
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.dll
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\refint\ET.dll
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.pdb
+C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ref\ET.dll

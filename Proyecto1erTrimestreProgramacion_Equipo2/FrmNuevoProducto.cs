@@ -19,7 +19,11 @@ namespace GUI
         {
             InitializeComponent();
         }
+        private void pnlIngresar_Click(object sender, EventArgs e)
+        {
+            ProductoBL bl = new ProductoBL();
 
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -56,10 +60,7 @@ namespace GUI
 
         }
 
-        private void pnlIngresar_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnSalir_Click_1(object sender, EventArgs e)
         {

@@ -35,13 +35,13 @@
             btnBuscarProveedor = new PictureBox();
             panel1 = new Panel();
             textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            dgvCategoria = new DataGridView();
             panelNuevoProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnNuevoProveedor).BeginInit();
             panelBTNBuscarProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCategoria).BeginInit();
             SuspendLayout();
             // 
             // panelNuevoProveedor
@@ -103,14 +103,14 @@
             textBox1.Size = new Size(530, 23);
             textBox1.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvCategoria
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(155, 110);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(520, 370);
-            dataGridView1.TabIndex = 3;
+            dgvCategoria.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCategoria.Location = new Point(155, 110);
+            dgvCategoria.Name = "dgvCategoria";
+            dgvCategoria.RowTemplate.Height = 25;
+            dgvCategoria.Size = new Size(520, 370);
+            dgvCategoria.TabIndex = 3;
             // 
             // CategoriaGUI
             // 
@@ -118,7 +118,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 248, 243);
             ClientSize = new Size(800, 570);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvCategoria);
             Controls.Add(panel1);
             Controls.Add(panelBTNBuscarProveedor);
             Controls.Add(panelNuevoProveedor);
@@ -131,7 +131,7 @@
             ((System.ComponentModel.ISupportInitialize)btnBuscarProveedor).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCategoria).EndInit();
             ResumeLayout(false);
         }
 
@@ -143,6 +143,6 @@
         private PictureBox btnBuscarProveedor;
         private Panel panel1;
         private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvCategoria;
     }
 }
