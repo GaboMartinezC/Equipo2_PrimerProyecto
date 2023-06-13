@@ -169,3 +169,15 @@ C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.dll
 C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\refint\ET.dll
 C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ET.pdb
 C:\Users\dylan\OneDrive\Escritorio\ProyectoProgra\ET\obj\Debug\net6.0\ref\ET.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\bin\Debug\net6.0\ET.deps.json
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\bin\Debug\net6.0\ET.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\bin\Debug\net6.0\ET.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.csproj.AssemblyReference.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.AssemblyInfoInputs.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.AssemblyInfo.cs
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.csproj.CoreCompileInputs.cache
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\refint\ET.dll
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ET.pdb
+C:\Users\keyla\OneDrive\Documentos\COVAO\11 Undécimo\Técnicas\Programación\2do Trimestre\Proyecto\5\ET\obj\Debug\net6.0\ref\ET.dll

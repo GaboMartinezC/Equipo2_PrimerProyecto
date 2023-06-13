@@ -8,6 +8,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ET;
+using BL;
+
 
 namespace GUI
 {
@@ -18,13 +21,55 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        //nuevo proveedor
+        public bool IngresarProveedor()
         {
-
+            bool retval = true;
+            Proveedor proveedor = new Proveedor();
+            ProveedorBL proveedorBL = new ProveedorBL();
+            proveedor.Descripcion = txtNombre.Text.ToUpper().Trim();
+            proveedor.Email = txtEmail.Text.ToUpper().Trim();
+            proveedor.Telefono = txtTelefono.Text.ToUpper().Trim();
+            if (chbxEditorial is CheckBox)
+            {
+                if (((CheckBox)chbxEditorial).Checked)
+                {
+                    proveedor.EsEditorial = true;
+                }
+                else
+                {
+                    proveedor.EsEditorial = false;
+                }
+            }
+            return retval;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        //limpiar la chbx
+        public void LimpiarChbx()
         {
+            txtNombre.Text = string.Empty;
+            txtNombre.Focus();
+            txtEmail.Text = string.Empty;
+            txtEmail.Focus();
+            txtTelefono.Text = string.Empty;
+            txtTelefono.Focus();
+
+            foreach (Control chbxEditorial in pnlNuevoProveedor.Controls)
+            {
+                if (chbxEditorial is CheckBox)
+                {
+                    if (((CheckBox)chbxEditorial).Checked)
+                    {
+                        ((CheckBox)chbxEditorial).Checked = false;
+                    }
+                }
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            IngresarProveedor();
+            LimpiarChbx();
 
         }
 
@@ -32,6 +77,8 @@ namespace GUI
         {
             this.Close();
         }
+
+
         // drag del form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -43,9 +90,18 @@ namespace GUI
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
